@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>res.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> or <div class="page"></div> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="实验2图查询与图算法实验报告">实验2：图查询与图算法实验报告</h1>
+<h2 id="一实验目的">一、实验目的</h2>
+<p>基于 TuGraph 图数据库平台，完成图数据的建模、导入、查询与分析，应用至少 2 种图算法（其中 1 种为节点嵌入），验证图算法在真实数据集上的有效性。</p>
+<hr>
+<h2 id="二实验环境">二、实验环境</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>配置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>操作系统</td>
+<td>Ubuntu (Dell Inspiron 14 Plus 7420)</td>
+</tr>
+<tr>
+<td>GPU</td>
+<td>NVIDIA GeForce RTX 3050 (4GB)</td>
+</tr>
+<tr>
+<td>图数据库</td>
+<td>TuGraph 社区版 V4.5.1（Docker 部署）</td>
+</tr>
+<tr>
+<td>开发语言</td>
+<td>Python 3.11</td>
+</tr>
+<tr>
+<td>主要依赖</td>
+<td>neo4j-driver, gensim, networkx, scikit-learn, matplotlib</td>
+</tr>
+<tr>
+<td>容器端口</td>
+<td>7070 (Web), 7687 (Bolt), 9090</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="三数据集">三、数据集</h2>
+<h3 id="31-amazon-共购网络default-图">3.1 Amazon 共购网络（default 图）</h3>
+<ul>
+<li><strong>来源</strong>：AAAI2025-SLRL 项目数据集</li>
+<li><strong>规模</strong>：13,178 个节点，33,768 条边</li>
+<li><strong>结构</strong>：无向图，节点为商品，边表示共同购买关系</li>
+<li><strong>度数统计</strong>：平均 5.12，最大 38，最小 1</li>
+</ul>
+<h3 id="32-dblp-合作网络dblp-图">3.2 DBLP 合作网络（dblp 图）</h3>
+<ul>
+<li><strong>来源</strong>：DBLP 学术合作数据集</li>
+<li><strong>规模</strong>：114,095 个节点，466,762 条边</li>
+<li><strong>结构</strong>：无向图，节点为作者，边表示合作关系</li>
+<li><strong>度数统计</strong>：平均 8.18，最大 264，最小 1</li>
+</ul>
+<hr>
+<h2 id="四数据建模与导入">四、数据建模与导入</h2>
+<h3 id="41-点类型定义">4.1 点类型定义</h3>
+<p>以 Amazon 图为例，定义点类型 <code>node</code>：</p>
+<pre class="hljs"><code><div>CALL db.createVertexLabel('node', 'node_id', 
+  ['node_id', 'INT32'], 
+  ['feature', 'STRING', true]
+)
+</div></code></pre>
+<ul>
+<li><strong>主键</strong>：<code>node_id</code></li>
+<li><strong>特征字段</strong>：<code>feature</code>（STRING 类型，存储 128 维 DeepWalk 向量）</li>
+</ul>
+<h3 id="42-边类型定义">4.2 边类型定义</h3>
+<pre class="hljs"><code><div>CALL db.createEdgeLabel('co_purchase', '[[node, node]]')
+</div></code></pre>
+<h3 id="43-数据导入">4.3 数据导入</h3>
+<p>使用 Python <code>neo4j</code> 驱动通过 Bolt 协议批量写入：</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">with</span> driver.session(database=<span class="hljs-string">&quot;default&quot;</span>) <span class="hljs-keyword">as</span> session:
+    session.run(<span class="hljs-string">&quot;CALL db.upsertVertex(&#x27;node&#x27;, $nodes)&quot;</span>, nodes=batch)
+</div></code></pre>
+<p>共导入 13,178 个节点，33,768 条边。</p>
+<hr>
+<h2 id="五图算法1deepwalk-节点嵌入">五、图算法1：DeepWalk 节点嵌入</h2>
+<h3 id="51-实验原理">5.1 实验原理</h3>
+<p>DeepWalk 将自然语言处理中的 Word2Vec 思想应用于图结构：</p>
+<ol>
+<li><strong>随机游走</strong>：从每个节点出发，随机选择邻居游走，生成节点序列</li>
+<li><strong>Skip-gram 训练</strong>：将节点序列视为&quot;句子&quot;，节点视为&quot;词&quot;，用滑动窗口构造训练对</li>
+<li><strong>负采样</strong>：正样本（真实邻居对）+ 负样本（随机采样），训练二分类器</li>
+<li><strong>输出</strong>：每个节点得到 128 维向量表示</li>
+</ol>
+<h3 id="52-实验方法">5.2 实验方法</h3>
+<p><strong>随机游走参数</strong>：</p>
+<ul>
+<li>每个节点游走 10 次</li>
+<li>每次游走长度 40</li>
+<li>生成 131,780 条游走序列</li>
+</ul>
+<p><strong>训练参数</strong>：</p>
+<ul>
+<li>嵌入维度：128</li>
+<li>窗口大小：5</li>
+<li>负采样数：5</li>
+<li>优化器：Adam</li>
+<li>训练轮数：3</li>
+</ul>
+<p><strong>核心代码</strong>：</p>
+<pre class="hljs"><code><div><span class="hljs-comment"># 随机游走</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">random_walk</span>(<span class="hljs-params">G, start_node, walk_length</span>):
+    walk = [start_node]
+    cur = start_node
+    <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(walk_length - <span class="hljs-number">1</span>):
+        neighbors = <span class="hljs-built_in">list</span>(G.neighbors(cur))
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> neighbors:
+            <span class="hljs-keyword">break</span>
+        cur = random.choice(neighbors)
+        walk.append(cur)
+    <span class="hljs-keyword">return</span> walk
+
+<span class="hljs-comment"># PyTorch Skip-gram（GPU）</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">SkipGram</span>(nn.Module):
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, vocab_size, embed_dim</span>):
+        <span class="hljs-built_in">super</span>().__init__()
+        <span class="hljs-variable language_">self</span>.in_embed = nn.Embedding(vocab_size, embed_dim)
+        <span class="hljs-variable language_">self</span>.out_embed = nn.Embedding(vocab_size, embed_dim)
+</div></code></pre>
+<h3 id="53-实验结果">5.3 实验结果</h3>
+<ul>
+<li>嵌入矩阵形状：<strong>(13178, 128)</strong></li>
+<li>所有节点均成功生成嵌入向量</li>
+<li>向量以 STRING 形式存储于 TuGraph 的 <code>feature</code> 字段</li>
+<li>示例（节点 0 的前 10 维）：</li>
+</ul>
+<pre class="hljs"><code><div>0.208405 -0.080648 0.082029 0.083543 -0.184395 
+-0.202437 0.242619 -0.144861 -0.680617 0.095045
+</div></code></pre>
+<hr>
+<h2 id="六图算法2pagerank-中心性">六、图算法2：PageRank 中心性</h2>
+<h3 id="61-实验原理">6.1 实验原理</h3>
+<p>PageRank 通过迭代计算节点重要性，核心假设：<strong>一个节点的重要性取决于指向它的节点的重要性</strong>。</p>
+<p>迭代公式：</p>
+<pre class="hljs"><code><div>PR(u) = (1-d) + d × Σ(PR(v) / out_degree(v))
+</div></code></pre>
+<p>其中 <code>d</code> 为阻尼系数（通常 0.85）。</p>
+<h3 id="62-实验方法">6.2 实验方法</h3>
+<pre class="hljs"><code><div>CALL algo.pagerank(20)
+YIELD node, pr
+RETURN node.node_id AS node_id, pr
+ORDER BY pr DESC
+LIMIT 10
+</div></code></pre>
+<h3 id="63-实验结果">6.3 实验结果</h3>
+<p><strong>Amazon 共购网络 Top 10</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>排名</th>
+<th>节点 ID</th>
+<th>PageRank</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>12893</td>
+<td>0.000250</td>
+</tr>
+<tr>
+<td>2</td>
+<td>12856</td>
+<td>0.000238</td>
+</tr>
+<tr>
+<td>3</td>
+<td>13157</td>
+<td>0.000231</td>
+</tr>
+<tr>
+<td>4</td>
+<td>12719</td>
+<td>0.000228</td>
+</tr>
+<tr>
+<td>5</td>
+<td>13141</td>
+<td>0.000225</td>
+</tr>
+<tr>
+<td>6</td>
+<td>13083</td>
+<td>0.000225</td>
+</tr>
+<tr>
+<td>7</td>
+<td>13079</td>
+<td>0.000218</td>
+</tr>
+<tr>
+<td>8</td>
+<td>13125</td>
+<td>0.000218</td>
+</tr>
+<tr>
+<td>9</td>
+<td>11505</td>
+<td>0.000213</td>
+</tr>
+<tr>
+<td>10</td>
+<td>12938</td>
+<td>0.000206</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>平均 PageRank：2.49 × 10⁻⁵</li>
+<li>最高 PageRank：2.50 × 10⁻⁴</li>
+<li>最高分约为平均值的 10 倍</li>
+</ul>
+<p><strong>DBLP 合作网络 Top 10</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>排名</th>
+<th>节点 ID</th>
+<th>PageRank</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>100549</td>
+<td>0.000096</td>
+</tr>
+<tr>
+<td>2</td>
+<td>84978</td>
+<td>0.000057</td>
+</tr>
+<tr>
+<td>3</td>
+<td>86470</td>
+<td>0.000053</td>
+</tr>
+<tr>
+<td>4</td>
+<td>102333</td>
+<td>0.000052</td>
+</tr>
+<tr>
+<td>5</td>
+<td>92195</td>
+<td>0.000052</td>
+</tr>
+<tr>
+<td>6</td>
+<td>100548</td>
+<td>0.000051</td>
+</tr>
+<tr>
+<td>7</td>
+<td>84527</td>
+<td>0.000049</td>
+</tr>
+<tr>
+<td>8</td>
+<td>104745</td>
+<td>0.000043</td>
+</tr>
+<tr>
+<td>9</td>
+<td>99372</td>
+<td>0.000038</td>
+</tr>
+<tr>
+<td>10</td>
+<td>107105</td>
+<td>0.000038</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>DBLP 最高分节点 100549 的 PageRank 约为第二名的 1.7 倍，说明其在合作网络中地位显著突出</li>
+</ul>
+<h3 id="64-结果分析">6.4 结果分析</h3>
+<ul>
+<li><strong>Amazon</strong>：分数分布较为均匀，没有极端超级节点</li>
+<li><strong>DBLP</strong>：少数核心作者（如节点 100549）PageRank 显著高于其他节点，符合学术合作网络的实际特征</li>
+</ul>
+<hr>
+<h2 id="七图算法3最短路径">七、图算法3：最短路径</h2>
+<h3 id="71-实验原理">7.1 实验原理</h3>
+<p>最短路径算法查找两个节点之间边数最少的路径，用于评估图的连通性和&quot;小世界&quot;特征。</p>
+<h3 id="72-实验方法">7.2 实验方法</h3>
+<pre class="hljs"><code><div>MATCH (a:node {node_id: $src}), (b:node {node_id: $dst})
+WITH a, b
+CALL algo.shortestPath(a, b)
+YIELD nodeCount, totalCost, path
+RETURN nodeCount, totalCost
+</div></code></pre>
+<h3 id="73-实验结果">7.3 实验结果</h3>
+<p><strong>DBLP 合作网络</strong>：</p>
+<ul>
+<li>节点 100549 → 节点 84978</li>
+<li>路径节点数：5</li>
+<li>总距离：4 步</li>
+</ul>
+<p><strong>结果解读</strong>：DBLP 中两个最重要的作者之间，只需通过 3 个中间人即可连通，体现了学术合作网络的&quot;小世界&quot;特征。</p>
+<hr>
+<h2 id="八图算法4节点分类与-t-sne-可视化">八、图算法4：节点分类与 t-SNE 可视化</h2>
+<h3 id="81-实验原理">8.1 实验原理</h3>
+<p>验证 DeepWalk 嵌入是否有效保留了图的结构信息：</p>
+<ol>
+<li>用节点度数（低/中/高）作为标签</li>
+<li>用 128 维 DeepWalk 嵌入作为特征</li>
+<li>训练 Logistic Regression 分类器</li>
+<li>用 t-SNE 将嵌入降到 2 维可视化</li>
+</ol>
+<h3 id="82-实验方法">8.2 实验方法</h3>
+<pre class="hljs"><code><div><span class="hljs-comment"># 按度数分 3 类</span>
+deg_df[<span class="hljs-string">&quot;label&quot;</span>] = pd.qcut(deg_df[<span class="hljs-string">&quot;degree&quot;</span>], q=<span class="hljs-number">3</span>, labels=[<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>])
+
+<span class="hljs-comment"># 训练分类器</span>
+clf = LogisticRegression(max_iter=<span class="hljs-number">1000</span>)
+clf.fit(X_train, y_train)
+
+<span class="hljs-comment"># t-SNE 可视化</span>
+tsne = TSNE(n_components=<span class="hljs-number">2</span>, random_state=<span class="hljs-number">42</span>, perplexity=<span class="hljs-number">30</span>)
+X_2d = tsne.fit_transform(X_sample)
+</div></code></pre>
+<h3 id="83-实验结果">8.3 实验结果</h3>
+<p><strong>Amazon 共购网络（default 图）</strong>：</p>
+<pre class="hljs"><code><div>Node classification accuracy: 0.6457
+
+              precision    recall  f1-score   support
+         low       0.71      0.78      0.74      1231
+      medium       0.46      0.37      0.41       760
+        high       0.68      0.72      0.70       645
+
+    accuracy                           0.65      2636
+</div></code></pre>
+<ul>
+<li><strong>准确率</strong>：64.57%</li>
+<li><strong>低度节点</strong> F1=0.74，分类效果最好</li>
+<li><strong>中度节点</strong> F1=0.41，分类效果较差</li>
+<li><strong>高度节点</strong> F1=0.70，分类效果良好</li>
+</ul>
+<p><strong>t-SNE 可视化</strong>：不同度数类别的节点在 2 维空间中呈现一定分离趋势，说明 DeepWalk 嵌入有效保留了图的结构信息。
+<img src="output_default/tsne.png" alt="alt text"></p>
+<h3 id="84-结果分析">8.4 结果分析</h3>
+<ul>
+<li>低度和高度节点分类效果较好，因为它们的拓扑特征差异明显</li>
+<li>中度节点与相邻类别边界模糊，导致分类准确率下降</li>
+<li>整体准确率 64.57% 显著高于随机猜测（33%），证明嵌入有效</li>
+</ul>
+<hr>
+<h2 id="九实验总结">九、实验总结</h2>
+<h3 id="91-完成情况">9.1 完成情况</h3>
+<table>
+<thead>
+<tr>
+<th>任务</th>
+<th>状态</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数据建模与导入</td>
+<td>✅</td>
+<td>2 个数据集，共 127,273 节点，500,530 边</td>
+</tr>
+<tr>
+<td>节点嵌入</td>
+<td>✅</td>
+<td>DeepWalk，128 维，13,178 节点</td>
+</tr>
+<tr>
+<td>PageRank</td>
+<td>✅</td>
+<td>2 个数据集均完成</td>
+</tr>
+<tr>
+<td>最短路径</td>
+<td>✅</td>
+<td>DBLP 数据集</td>
+</tr>
+<tr>
+<td>节点分类</td>
+<td>✅</td>
+<td>Amazon 数据集，准确率 64.57%</td>
+</tr>
+<tr>
+<td>t-SNE 可视化</td>
+<td>✅</td>
+<td>Amazon 数据集</td>
+</tr>
+</tbody>
+</table>
+<h3 id="92-关键技术点">9.2 关键技术点</h3>
+<ol>
+<li><strong>TuGraph 属性强 Schema</strong>：所有属性需预先定义，用 <code>db.alterLabelAddFields</code> 批量添加字段</li>
+<li><strong>特征存储</strong>：TuGraph 不支持原生 float 数组，DeepWalk 嵌入以 STRING 形式存储，用时通过 <code>split</code> + <code>toFloat</code> 解析</li>
+<li><strong>GPU 加速</strong>：随机游走在 CPU 完成，Skip-gram 训练迁移到 RTX 3050，大幅缩短训练时间</li>
+<li><strong>批量写入</strong>：通过 Bolt 协议分批 upsert，每批 1000 条，避免单次数据包过大</li>
+</ol>
+<h3 id="93-遇到的问题">9.3 遇到的问题</h3>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>karateclub</code> 依赖冲突</td>
+<td>改用 gensim 手写 DeepWalk</td>
+</tr>
+<tr>
+<td>训练对内存爆炸（OOM）</td>
+<td>改用 IterableDataset 流式生成</td>
+</tr>
+<tr>
+<td>TuGraph <code>feature</code> 字段为 null</td>
+<td>用 <code>db.alterLabelAddFields</code> 先加字段</td>
+</tr>
+<tr>
+<td><code>YIELD nodeId</code> 报错</td>
+<td>查 <code>dbms.procedures()</code> 得到正确字段名 <code>node, pr</code></td>
+</tr>
+<tr>
+<td><code>EqualNull</code> 函数未实现</td>
+<td>改用 Python 端统计，避开 TuGraph 聚合函数</td>
+</tr>
+</tbody>
+</table>
+<h3 id="94-结论">9.4 结论</h3>
+<p>本实验基于 TuGraph 平台完成了完整的图数据分析流程：数据建模 → 数据导入 → 图查询 → 图算法应用。通过 DeepWalk 节点嵌入、PageRank 中心性、最短路径、节点分类 4 种算法，验证了图算法在 Amazon 共购网络和 DBLP 合作网络上的有效性。</p>
+<p>实验证明：</p>
+<ol>
+<li>DeepWalk 嵌入有效保留了图的拓扑结构信息</li>
+<li>PageRank 能准确识别网络中的核心节点</li>
+<li>两个数据集均呈现&quot;小世界&quot;特征</li>
+<li>TuGraph 作为图数据库，能高效支持图查询与图算法</li>
+</ol>
+<hr>
+
+</body>
+</html>

@@ -1,3 +1,0 @@
-graph=default
-nodes=13178
-edges=33768
