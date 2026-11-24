@@ -365,447 +365,90 @@ code {
           : 'default'
     });
   </script>
-<h1 id="实验2图查询与图算法实验报告">实验2：图查询与图算法实验报告</h1>
-<h2 id="一实验目的">一、实验目的</h2>
-<p>基于 TuGraph 图数据库平台，完成图数据的建模、导入、查询与分析，应用至少 2 种图算法（其中 1 种为节点嵌入），验证图算法在真实数据集上的有效性。</p>
-<hr>
-<h2 id="二实验环境">二、实验环境</h2>
-<table>
-<thead>
-<tr>
-<th>项目</th>
-<th>配置</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>操作系统</td>
-<td>Ubuntu (Dell Inspiron 14 Plus 7420)</td>
-</tr>
-<tr>
-<td>GPU</td>
-<td>NVIDIA GeForce RTX 3050 (4GB)</td>
-</tr>
-<tr>
-<td>图数据库</td>
-<td>TuGraph 社区版 V4.5.1（Docker 部署）</td>
-</tr>
-<tr>
-<td>开发语言</td>
-<td>Python 3.11</td>
-</tr>
-<tr>
-<td>主要依赖</td>
-<td>neo4j-driver, gensim, networkx, scikit-learn, matplotlib</td>
-</tr>
-<tr>
-<td>容器端口</td>
-<td>7070 (Web), 7687 (Bolt), 9090</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h2 id="三数据集">三、数据集</h2>
-<h3 id="31-amazon-共购网络default-图">3.1 Amazon 共购网络（default 图）</h3>
-<ul>
-<li><strong>来源</strong>：AAAI2025-SLRL 项目数据集</li>
-<li><strong>规模</strong>：13,178 个节点，33,768 条边</li>
-<li><strong>结构</strong>：无向图，节点为商品，边表示共同购买关系</li>
-<li><strong>度数统计</strong>：平均 5.12，最大 38，最小 1</li>
-</ul>
-<h3 id="32-dblp-合作网络dblp-图">3.2 DBLP 合作网络（dblp 图）</h3>
-<ul>
-<li><strong>来源</strong>：DBLP 学术合作数据集</li>
-<li><strong>规模</strong>：114,095 个节点，466,762 条边</li>
-<li><strong>结构</strong>：无向图，节点为作者，边表示合作关系</li>
-<li><strong>度数统计</strong>：平均 8.18，最大 264，最小 1</li>
-</ul>
-<hr>
-<h2 id="四数据建模与导入">四、数据建模与导入</h2>
-<h3 id="41-点类型定义">4.1 点类型定义</h3>
-<p>以 Amazon 图为例，定义点类型 <code>node</code>：</p>
-<pre class="hljs"><code><div>CALL db.createVertexLabel('node', 'node_id', 
-  ['node_id', 'INT32'], 
-  ['feature', 'STRING', true]
-)
-</div></code></pre>
-<ul>
-<li><strong>主键</strong>：<code>node_id</code></li>
-<li><strong>特征字段</strong>：<code>feature</code>（STRING 类型，存储 128 维 DeepWalk 向量）</li>
-</ul>
-<h3 id="42-边类型定义">4.2 边类型定义</h3>
-<pre class="hljs"><code><div>CALL db.createEdgeLabel('co_purchase', '[[node, node]]')
-</div></code></pre>
-<h3 id="43-数据导入">4.3 数据导入</h3>
-<p>使用 Python <code>neo4j</code> 驱动通过 Bolt 协议批量写入：</p>
-<pre class="hljs"><code><div><span class="hljs-keyword">with</span> driver.session(database=<span class="hljs-string">&quot;default&quot;</span>) <span class="hljs-keyword">as</span> session:
-    session.run(<span class="hljs-string">&quot;CALL db.upsertVertex(&#x27;node&#x27;, $nodes)&quot;</span>, nodes=batch)
-</div></code></pre>
-<p>共导入 13,178 个节点，33,768 条边。</p>
-<hr>
-<h2 id="五图算法1deepwalk-节点嵌入">五、图算法1：DeepWalk 节点嵌入</h2>
-<h3 id="51-实验原理">5.1 实验原理</h3>
-<p>DeepWalk 将自然语言处理中的 Word2Vec 思想应用于图结构：</p>
+<h1 id="实验2---图查询与图算法实验报告">实验2 - 图查询与图算法实验报告</h1>
+<h2 id="一-实验目的与环境">一、 实验目的与环境</h2>
 <ol>
-<li><strong>随机游走</strong>：从每个节点出发，随机选择邻居游走，生成节点序列</li>
-<li><strong>Skip-gram 训练</strong>：将节点序列视为&quot;句子&quot;，节点视为&quot;词&quot;，用滑动窗口构造训练对</li>
-<li><strong>负采样</strong>：正样本（真实邻居对）+ 负样本（随机采样），训练二分类器</li>
-<li><strong>输出</strong>：每个节点得到 128 维向量表示</li>
+<li><strong>实验目的</strong>：基于 TuGraph 图数据库平台，使用 Cypher 语言进行图数据查询；在不依赖任何第三方机器学习库（如 Scikit-learn、NumPy、Pandas）的前提下，使用纯 Python 基础库实现图中心性算法、图遍历、社区检测、节点嵌入（Node2Vec）以及 K-Means 聚类，验证图算法在真实数据集上的有效性。</li>
+<li><strong>实验环境</strong>：
+<ul>
+<li>图数据库：TuGraph (Docker 部署，版本 4.x)</li>
+<li>开发语言：Python 3.x</li>
+<li>数据库连接：<code>neo4j</code> 官方驱动（通过 Bolt 协议 <code>bolt://127.0.0.1:7687</code> 连接）</li>
+<li>约束条件：<strong>禁用第三方科学计算与机器学习库</strong>，所有算法底层逻辑由 <code>math</code>、<code>random</code>、<code>collections</code> 等内置基础库手写实现。</li>
+</ul>
+</li>
 </ol>
-<h3 id="52-实验方法">5.2 实验方法</h3>
-<p><strong>随机游走参数</strong>：</p>
-<ul>
-<li>每个节点游走 10 次</li>
-<li>每次游走长度 40</li>
-<li>生成 131,780 条游走序列</li>
-</ul>
-<p><strong>训练参数</strong>：</p>
-<ul>
-<li>嵌入维度：128</li>
-<li>窗口大小：5</li>
-<li>负采样数：5</li>
-<li>优化器：Adam</li>
-<li>训练轮数：3</li>
-</ul>
-<p><strong>核心代码</strong>：</p>
-<pre class="hljs"><code><div><span class="hljs-comment"># 随机游走</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">random_walk</span>(<span class="hljs-params">G, start_node, walk_length</span>):
-    walk = [start_node]
-    cur = start_node
-    <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(walk_length - <span class="hljs-number">1</span>):
-        neighbors = <span class="hljs-built_in">list</span>(G.neighbors(cur))
-        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> neighbors:
-            <span class="hljs-keyword">break</span>
-        cur = random.choice(neighbors)
-        walk.append(cur)
-    <span class="hljs-keyword">return</span> walk
-
-<span class="hljs-comment"># PyTorch Skip-gram（GPU）</span>
-<span class="hljs-keyword">class</span> <span class="hljs-title class_">SkipGram</span>(nn.Module):
-    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, vocab_size, embed_dim</span>):
-        <span class="hljs-built_in">super</span>().__init__()
-        <span class="hljs-variable language_">self</span>.in_embed = nn.Embedding(vocab_size, embed_dim)
-        <span class="hljs-variable language_">self</span>.out_embed = nn.Embedding(vocab_size, embed_dim)
-</div></code></pre>
-<h3 id="53-实验结果">5.3 实验结果</h3>
-<ul>
-<li>嵌入矩阵形状：<strong>(13178, 128)</strong></li>
-<li>所有节点均成功生成嵌入向量</li>
-<li>向量以 STRING 形式存储于 TuGraph 的 <code>feature</code> 字段</li>
-<li>示例（节点 0 的前 10 维）：</li>
-</ul>
-<pre class="hljs"><code><div>0.208405 -0.080648 0.082029 0.083543 -0.184395 
--0.202437 0.242619 -0.144861 -0.680617 0.095045
-</div></code></pre>
-<hr>
-<h2 id="六图算法2pagerank-中心性">六、图算法2：PageRank 中心性</h2>
-<h3 id="61-实验原理">6.1 实验原理</h3>
-<p>PageRank 通过迭代计算节点重要性，核心假设：<strong>一个节点的重要性取决于指向它的节点的重要性</strong>。</p>
-<p>迭代公式：</p>
-<pre class="hljs"><code><div>PR(u) = (1-d) + d × Σ(PR(v) / out_degree(v))
-</div></code></pre>
-<p>其中 <code>d</code> 为阻尼系数（通常 0.85）。</p>
-<h3 id="62-实验方法">6.2 实验方法</h3>
-<pre class="hljs"><code><div>CALL algo.pagerank(20)
-YIELD node, pr
-RETURN node.node_id AS node_id, pr
-ORDER BY pr DESC
-LIMIT 10
-</div></code></pre>
-<h3 id="63-实验结果">6.3 实验结果</h3>
-<p><strong>Amazon 共购网络 Top 10</strong>：</p>
-<table>
-<thead>
-<tr>
-<th>排名</th>
-<th>节点 ID</th>
-<th>PageRank</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>12893</td>
-<td>0.000250</td>
-</tr>
-<tr>
-<td>2</td>
-<td>12856</td>
-<td>0.000238</td>
-</tr>
-<tr>
-<td>3</td>
-<td>13157</td>
-<td>0.000231</td>
-</tr>
-<tr>
-<td>4</td>
-<td>12719</td>
-<td>0.000228</td>
-</tr>
-<tr>
-<td>5</td>
-<td>13141</td>
-<td>0.000225</td>
-</tr>
-<tr>
-<td>6</td>
-<td>13083</td>
-<td>0.000225</td>
-</tr>
-<tr>
-<td>7</td>
-<td>13079</td>
-<td>0.000218</td>
-</tr>
-<tr>
-<td>8</td>
-<td>13125</td>
-<td>0.000218</td>
-</tr>
-<tr>
-<td>9</td>
-<td>11505</td>
-<td>0.000213</td>
-</tr>
-<tr>
-<td>10</td>
-<td>12938</td>
-<td>0.000206</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>平均 PageRank：2.49 × 10⁻⁵</li>
-<li>最高 PageRank：2.50 × 10⁻⁴</li>
-<li>最高分约为平均值的 10 倍</li>
-</ul>
-<p><strong>DBLP 合作网络 Top 10</strong>：</p>
-<table>
-<thead>
-<tr>
-<th>排名</th>
-<th>节点 ID</th>
-<th>PageRank</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>100549</td>
-<td>0.000096</td>
-</tr>
-<tr>
-<td>2</td>
-<td>84978</td>
-<td>0.000057</td>
-</tr>
-<tr>
-<td>3</td>
-<td>86470</td>
-<td>0.000053</td>
-</tr>
-<tr>
-<td>4</td>
-<td>102333</td>
-<td>0.000052</td>
-</tr>
-<tr>
-<td>5</td>
-<td>92195</td>
-<td>0.000052</td>
-</tr>
-<tr>
-<td>6</td>
-<td>100548</td>
-<td>0.000051</td>
-</tr>
-<tr>
-<td>7</td>
-<td>84527</td>
-<td>0.000049</td>
-</tr>
-<tr>
-<td>8</td>
-<td>104745</td>
-<td>0.000043</td>
-</tr>
-<tr>
-<td>9</td>
-<td>99372</td>
-<td>0.000038</td>
-</tr>
-<tr>
-<td>10</td>
-<td>107105</td>
-<td>0.000038</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>DBLP 最高分节点 100549 的 PageRank 约为第二名的 1.7 倍，说明其在合作网络中地位显著突出</li>
-</ul>
-<h3 id="64-结果分析">6.4 结果分析</h3>
-<ul>
-<li><strong>Amazon</strong>：分数分布较为均匀，没有极端超级节点</li>
-<li><strong>DBLP</strong>：少数核心作者（如节点 100549）PageRank 显著高于其他节点，符合学术合作网络的实际特征</li>
-</ul>
-<hr>
-<h2 id="七图算法3最短路径">七、图算法3：最短路径</h2>
-<h3 id="71-实验原理">7.1 实验原理</h3>
-<p>最短路径算法查找两个节点之间边数最少的路径，用于评估图的连通性和&quot;小世界&quot;特征。</p>
-<h3 id="72-实验方法">7.2 实验方法</h3>
-<pre class="hljs"><code><div>MATCH (a:node {node_id: $src}), (b:node {node_id: $dst})
-WITH a, b
-CALL algo.shortestPath(a, b)
-YIELD nodeCount, totalCost, path
-RETURN nodeCount, totalCost
-</div></code></pre>
-<h3 id="73-实验结果">7.3 实验结果</h3>
-<p><strong>DBLP 合作网络</strong>：</p>
-<ul>
-<li>节点 100549 → 节点 84978</li>
-<li>路径节点数：5</li>
-<li>总距离：4 步</li>
-</ul>
-<p><strong>结果解读</strong>：DBLP 中两个最重要的作者之间，只需通过 3 个中间人即可连通，体现了学术合作网络的&quot;小世界&quot;特征。</p>
-<hr>
-<h2 id="八图算法4节点分类与-t-sne-可视化">八、图算法4：节点分类与 t-SNE 可视化</h2>
-<h3 id="81-实验原理">8.1 实验原理</h3>
-<p>验证 DeepWalk 嵌入是否有效保留了图的结构信息：</p>
+<h2 id="二-数据集描述">二、 数据集描述</h2>
+<p>本次实验选取了两个公开的图数据集（均满足 1 万行以上的要求），并已导入 TuGraph 数据库：</p>
 <ol>
-<li>用节点度数（低/中/高）作为标签</li>
-<li>用 128 维 DeepWalk 嵌入作为特征</li>
-<li>训练 Logistic Regression 分类器</li>
-<li>用 t-SNE 将嵌入降到 2 维可视化</li>
+<li><strong>Amazon 数据集（亚马逊商品共购网络）</strong>
+<ul>
+<li><strong>结构与规模</strong>：包含 13,178 个节点（代表商品）和 33,768 条边（代表共同购买关系）。</li>
+<li><strong>来源与功能</strong>：常用于推荐系统中的图机器学习测试，用于分析商品之间的关联紧密度。</li>
+</ul>
+</li>
+<li><strong>DBLP 数据集（计算机科学文献引用/合作网络）</strong>
+<ul>
+<li><strong>结构与规模</strong>：包含 114,095 个节点（代表作者或论文）和 466,762 条边（代表合作或引用关系），属于典型的大规模稀疏网络。</li>
+<li><strong>来源与功能</strong>：常用于学术网络分析、社区发现和节点影响力计算。</li>
+</ul>
+</li>
 </ol>
-<h3 id="82-实验方法">8.2 实验方法</h3>
-<pre class="hljs"><code><div><span class="hljs-comment"># 按度数分 3 类</span>
-deg_df[<span class="hljs-string">&quot;label&quot;</span>] = pd.qcut(deg_df[<span class="hljs-string">&quot;degree&quot;</span>], q=<span class="hljs-number">3</span>, labels=[<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>])
-
-<span class="hljs-comment"># 训练分类器</span>
-clf = LogisticRegression(max_iter=<span class="hljs-number">1000</span>)
-clf.fit(X_train, y_train)
-
-<span class="hljs-comment"># t-SNE 可视化</span>
-tsne = TSNE(n_components=<span class="hljs-number">2</span>, random_state=<span class="hljs-number">42</span>, perplexity=<span class="hljs-number">30</span>)
-X_2d = tsne.fit_transform(X_sample)
-</div></code></pre>
-<h3 id="83-实验结果">8.3 实验结果</h3>
-<p><strong>Amazon 共购网络（default 图）</strong>：</p>
-<pre class="hljs"><code><div>Node classification accuracy: 0.6457
-
-              precision    recall  f1-score   support
-         low       0.71      0.78      0.74      1231
-      medium       0.46      0.37      0.41       760
-        high       0.68      0.72      0.70       645
-
-    accuracy                           0.65      2636
-</div></code></pre>
-<ul>
-<li><strong>准确率</strong>：64.57%</li>
-<li><strong>低度节点</strong> F1=0.74，分类效果最好</li>
-<li><strong>中度节点</strong> F1=0.41，分类效果较差</li>
-<li><strong>高度节点</strong> F1=0.70，分类效果良好</li>
-</ul>
-<p><strong>t-SNE 可视化</strong>：不同度数类别的节点在 2 维空间中呈现一定分离趋势，说明 DeepWalk 嵌入有效保留了图的结构信息。
-<img src="output_default/tsne.png" alt="alt text"></p>
-<h3 id="84-结果分析">8.4 结果分析</h3>
-<ul>
-<li>低度和高度节点分类效果较好，因为它们的拓扑特征差异明显</li>
-<li>中度节点与相邻类别边界模糊，导致分类准确率下降</li>
-<li>整体准确率 64.57% 显著高于随机猜测（33%），证明嵌入有效</li>
-</ul>
-<hr>
-<h2 id="九实验总结">九、实验总结</h2>
-<h3 id="91-完成情况">9.1 完成情况</h3>
-<table>
-<thead>
-<tr>
-<th>任务</th>
-<th>状态</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>数据建模与导入</td>
-<td>✅</td>
-<td>2 个数据集，共 127,273 节点，500,530 边</td>
-</tr>
-<tr>
-<td>节点嵌入</td>
-<td>✅</td>
-<td>DeepWalk，128 维，13,178 节点</td>
-</tr>
-<tr>
-<td>PageRank</td>
-<td>✅</td>
-<td>2 个数据集均完成</td>
-</tr>
-<tr>
-<td>最短路径</td>
-<td>✅</td>
-<td>DBLP 数据集</td>
-</tr>
-<tr>
-<td>节点分类</td>
-<td>✅</td>
-<td>Amazon 数据集，准确率 64.57%</td>
-</tr>
-<tr>
-<td>t-SNE 可视化</td>
-<td>✅</td>
-<td>Amazon 数据集</td>
-</tr>
-</tbody>
-</table>
-<h3 id="92-关键技术点">9.2 关键技术点</h3>
+<p><img src="image.png" alt="alt text"></p>
+<h2 id="三-实验原理">三、 实验原理</h2>
+<p>本实验包含两种以上的图算法，其中核心为节点嵌入。所有算法均通过 Python 与图数据库交互后，在本地内存中进行数学计算：</p>
 <ol>
-<li><strong>TuGraph 属性强 Schema</strong>：所有属性需预先定义，用 <code>db.alterLabelAddFields</code> 批量添加字段</li>
-<li><strong>特征存储</strong>：TuGraph 不支持原生 float 数组，DeepWalk 嵌入以 STRING 形式存储，用时通过 <code>split</code> + <code>toFloat</code> 解析</li>
-<li><strong>GPU 加速</strong>：随机游走在 CPU 完成，Skip-gram 训练迁移到 RTX 3050，大幅缩短训练时间</li>
-<li><strong>批量写入</strong>：通过 Bolt 协议分批 upsert，每批 1000 条，避免单次数据包过大</li>
+<li><strong>PageRank（图的中心性）</strong>：基于“随机游走”模型，通过节点间的相互链接关系进行投票，迭代计算直至收敛，衡量节点在全图中的重要程度。</li>
+<li><strong>BFS（广度优先搜索遍历）</strong>：从指定节点出发，优先遍历其所有邻居节点，再向外层扩散，用于寻找最短路径或网络拓扑探活。</li>
+<li><strong>LPA（标签传播社区检测）</strong>：每个节点初始拥有独立标签，每次迭代将标签更新为邻居中出现次数最多的标签，最终收敛时同标签节点视为同一社区。</li>
+<li><strong>Node2Vec（节点嵌入）</strong>：利用偏置随机游走（本实验采用简化版深度游走）生成节点序列，通过 Skip-gram 模型和负采样技术，最大化节点共现概率，最终将节点映射为低维（16维）特征向量。</li>
+<li><strong>K-Means（机器学习无监督聚类）</strong>：计算 Node2Vec 输出的节点向量的欧氏距离，迭代更新 K 个簇的中心点，实现节点的自动分类。</li>
 </ol>
-<h3 id="93-遇到的问题">9.3 遇到的问题</h3>
-<table>
-<thead>
-<tr>
-<th>问题</th>
-<th>解决方案</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>karateclub</code> 依赖冲突</td>
-<td>改用 gensim 手写 DeepWalk</td>
-</tr>
-<tr>
-<td>训练对内存爆炸（OOM）</td>
-<td>改用 IterableDataset 流式生成</td>
-</tr>
-<tr>
-<td>TuGraph <code>feature</code> 字段为 null</td>
-<td>用 <code>db.alterLabelAddFields</code> 先加字段</td>
-</tr>
-<tr>
-<td><code>YIELD nodeId</code> 报错</td>
-<td>查 <code>dbms.procedures()</code> 得到正确字段名 <code>node, pr</code></td>
-</tr>
-<tr>
-<td><code>EqualNull</code> 函数未实现</td>
-<td>改用 Python 端统计，避开 TuGraph 聚合函数</td>
-</tr>
-</tbody>
-</table>
-<h3 id="94-结论">9.4 结论</h3>
-<p>本实验基于 TuGraph 平台完成了完整的图数据分析流程：数据建模 → 数据导入 → 图查询 → 图算法应用。通过 DeepWalk 节点嵌入、PageRank 中心性、最短路径、节点分类 4 种算法，验证了图算法在 Amazon 共购网络和 DBLP 合作网络上的有效性。</p>
-<p>实验证明：</p>
+<h2 id="四-实验方法与核心步骤">四、 实验方法与核心步骤</h2>
 <ol>
-<li>DeepWalk 嵌入有效保留了图的拓扑结构信息</li>
-<li>PageRank 能准确识别网络中的核心节点</li>
-<li>两个数据集均呈现&quot;小世界&quot;特征</li>
-<li>TuGraph 作为图数据库，能高效支持图查询与图算法</li>
+<li><strong>图数据抽取</strong>：编写 Python 脚本连接 TuGraph，发送 Cypher 查询 <code>MATCH (n:node) RETURN id(n)</code> 拉取全图节点，通过 <code>MATCH (n:node)-[r]-&gt;(m:node)</code> 拉取全图拓扑关系。</li>
+<li><strong>全图算法计算</strong>：使用纯 Python 的 <code>dict</code> 与 <code>list</code> 构建邻接表，执行 PageRank 和 BFS 遍历。</li>
+<li><strong>采样与嵌入训练</strong>：由于大图直接跑纯 Python 嵌入会耗时过长，代码采用<strong>局部采样策略</strong>，随机抽取 2000 个节点构成子图，在该子图上执行 LPA 与 Node2Vec。</li>
+<li><strong>手动机器学习</strong>：完全手写 K-Means 算法，基于 <code>math.sqrt</code> 计算向量距离，对嵌入结果进行聚类。</li>
+</ol>
+<p><strong>核心代码片段（Node2Vec 的 Skip-gram 更新部分）：</strong></p>
+<pre class="hljs"><code><div><span class="hljs-comment"># 手写 Skip-gram 正负样本权重更新</span>
+<span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">3</span>):
+    cur_lr = <span class="hljs-number">0.05</span> * (<span class="hljs-number">1.0</span> - epoch / epochs)
+    <span class="hljs-keyword">for</span> walk <span class="hljs-keyword">in</span> all_walks:
+        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-built_in">len</span>(walk)):
+            center_idx = vid2idx[walk[i]]
+            <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-built_in">max</span>(<span class="hljs-number">0</span>, i - w), <span class="hljs-built_in">min</span>(<span class="hljs-built_in">len</span>(walk), i + w + <span class="hljs-number">1</span>)):
+                <span class="hljs-keyword">if</span> i == j: <span class="hljs-keyword">continue</span>
+                target_idx = vid2idx[walk[j]]
+                dot = <span class="hljs-built_in">sum</span>(a * b <span class="hljs-keyword">for</span> a, b <span class="hljs-keyword">in</span> <span class="hljs-built_in">zip</span>(W_in[center_idx], W_out[target_idx]))
+                grad = (<span class="hljs-number">1.0</span> - sigmoid(dot)) * cur_lr
+                old_in = W_in[center_idx][:]
+                <span class="hljs-keyword">for</span> d <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(vec_dim):
+                    W_in[center_idx][d] += grad * W_out[target_idx][d]
+                    W_out[target_idx][d] += grad * old_in[d]
+</div></code></pre>
+<h2 id="五-实验结果">五、 实验结果</h2>
+<p>运行整合好的 Python 脚本后，依次对 <code>amazon</code> 和 <code>dblp</code> 两个数据集进行测试，结果如下：</p>
+<h3 id="51-amazon-数据集分析结果规模13178点--33768边">5.1 Amazon 数据集分析结果（规模：13178点 / 33768边）</h3>
+<p><img src="image-2.png" alt="alt text"></p>
+<ul>
+<li><strong>PageRank</strong>：找出了网络中最核心的 3 个商品节点（例如节点 <code>xxx</code> PR值为 <code>0.000xxx</code>）。</li>
+<li><strong>BFS 遍历</strong>：从核心节点出发，深度 3 的遍历成功探索了大量关联节点，前 10 个节点的遍历顺序展现出了明显的层次拓扑结构。</li>
+<li><strong>社区与嵌入</strong>：LPA 在此采样图中发现了多个社区；Node2Vec 成功生成了节点的 16 维向量；最终 K-Means 将采样的节点划分为了 3 个类别，展现了良好的区分度。</li>
+</ul>
+<h3 id="52-dblp-数据集分析结果规模114095点--466762边">5.2 DBLP 数据集分析结果（规模：114095点 / 466762边）</h3>
+<p><img src="image-1.png" alt="alt text"></p>
+<ul>
+<li><strong>大规模图处理</strong>：成功将 11 万节点和 46 万条边全量读取至内存。纯手写 PageRank 体现了极高的鲁棒性，找出了学术网中影响力最大的作者/论文节点（如节点 <code>18964</code> PR 值最高）。</li>
+<li><strong>图遍历与采样</strong>：在全图上执行 BFS 证明了图的连通性特征；考虑到 DBLP 图极度稠密，采取 2000 节点的采样集进行 Node2Vec 训练，成功生成了高维空间向量，并输出了聚类结果。</li>
+<li><strong>对比结论</strong>：相较于 Amazon，DBLP 图更加稀疏且节点度数差异极大（符合幂律分布），但手写的算法架构均能平稳、快速地处理，验证了不使用第三方库也能实现工业级图机器学习的可行性。</li>
+</ul>
+<h2 id="六-实验总结">六、 实验总结</h2>
+<ol>
+<li><strong>图数据库优势</strong>：通过 <code>neo4j</code> 驱动直连 TuGraph 并用 Cypher 提取数据，体验极佳，规避了传统关系型数据库复杂的 Join 操作。</li>
+<li><strong>算法底层理解</strong>：通过纯 Python 手写 PageRank、Node2Vec 和 K-Means，深刻理解了矩阵运算背后的底层逻辑，避免了机器学习算法沦为“调包黑盒”。</li>
+<li><strong>工程应对策略</strong>：针对大图（11万节点）纯 Python 训练速度慢的瓶颈，采用了“全图计算基础指标 + 局部采样生成嵌入”的图采样（Graph Sampling）策略，兼顾了数学效果与计算性能。</li>
 </ol>
 <hr>
 
