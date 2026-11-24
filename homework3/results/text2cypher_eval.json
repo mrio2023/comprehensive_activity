@@ -1,0 +1,390 @@
+{
+  "summary": {
+    "baseline": {
+      "n": 11,
+      "valid_rate": 0.4545,
+      "exec_accuracy": 0.4545,
+      "avg_latency_s": 8.35,
+      "blocked": 0
+    },
+    "schema": {
+      "n": 11,
+      "valid_rate": 1.0,
+      "exec_accuracy": 1.0,
+      "avg_latency_s": 8.62,
+      "blocked": 0
+    },
+    "schema_aware": {
+      "n": 11,
+      "valid_rate": 1.0,
+      "exec_accuracy": 1.0,
+      "avg_latency_s": 4.72,
+      "blocked": 0
+    }
+  },
+  "details": [
+    {
+      "mode": "baseline",
+      "id": "T01",
+      "question": "pelvic infection 有哪些症状？",
+      "cypher": "MATCH (d:Disease {name: \"pelvic infection\"})-[:HAS_SYMPTOM]->(s:Symptom) RETURN s.name AS symptom",
+      "valid": true,
+      "correct": true,
+      "pred_size": 10,
+      "gold_size": 10,
+      "error": ""
+    },
+    {
+      "mode": "baseline",
+      "id": "T02",
+      "question": "intestinal obstruction 有哪些症状？",
+      "cypher": "MATCH (d:Disease {name: \"intestinal obstruction\"})-[:HAS_SYMPTOM]->(s:Symptom) RETURN s.name",
+      "valid": true,
+      "correct": true,
+      "pred_size": 7,
+      "gold_size": 7,
+      "error": ""
+    },
+    {
+      "mode": "baseline",
+      "id": "T03",
+      "question": "得了 polycystic ovary syndrome 需要做哪些检查？",
+      "cypher": "MATCH (d:Disease)-[:need_check]->(c:Check) WHERE toLower(d.name) IN ['polycystic ovary syndrome', '多囊卵巢综合征'] RETURN DISTINCT c.name AS `检查项目`",
+      "valid": false,
+      "correct": false,
+      "pred_size": 0,
+      "gold_size": 9,
+      "error": "{neo4j_code: CypherException} {message: No such vertex label: Check} {gql_status: 50N42} {gql_status_description: error: general processing exception - unexpected error. No such vertex label: Check}"
+    },
+    {
+      "mode": "baseline",
+      "id": "T04",
+      "question": "得了 diabetes 需要做哪些检查？",
+      "cypher": "MATCH (d:Disease)-[:need_check]->(c:Check) WHERE toLower(d.name) IN ['diabetes', '糖尿病'] RETURN DISTINCT c.name AS `检查项目` ORDER BY `检查项目",
+      "valid": false,
+      "correct": false,
+      "pred_size": 0,
+      "gold_size": 5,
+      "error": "{neo4j_code: ParserException} {message: ParserException: line 1:135 mismatched input '<EOF>' expecting {'(', '[', '+', '-', '{', '$', ALL, NOT, NULL_, COUNT, ANY, NONE, SINGLE, TRUE_, FALSE_, EXISTS, "
+    },
+    {
+      "mode": "baseline",
+      "id": "T05",
+      "question": "cervical spondylosis 一般用什么药？",
+      "cypher": "MATCH (d:Disease)-[:common_drug]->(m:Drug) WHERE toLower(d.name) IN ['cervical spondylosis', '颈椎病'] RETURN DISTINCT m.name AS `常用药物`",
+      "valid": false,
+      "correct": false,
+      "pred_size": 0,
+      "gold_size": 5,
+      "error": "{neo4j_code: CypherException} {message: No such edge label: common_drug} {gql_status: 50N42} {gql_status_description: error: general processing exception - unexpected error. No such edge label: common"
+    },
+    {
+      "mode": "baseline",
+      "id": "T06",
+      "question": "diabetes 一般用什么药？",
+      "cypher": "MATCH (d:Disease)-[:COMMON_DRUG]->(m:Drug) WHERE toLower(d.name) = 'diabetes' OR d.name = '糖尿病' RETURN DISTINCT m.name AS 药物",
+      "valid": false,
+      "correct": false,
+      "pred_size": 0,
+      "gold_size": 4,
+      "error": "{neo4j_code: CypherException} {message: No such edge label: COMMON_DRUG} {gql_status: 50N42} {gql_status_description: error: general processing exception - unexpected error. No such edge label: COMMON"
+    },
+    {
+      "mode": "baseline",
+      "id": "T07",
+      "question": "pcos 应该去哪个科室看？",
+      "cypher": "MATCH (d:Disease)-[:belongs_to]->(dept:Department) WHERE toLower(d.name) = 'pcos' OR d.name = '多囊卵巢综合征' RETURN DISTINCT dept.name AS 科室",
+      "valid": false,
+      "correct": false,
+      "pred_size": 0,
+      "gold_size": 2,
+      "error": "{neo4j_code: CypherException} {message: No such edge label: belongs_to} {gql_status: 50N42} {gql_status_description: error: general processing exception - unexpected error. No such edge label: belongs"
+    },
+    {
+      "mode": "baseline",
+      "id": "T08",
+      "question": "back pain 应该去哪个科室看？",
+      "cypher": "MATCH (s:Symptom {name: \"back pain\"})-[:RECOMMENDED_DEPARTMENT]->(d:Department) RETURN d.name AS department",
+      "valid": false,
+      "correct": false,
+      "pred_size": 0,
+      "gold_size": 2,
+      "error": "{neo4j_code: CypherException} {message: No such edge label: RECOMMENDED_DEPARTMENT} {gql_status: 50N42} {gql_status_description: error: general processing exception - unexpected error. No such edge la"
+    },
+    {
+      "mode": "baseline",
+      "id": "T09",
+      "question": "图谱里一共有多少个疾病节点？",
+      "cypher": "MATCH (d:Disease) RETURN count(d) AS diseaseCount",
+      "valid": true,
+      "correct": true,
+      "pred_size": 1,
+      "gold_size": 1,
+      "error": ""
+    },
+    {
+      "mode": "baseline",
+      "id": "T10",
+      "question": "图谱里一共有多少条关系？",
+      "cypher": "MATCH ()-[r]->() RETURN count(r) AS relationshipCount",
+      "valid": true,
+      "correct": true,
+      "pred_size": 1,
+      "gold_size": 1,
+      "error": ""
+    },
+    {
+      "mode": "baseline",
+      "id": "T11",
+      "question": "有哪些疾病会出现 itching 这个症状？",
+      "cypher": "MATCH (d:Disease)-[:HAS_SYMPTOM]->(:Symptom {name: 'itching'}) RETURN DISTINCT d.name AS disease ORDER BY disease",
+      "valid": true,
+      "correct": true,
+      "pred_size": 5,
+      "gold_size": 5,
+      "error": ""
+    },
+    {
+      "mode": "schema",
+      "id": "T01",
+      "question": "pelvic infection 有哪些症状？",
+      "cypher": "MATCH (d:Disease)-[:HAS_SYMPTOM]->(s:Symptom) WHERE d.name = 'pelvic infection' RETURN s.name AS symptom ORDER BY symptom LIMIT 20",
+      "valid": true,
+      "correct": true,
+      "pred_size": 10,
+      "gold_size": 10,
+      "error": ""
+    },
+    {
+      "mode": "schema",
+      "id": "T02",
+      "question": "intestinal obstruction 有哪些症状？",
+      "cypher": "MATCH (d:Disease)-[r:HAS_SYMPTOM]->(s:Symptom) WHERE d.name = 'intestinal obstruction' RETURN s.name AS symptom LIMIT 20",
+      "valid": true,
+      "correct": true,
+      "pred_size": 7,
+      "gold_size": 7,
+      "error": ""
+    },
+    {
+      "mode": "schema",
+      "id": "T03",
+      "question": "得了 polycystic ovary syndrome 需要做哪些检查？",
+      "cypher": "MATCH (n:Disease)-[r:REQUIRES_EXAM]->(e:Examination) WHERE n.name = 'polycystic ovary syndrome' RETURN e.name AS examination, e.description AS description, r.qa_id, r.evidence LIMIT 20",
+      "valid": true,
+      "correct": true,
+      "pred_size": 9,
+      "gold_size": 9,
+      "error": ""
+    },
+    {
+      "mode": "schema",
+      "id": "T04",
+      "question": "得了 diabetes 需要做哪些检查？",
+      "cypher": "MATCH (n:Disease {name: 'diabetes'})-[r:REQUIRES_EXAM]->(e:Examination) RETURN e.name, r.qa_id, r.evidence LIMIT 20",
+      "valid": true,
+      "correct": true,
+      "pred_size": 5,
+      "gold_size": 5,
+      "error": ""
+    },
+    {
+      "mode": "schema",
+      "id": "T05",
+      "question": "cervical spondylosis 一般用什么药？",
+      "cypher": "MATCH (d:Disease)-[r:USES_DRUG]->(m:Drug) WHERE d.name = 'cervical spondylosis' RETURN m.name AS drug, r.qa_id AS qa_id, r.evidence AS evidence LIMIT 20",
+      "valid": true,
+      "correct": true,
+      "pred_size": 5,
+      "gold_size": 5,
+      "error": ""
+    },
+    {
+      "mode": "schema",
+      "id": "T06",
+      "question": "diabetes 一般用什么药？",
+      "cypher": "MATCH (n:Disease)-[r:USES_DRUG]->(d:Drug) WHERE n.name = 'diabetes' RETURN d.name AS drug, r.qa_id, r.evidence LIMIT 20",
+      "valid": true,
+      "correct": true,
+      "pred_size": 4,
+      "gold_size": 4,
+      "error": ""
+    },
+    {
+      "mode": "schema",
+      "id": "T07",
+      "question": "pcos 应该去哪个科室看？",
+      "cypher": "MATCH (n:Disease)-[:BELONGS_TO]->(d:Department) WHERE n.name = 'pcos' RETURN d.name AS department LIMIT 20",
+      "valid": true,
+      "correct": true,
+      "pred_size": 2,
+      "gold_size": 2,
+      "error": ""
+    },
+    {
+      "mode": "schema",
+      "id": "T08",
+      "question": "back pain 应该去哪个科室看？",
+      "cypher": "MATCH (d:Disease)-[:BELONGS_TO]->(dep:Department) WHERE d.name = 'back pain' RETURN dep.name AS department LIMIT 20",
+      "valid": true,
+      "correct": true,
+      "pred_size": 2,
+      "gold_size": 2,
+      "error": ""
+    },
+    {
+      "mode": "schema",
+      "id": "T09",
+      "question": "图谱里一共有多少个疾病节点？",
+      "cypher": "MATCH (d:Disease) RETURN count(d) AS disease_count",
+      "valid": true,
+      "correct": true,
+      "pred_size": 1,
+      "gold_size": 1,
+      "error": ""
+    },
+    {
+      "mode": "schema",
+      "id": "T10",
+      "question": "图谱里一共有多少条关系？",
+      "cypher": "MATCH ()-[r]->() RETURN count(r) AS relationship_count",
+      "valid": true,
+      "correct": true,
+      "pred_size": 1,
+      "gold_size": 1,
+      "error": ""
+    },
+    {
+      "mode": "schema",
+      "id": "T11",
+      "question": "有哪些疾病会出现 itching 这个症状？",
+      "cypher": "MATCH (d:Disease)-[:HAS_SYMPTOM]->(s:Symptom) WHERE s.name = 'itching' RETURN DISTINCT d.name AS disease ORDER BY disease LIMIT 20",
+      "valid": true,
+      "correct": true,
+      "pred_size": 5,
+      "gold_size": 5,
+      "error": ""
+    },
+    {
+      "mode": "schema_aware",
+      "id": "T01",
+      "question": "pelvic infection 有哪些症状？",
+      "cypher": "MATCH (d:Disease)-[r:HAS_SYMPTOM]->(s:Symptom) WHERE d.name = 'pelvic infection' RETURN s.name AS symptom, r.qa_id AS source, r.evidence AS evidence LIMIT 20",
+      "valid": true,
+      "correct": true,
+      "pred_size": 10,
+      "gold_size": 10,
+      "error": ""
+    },
+    {
+      "mode": "schema_aware",
+      "id": "T02",
+      "question": "intestinal obstruction 有哪些症状？",
+      "cypher": "MATCH (d:Disease)-[r:HAS_SYMPTOM]->(s:Symptom) WHERE d.name = 'intestinal obstruction' RETURN s.name AS symptom, r.qa_id AS source LIMIT 20",
+      "valid": true,
+      "correct": true,
+      "pred_size": 7,
+      "gold_size": 7,
+      "error": ""
+    },
+    {
+      "mode": "schema_aware",
+      "id": "T03",
+      "question": "得了 polycystic ovary syndrome 需要做哪些检查？",
+      "cypher": "MATCH (d:Disease)-[r:REQUIRES_EXAM]->(e:Examination) WHERE d.name = 'polycystic ovary syndrome' RETURN e.name AS examination, r.qa_id AS source, r.evidence AS evidence LIMIT 20",
+      "valid": true,
+      "correct": true,
+      "pred_size": 9,
+      "gold_size": 9,
+      "error": ""
+    },
+    {
+      "mode": "schema_aware",
+      "id": "T04",
+      "question": "得了 diabetes 需要做哪些检查？",
+      "cypher": "MATCH (d:Disease)-[r:REQUIRES_EXAM]->(e:Examination) WHERE d.name = 'diabetes' RETURN e.name AS examination, r.qa_id AS source, r.evidence AS evidence LIMIT 20",
+      "valid": true,
+      "correct": true,
+      "pred_size": 5,
+      "gold_size": 5,
+      "error": ""
+    },
+    {
+      "mode": "schema_aware",
+      "id": "T05",
+      "question": "cervical spondylosis 一般用什么药？",
+      "cypher": "MATCH (d:Disease)-[r:USES_DRUG]->(m:Drug) WHERE d.name = 'cervical spondylosis' RETURN m.name AS drug, r.qa_id AS source, r.evidence AS evidence LIMIT 20",
+      "valid": true,
+      "correct": true,
+      "pred_size": 5,
+      "gold_size": 5,
+      "error": ""
+    },
+    {
+      "mode": "schema_aware",
+      "id": "T06",
+      "question": "diabetes 一般用什么药？",
+      "cypher": "MATCH (d:Disease)-[r:USES_DRUG]->(m:Drug) WHERE d.name = 'diabetes' RETURN m.name AS drug, r.qa_id AS source, r.evidence AS evidence LIMIT 20",
+      "valid": true,
+      "correct": true,
+      "pred_size": 4,
+      "gold_size": 4,
+      "error": ""
+    },
+    {
+      "mode": "schema_aware",
+      "id": "T07",
+      "question": "pcos 应该去哪个科室看？",
+      "cypher": "MATCH (d:Disease)-[r:BELONGS_TO]->(dept:Department) WHERE d.name = 'pcos' RETURN dept.name AS department, r.qa_id AS source, r.evidence AS evidence LIMIT 20",
+      "valid": true,
+      "correct": true,
+      "pred_size": 2,
+      "gold_size": 2,
+      "error": ""
+    },
+    {
+      "mode": "schema_aware",
+      "id": "T08",
+      "question": "back pain 应该去哪个科室看？",
+      "cypher": "MATCH (d:Disease)-[r:BELONGS_TO]->(dept:Department) WHERE d.name = 'back pain' RETURN dept.name AS department, r.qa_id AS source LIMIT 20",
+      "valid": true,
+      "correct": true,
+      "pred_size": 2,
+      "gold_size": 2,
+      "error": ""
+    },
+    {
+      "mode": "schema_aware",
+      "id": "T09",
+      "question": "图谱里一共有多少个疾病节点？",
+      "cypher": "MATCH (d:Disease) RETURN count(d) AS diseases",
+      "valid": true,
+      "correct": true,
+      "pred_size": 1,
+      "gold_size": 1,
+      "error": ""
+    },
+    {
+      "mode": "schema_aware",
+      "id": "T10",
+      "question": "图谱里一共有多少条关系？",
+      "cypher": "MATCH ()-[r]->() RETURN count(r) AS relationships",
+      "valid": true,
+      "correct": true,
+      "pred_size": 1,
+      "gold_size": 1,
+      "error": ""
+    },
+    {
+      "mode": "schema_aware",
+      "id": "T11",
+      "question": "有哪些疾病会出现 itching 这个症状？",
+      "cypher": "MATCH (d:Disease)-[:HAS_SYMPTOM]->(s:Symptom) WHERE s.name = 'itching' WITH d.name AS disease, count(d) AS matches RETURN disease ORDER BY disease LIMIT 20",
+      "valid": true,
+      "correct": true,
+      "pred_size": 5,
+      "gold_size": 5,
+      "error": ""
+    }
+  ]
+}

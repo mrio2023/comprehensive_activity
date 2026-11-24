@@ -1,0 +1,35 @@
+{
+  "graph": "medical_kg_en",
+  "raw_entities": 1144,
+  "fused_entities": 622,
+  "raw_relations": 426,
+  "fused_relations": 416,
+  "entity_type_dist": {
+    "Symptom": 169,
+    "Disease": 235,
+    "Drug": 107,
+    "Examination": 73,
+    "Department": 38
+  },
+  "relation_type_dist": {
+    "REQUIRES_EXAM": 86,
+    "HAS_SYMPTOM": 177,
+    "BELONGS_TO": 69,
+    "USES_DRUG": 84
+  },
+  "case_specific": 134,
+  "dropped": {
+    "尾部实体未入库": 2,
+    "头部实体未入库": 2
+  },
+  "sources": {
+    "ner": [
+      "ner_rule_longest.jsonl",
+      "ner_llm.jsonl"
+    ],
+    "re": [
+      "re_rule.jsonl",
+      "re_llm.jsonl"
+    ]
+  }
+}

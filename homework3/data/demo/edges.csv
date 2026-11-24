@@ -1,0 +1,7 @@
+src_label,src_id,relation,dst_label,dst_id,qa_id,evidence,scope
+Disease,D001,HAS_SYMPTOM,Symptom,S001,DEMO-Q001,"糖尿病典型症状包括多饮、多尿","general"
+Disease,D001,HAS_SYMPTOM,Symptom,S002,DEMO-Q001,"糖尿病典型症状包括多饮、多尿","general"
+Disease,D001,USES_DRUG,Drug,M001,DEMO-Q002,"2 型糖尿病首选二甲双胍","general"
+Disease,D001,BELONGS_TO,Department,P001,DEMO-Q003,"糖尿病属于内分泌代谢疾病，就诊内分泌科","general"
+Disease,D001,REQUIRES_EXAM,Examination,E001,DEMO-Q004,"确诊需查空腹血糖","general"
+Disease,D001,REQUIRES_EXAM,Examination,E002,DEMO-Q005,"评估长期血糖控制查糖化血红蛋白","general"

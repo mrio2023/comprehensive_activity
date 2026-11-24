@@ -1,0 +1,421 @@
+src_label,src_id,relation,dst_label,dst_id,qa_id,evidence,scope
+Disease,DIS-00007,REQUIRES_EXAM,Examination,EXA-00006,HE-06520,Is ultrasound scanning safe during pregnancy ?,general
+Disease,DIS-00023,HAS_SYMPTOM,Symptom,SYM-00022,HE-09770,hi...i am 24 years old female from India and I'm experiencing shortness of breath alongwith tachycardia (pulse rate is 92)...I have a history of hypothyroidism and right now i'm on eltroxin 100 mcg...,general
+Disease,DIS-00043,REQUIRES_EXAM,Examination,EXA-00017,HE-61718,"Diabetes, cervical spondylosis, Plain X-ray showed cervical spondylosis with bony osteophytes, MRI showed cervical spondylosis with cord compression.",general
+Disease,DIS-00043,REQUIRES_EXAM,Examination,EXA-00053,HE-61718,"Diabetes, cervical spondylosis, Plain X-ray showed cervical spondylosis with bony osteophytes, MRI showed cervical spondylosis with cord compression.",general
+Disease,DIS-00066,BELONGS_TO,Department,DEP-00028,IC-00127,"Hello doctor, I am going to the dentist soon and I know I have a cavity and I think it is pretty big- it is easily noticeable.",general
+Disease,DIS-00068,BELONGS_TO,Department,DEP-00065,IC-00536,For further doubts consult a periodontist online -,general
+Disease,DIS-00071,REQUIRES_EXAM,Examination,EXA-00057,IC-00551,"Once stool color changed to normal from black, can proceed with CT scan abdomen to find out the cause.",general
+Disease,DIS-00071,BELONGS_TO,Department,DEP-00070,IC-00551,For further information consult a surgical gastroenterologist online.--,general
+Disease,DIS-00075,HAS_SYMPTOM,Symptom,SYM-00025,IC-00596,Can this be due to stress?,general
+Disease,DIS-00082,HAS_SYMPTOM,Symptom,SYM-00002,IC-00772,"These are nothing but accumulated skin due to fissure usually nothing to do for that but if you have any problem because of it like pain, bleeding, or pus discharge, you can opt for surgery.",case_specific
+Disease,DIS-00082,HAS_SYMPTOM,Symptom,SYM-00069,IC-00772,"These are nothing but accumulated skin due to fissure usually nothing to do for that but if you have any problem because of it like pain, bleeding, or pus discharge, you can opt for surgery.",case_specific
+Disease,DIS-00087,HAS_SYMPTOM,Symptom,SYM-00015,IC-01288,Presently also stomach feeling full of gas.,general
+Disease,DIS-00087,HAS_SYMPTOM,Symptom,SYM-00002,IC-01288,Light pain feeling in the morning.,general
+Disease,DIS-00087,USES_DRUG,Drug,DRU-00086,IC-01288,"It is fine to continue with the Rabiprazole for now, but I want to substitute another medication over Domperidone.",general
+Disease,DIS-00087,HAS_SYMPTOM,Symptom,SYM-00014,IC-01288,Gas and bloating I can consider testing you thoroughly if your symptoms remain for a week or so and does not improve with the medications I prescribed.,general
+Disease,DIS-00007,HAS_SYMPTOM,Symptom,SYM-00012,IC-01385,Is it normal to feel hot over the hands and vagina with sharp abdominal pain during pregnancy?,general
+Disease,DIS-00091,USES_DRUG,Drug,DRU-00080,IC-01385,"I have attached my reports and I am currently taking Fol 123, Duvadilan, Duphaston 10 mg, Udiliv 300 mg, Pan-D, Thyroxine 12.5, and Eltroxin 75.",general
+Disease,DIS-00007,HAS_SYMPTOM,Symptom,SYM-00089,IC-01385,"Burning sensation in palms and hand is called Carpal Syndrome, it happens in pregnancy due to swelling of tissues.",general
+Disease,DIS-00007,HAS_SYMPTOM,Symptom,SYM-00046,IC-01385,"Burning sensation in palms and hand is called Carpal Syndrome, it happens in pregnancy due to swelling of tissues.",general
+Disease,DIS-00091,BELONGS_TO,Department,DEP-00090,IC-01385,Countinue your medication and especially you have to consult with an endocrinologist to secure that the thyroid hormone levels are normal.,general
+Disease,DIS-00093,HAS_SYMPTOM,Symptom,SYM-00002,IC-01475,"Hi doctor, This patient is complaining of prolonged chest pain for three weeks now.",general
+Disease,DIS-00093,BELONGS_TO,Department,DEP-00092,IC-01475,For further information consult a cardiologist online -,general
+Disease,DIS-00100,HAS_SYMPTOM,Symptom,SYM-00002,IC-02033,Now during lock down due to excess use of mobile and sitting etc pain and stiffness has been started in my neck that moves from left back side of neck to head sometimes.,general
+Disease,DIS-00100,HAS_SYMPTOM,Symptom,SYM-00097,IC-02033,Now during lock down due to excess use of mobile and sitting etc pain and stiffness has been started in my neck that moves from left back side of neck to head sometimes.,general
+Disease,DIS-00100,REQUIRES_EXAM,Examination,EXA-00053,IC-02033,"as per MRI reports you mentioned, its a LBA (low back ache) which radiated to leg and now shifting to left lower body as well.",general
+Disease,DIS-00100,REQUIRES_EXAM,Examination,EXA-00006,IC-02033,"actually you need IFT and ultrasound theraoy for 2 weeks with immediate effect but may be not available due to lock down, but at home you can try the following which is also very effevtive in reducing pain.",case_specific
+Disease,DIS-00100,USES_DRUG,Drug,DRU-00099,IC-02033,"Apply diclofenac ointment in the area of pain mainly at lower back, neck, shoulder and knees and cover it for 10 - 15mins with a cloth.",general
+Disease,DIS-00041,HAS_SYMPTOM,Symptom,SYM-00069,IC-02144,"Due to rectal bleeding, I end up in anemia.",general
+Disease,DIS-00104,HAS_SYMPTOM,Symptom,SYM-00002,IC-02683,"Symptoms are vaginal dryness during sex, burning sensation in vagina after sex, pain throughout which increases around the time of ejaculation, following day excessive vaginal discharge with or without itching and foul smell.",general
+Disease,DIS-00104,HAS_SYMPTOM,Symptom,SYM-00089,IC-02683,"Symptoms are vaginal dryness during sex, burning sensation in vagina after sex, pain throughout which increases around the time of ejaculation, following day excessive vaginal discharge with or without itching and foul smell.",general
+Disease,DIS-00104,HAS_SYMPTOM,Symptom,SYM-00037,IC-02683,"Symptoms are vaginal dryness during sex, burning sensation in vagina after sex, pain throughout which increases around the time of ejaculation, following day excessive vaginal discharge with or without itching and foul smell.",general
+Disease,DIS-00105,HAS_SYMPTOM,Symptom,SYM-00022,IC-03298,I feel great and no shortness of breath.,general
+Disease,DIS-00109,HAS_SYMPTOM,Symptom,SYM-00054,IC-03387,"Because, she has all the symptoms except the numbness in legs and feet.",general
+Disease,DIS-00109,REQUIRES_EXAM,Examination,EXA-00017,IC-03387,Plain KUB x-ray to look for renal stones and urinalysis with culture.,general
+Disease,DIS-00109,BELONGS_TO,Department,DEP-00110,IC-03387,Revert back after a week with investigation report to an internal medicine physician online.--,general
+Disease,DIS-00115,USES_DRUG,Drug,DRU-00114,IC-04101,800 mg of Ibuprofen and Aspercreme on the area help me somewhat.,general
+Disease,DIS-00115,REQUIRES_EXAM,Examination,EXA-00017,IC-04101,I reckon you check with the x-ray for that tooth if you have not had any before and forward it to me.,general
+Disease,DIS-00116,HAS_SYMPTOM,Symptom,SYM-00002,IC-05156,"Today, I am feeling more pain.",general
+Disease,DIS-00116,REQUIRES_EXAM,Examination,EXA-00017,IC-05156,Revert back with the x-ray reports to an internal medicine physician online -,general
+Disease,DIS-00116,BELONGS_TO,Department,DEP-00110,IC-05156,Revert back with the x-ray reports to an internal medicine physician online -,general
+Disease,DIS-00124,REQUIRES_EXAM,Examination,EXA-00122,IC-05603,The CBC and peripheral smear examination report do not suggest leukemia.,case_specific
+Disease,DIS-00124,REQUIRES_EXAM,Examination,EXA-00123,IC-05603,"As you have persistent spleen enlargement, it is advisable to investigate with spleen biopsy or FNAC for histopathology examination.",general
+Disease,DIS-00124,REQUIRES_EXAM,Examination,EXA-00049,IC-05603,"As you have persistent spleen enlargement, it is advisable to investigate with spleen biopsy or FNAC for histopathology examination.",general
+Disease,DIS-00128,HAS_SYMPTOM,Symptom,SYM-00002,IC-05812,"This morning the burning pain keeps coming and going, and I can feel a lot of mucus dripping down the back of my throat.",general
+Disease,DIS-00128,HAS_SYMPTOM,Symptom,SYM-00089,IC-05812,"Also, the burning sensation is limited only to my lower abdomen.I typically do not have issues with severe allergies, so I am wondering if this could be caused by a virus?",general
+Disease,DIS-00129,REQUIRES_EXAM,Examination,EXA-00057,IC-05859,I read your question and reviewed your uploaded CT scan images.,general
+Disease,DIS-00042,HAS_SYMPTOM,Symptom,SYM-00026,IC-05859,Besides the headache is usually associated with increased intracranial hypertension ( like in case of abnormal fluid accumulation in the brain).,general
+Disease,DIS-00129,REQUIRES_EXAM,Examination,EXA-00053,IC-05859,Coming to this point I would recommend performing a brain MRI (magnetic resonance imaging) in order to examine her brain better and investigate for the possible causes underlying her complaints.,case_specific
+Disease,DIS-00130,HAS_SYMPTOM,Symptom,SYM-00025,IC-06009,I am suffering from extreme stress and depression due to relationship issues.,general
+Disease,DIS-00135,HAS_SYMPTOM,Symptom,SYM-00111,IC-06815,"However, in between, I had dizziness, nausea, and vomiting due to which I met another doctor who changed Stamlo 5 to Aquazide 12.5 biweekly (only on Sunday and Thursday).",general
+Disease,DIS-00135,HAS_SYMPTOM,Symptom,SYM-00132,IC-06815,"However, in between, I had dizziness, nausea, and vomiting due to which I met another doctor who changed Stamlo 5 to Aquazide 12.5 biweekly (only on Sunday and Thursday).",general
+Disease,DIS-00135,HAS_SYMPTOM,Symptom,SYM-00133,IC-06815,"However, in between, I had dizziness, nausea, and vomiting due to which I met another doctor who changed Stamlo 5 to Aquazide 12.5 biweekly (only on Sunday and Thursday).",general
+Disease,DIS-00138,HAS_SYMPTOM,Symptom,SYM-00107,IC-06850,"From yesterday night, he is suffering from cough and vomiting.",general
+Disease,DIS-00138,REQUIRES_EXAM,Examination,EXA-00017,IC-06850,An x-ray chest should be done as well.,general
+Disease,DIS-00033,HAS_SYMPTOM,Symptom,SYM-00139,IC-07535,"It is a type of eczema secondary to mild pityrosporum yeast infection associated with an oily part of the face with affected areas, mild scaling and redness in few individuals.",general
+Disease,DIS-00033,BELONGS_TO,Department,DEP-00034,IC-07535,For more information consult a dermatologist online -,general
+Disease,DIS-00142,REQUIRES_EXAM,Examination,EXA-00077,IC-08009,"Thyroid function test (T3, T4, TSH).",general
+Disease,DIS-00147,HAS_SYMPTOM,Symptom,SYM-00146,IC-08247,I had been falling for pharyngitis due to consumption of cold items.,general
+Disease,DIS-00147,HAS_SYMPTOM,Symptom,SYM-00096,IC-08247,"Also, seven months back I had trouble sleeping due to severe back pain upon lying down to sleep.",general
+Disease,DIS-00147,HAS_SYMPTOM,Symptom,SYM-00002,IC-08247,"Also, seven months back I had trouble sleeping due to severe back pain upon lying down to sleep.",general
+Disease,DIS-00147,REQUIRES_EXAM,Examination,EXA-00053,IC-08247,"When consulted and took an MRI, it resulted in a spine disc hitting a vein causing pain at different angles.",general
+Disease,DIS-00148,USES_DRUG,Drug,DRU-00005,IC-08256,I suggest you try Omeprazole 20 mg once daily 30 minutes before breakfast daily.,case_specific
+Disease,DIS-00148,BELONGS_TO,Department,DEP-00110,IC-08256,For more information consult an internal medicine physician online -,general
+Disease,DIS-00150,USES_DRUG,Drug,DRU-00149,IC-08368,Take Psyllium or Prune fiber early in the morning.,general
+Disease,DIS-00152,BELONGS_TO,Department,DEP-00038,IC-08378,For more information consult a family physician online -,general
+Disease,DIS-00081,REQUIRES_EXAM,Examination,EXA-00064,IC-08426,It is a blood test that detects minutest pregnancies.,general
+Disease,DIS-00155,HAS_SYMPTOM,Symptom,SYM-00026,IC-08511,"Other symptoms like headache, neck tightness, and shoulder pain might be due to other causes like glaucoma.",general
+Disease,DIS-00155,HAS_SYMPTOM,Symptom,SYM-00154,IC-08511,"Other symptoms like headache, neck tightness, and shoulder pain might be due to other causes like glaucoma.",general
+Disease,DIS-00159,HAS_SYMPTOM,Symptom,SYM-00037,IC-09147,"when I am out in sunlight or when my body heats up, I have a feeling like thousands of ants are crawling and biting my body and my body starts itching.",general
+Disease,DIS-00159,USES_DRUG,Drug,DRU-00036,IC-09147,"To control itching, I would suggest you to start taking tablet Cetirizine.",case_specific
+Disease,DIS-00159,BELONGS_TO,Department,DEP-00034,IC-09147,Kindly consult a dermatologist for a prescription to the above.,general
+Disease,DIS-00161,HAS_SYMPTOM,Symptom,SYM-00089,IC-10240,The following are the causes for burning sensation in the anus.,general
+Disease,DIS-00164,BELONGS_TO,Department,DEP-00034,IC-10688,"If you have pimples or any rash, then you should consult a dermatologist.",case_specific
+Disease,DIS-00165,REQUIRES_EXAM,Examination,EXA-00053,IC-10764,"(MRI confirmed nerve pinch, but no broken disc or liquid leaks) With heavy pain, I was hospitalized, but recovered within two weeks.",general
+Disease,DIS-00165,HAS_SYMPTOM,Symptom,SYM-00002,IC-10764,"Right now, I am experiencing almost no back pain, but the sciatica is heavy.",general
+Disease,DIS-00165,HAS_SYMPTOM,Symptom,SYM-00096,IC-10764,"Right now, I am experiencing almost no back pain, but the sciatica is heavy.",general
+Disease,DIS-00165,HAS_SYMPTOM,Symptom,SYM-00146,IC-10764,I advice to not use cold therapy as it is aggravating the pain symptoms.,general
+Disease,DIS-00165,HAS_SYMPTOM,Symptom,SYM-00166,IC-10764,"In most cases, the pain is caused due to more of the muscle weakness, and it is common in most cases to have received the symptoms back.",general
+Disease,DIS-00169,HAS_SYMPTOM,Symptom,SYM-00167,IC-10929,"Hello doctor, A 23-year-old male patient hit with bike accident, fell on back side of head, CT scan reports reveals mild cerebral edema, with some facial fractures, currently patient is having blood clots discharge as post-nasal drip, and not associated with headache, dizziness, seizures, fainting, ",general
+Disease,DIS-00169,REQUIRES_EXAM,Examination,EXA-00057,IC-10929,"Hello doctor, A 23-year-old male patient hit with bike accident, fell on back side of head, CT scan reports reveals mild cerebral edema, with some facial fractures, currently patient is having blood clots discharge as post-nasal drip, and not associated with headache, dizziness, seizures, fainting, ",general
+Disease,DIS-00169,HAS_SYMPTOM,Symptom,SYM-00026,IC-10929,"Hello doctor, A 23-year-old male patient hit with bike accident, fell on back side of head, CT scan reports reveals mild cerebral edema, with some facial fractures, currently patient is having blood clots discharge as post-nasal drip, and not associated with headache, dizziness, seizures, fainting, ",general
+Disease,DIS-00169,HAS_SYMPTOM,Symptom,SYM-00111,IC-10929,"Hello doctor, A 23-year-old male patient hit with bike accident, fell on back side of head, CT scan reports reveals mild cerebral edema, with some facial fractures, currently patient is having blood clots discharge as post-nasal drip, and not associated with headache, dizziness, seizures, fainting, ",general
+Disease,DIS-00169,HAS_SYMPTOM,Symptom,SYM-00168,IC-10929,"Hello doctor, A 23-year-old male patient hit with bike accident, fell on back side of head, CT scan reports reveals mild cerebral edema, with some facial fractures, currently patient is having blood clots discharge as post-nasal drip, and not associated with headache, dizziness, seizures, fainting, ",general
+Disease,DIS-00169,USES_DRUG,Drug,DRU-00114,IC-10929,"It would also help taking some Ibuprofen to lessen the inflammation and swelling, if taken every eight hours.",general
+Disease,DIS-00186,USES_DRUG,Drug,DRU-00180,IC-12610,I am taking tablet Metformin.,general
+Disease,DIS-00130,HAS_SYMPTOM,Symptom,SYM-00173,IC-12610,"This causes anxiety, anger, palpitations, fatigue, muscle pain, intense bleeding during periods and depression and also leads to weight loss.",general
+Disease,DIS-00130,HAS_SYMPTOM,Symptom,SYM-00182,IC-12610,"This causes anxiety, anger, palpitations, fatigue, muscle pain, intense bleeding during periods and depression and also leads to weight loss.",general
+Disease,DIS-00130,HAS_SYMPTOM,Symptom,SYM-00069,IC-12610,"This causes anxiety, anger, palpitations, fatigue, muscle pain, intense bleeding during periods and depression and also leads to weight loss.",general
+Disease,DIS-00130,HAS_SYMPTOM,Symptom,SYM-00103,IC-12610,"This causes anxiety, anger, palpitations, fatigue, muscle pain, intense bleeding during periods and depression and also leads to weight loss.",general
+Disease,DIS-00130,HAS_SYMPTOM,Symptom,SYM-00002,IC-12610,"This causes anxiety, anger, palpitations, fatigue, muscle pain, intense bleeding during periods and depression and also leads to weight loss.",general
+Disease,DIS-00043,USES_DRUG,Drug,DRU-00184,IC-12610,"If there is frank diabetes, then you can be take small amounts of OHA (oral hypoglycemic agents) such as tablet Glimepiride or Dipeptidyl peptidase- 4 inhibitor (DPP4I) or go with peroxisome proliferator-activated inhibitor (PPAR).",case_specific
+Disease,DIS-00186,HAS_SYMPTOM,Symptom,SYM-00069,IC-12610,Intense bleeding and pain during your periods is mainly due to multiple fibroids.,general
+Disease,DIS-00186,HAS_SYMPTOM,Symptom,SYM-00002,IC-12610,Intense bleeding and pain during your periods is mainly due to multiple fibroids.,general
+Disease,DIS-00189,USES_DRUG,Drug,DRU-00188,IC-12830,"Trying some physical procedures, like warm massage over the affected area, in addition to any anti-inflammatory drug could be of value like Naproxen.",general
+Disease,DIS-00189,REQUIRES_EXAM,Examination,EXA-00061,IC-12830,You should be careful with the drug intake and periodically check ECG and blood parameters to timely prevent further homeostatic abnormalities.,case_specific
+Disease,DIS-00191,REQUIRES_EXAM,Examination,EXA-00017,IC-12981,The first thing you should do now is to take an X-ray for a safety case.,case_specific
+Disease,DIS-00194,HAS_SYMPTOM,Symptom,SYM-00002,IC-13761,How can I manage tight penis opening that causes pain on jerking it?,general
+Disease,DIS-00194,USES_DRUG,Drug,DRU-00193,IC-13761,Betamethasone ointment twice a day.,general
+Disease,DIS-00197,BELONGS_TO,Department,DEP-00078,IC-14211,"You have to consult your gynecologist, confirm the gestational age.",general
+Disease,DIS-00201,BELONGS_TO,Department,DEP-00200,IC-14441,I asked my general physician to re-test my hematinics.,general
+Disease,DIS-00201,USES_DRUG,Drug,DRU-00118,IC-14441,The high level of vitamin B12 can only be explained if you were given a single megadose of vitamin as an intramuscular injection during your chemotherapy.,general
+Disease,DIS-00201,BELONGS_TO,Department,DEP-00202,IC-14441,For more information consult a hematologist online -,general
+Disease,DIS-00207,REQUIRES_EXAM,Examination,EXA-00206,IC-14756,"In both cases, you must get a urine routine and microscopic examination plus a complete blood count test done initially.",general
+Disease,DIS-00207,REQUIRES_EXAM,Examination,EXA-00072,IC-14756,"In both cases, you must get a urine routine and microscopic examination plus a complete blood count test done initially.",general
+Disease,DIS-00207,HAS_SYMPTOM,Symptom,SYM-00012,IC-14756,"If you have other symptoms like abdominal pain, vomiting, etc, you must let me know.",general
+Disease,DIS-00207,HAS_SYMPTOM,Symptom,SYM-00133,IC-14756,"If you have other symptoms like abdominal pain, vomiting, etc, you must let me know.",general
+Disease,DIS-00190,REQUIRES_EXAM,Examination,EXA-00064,IC-14974,"To be on the safe side, a blood test called serum electrolytes may be done, in which we will see potassium levels (low or high potassium levels may cause some heart rhythm problems).",general
+Disease,DIS-00214,USES_DRUG,Drug,DRU-00004,IC-15609,Take Paracetamol for any fever or aches and pains.,general
+Disease,DIS-00214,USES_DRUG,Drug,DRU-00211,IC-15609,Take anti-vomiting medication (such as Zofran 4 mg twice) and antidiarrhoeal medication (such as Loperamide up to 16 mg a day).,general
+Disease,DIS-00214,USES_DRUG,Drug,DRU-00212,IC-15609,"Tablet Ofloxacin 200 mg twice a day, tablet Metronidazole 400 mg twice daily.",general
+Disease,DIS-00214,USES_DRUG,Drug,DRU-00213,IC-15609,"Tablet Ofloxacin 200 mg twice a day, tablet Metronidazole 400 mg twice daily.",general
+Disease,DIS-00215,HAS_SYMPTOM,Symptom,SYM-00002,IC-15838,What can be done for neck pain due to prolonged sitting?,general
+Disease,DIS-00020,HAS_SYMPTOM,Symptom,SYM-00025,IC-16459,Acne is a disease in which the patient may experience frequent exacerbation due to stress or hormones or periods.,general
+Disease,DIS-00020,USES_DRUG,Drug,DRU-00218,IC-16459,Take capsule Doxycycline 100 mg once daily for three weeks.,general
+Disease,DIS-00220,BELONGS_TO,Department,DEP-00110,IC-17015,For further queries consult an internal medicine physician online -,general
+Disease,DIS-00222,BELONGS_TO,Department,DEP-00221,IC-17105,For further doubts consult an obstetrician and gynaecologist online -,general
+Disease,DIS-00222,BELONGS_TO,Department,DEP-00223,IC-17105,For further doubts consult an obstetrician and gynaecologist online -,general
+Disease,DIS-00225,REQUIRES_EXAM,Examination,EXA-00224,IC-17412,Could my HIV test be false negative as I got tested after six years of exposure?,general
+Disease,DIS-00225,HAS_SYMPTOM,Symptom,SYM-00025,IC-17412,The reason for dropping maybe due to a previous infection and stress.,general
+Disease,DIS-00225,HAS_SYMPTOM,Symptom,SYM-00226,IC-17412,"Only recently, I am experiencing recurrent colds and blocked, runny nose, vaginal infections, fungi like discoloration on two of my fingers and red dots or spots, rashes on one of my shoulders.",general
+Disease,DIS-00227,BELONGS_TO,Department,DEP-00228,IC-17487,Consult a paediatrician online -,general
+Disease,DIS-00079,HAS_SYMPTOM,Symptom,SYM-00069,IC-18356,"In PCOS, periods become irregular due to anovulation, which leads to heavy bleeding due to unopposed estrogen in body.",general
+Disease,DIS-00007,USES_DRUG,Drug,DRU-00230,IC-18356,Simple treatment for it is to take combined oral contraceptive pills for regularizing periods before marriage and when you are not trying for pregnancy.,general
+Disease,DIS-00079,USES_DRUG,Drug,DRU-00230,IC-18356,Do regular exercise for at least 30-45 minutes daily and induce period by oral contraceptive pill and Progesterone tablets regularly.,general
+Disease,DIS-00079,USES_DRUG,Drug,DRU-00119,IC-18356,I hope you are taking Iron and vitamin D3 supplements to recover from deficiency.,general
+Disease,DIS-00079,BELONGS_TO,Department,DEP-00221,IC-18356,For further information consult an obstetrician and gynaecologist online -,general
+Disease,DIS-00079,BELONGS_TO,Department,DEP-00223,IC-18356,For further information consult an obstetrician and gynaecologist online -,general
+Disease,DIS-00231,REQUIRES_EXAM,Examination,EXA-00006,IC-18770,I got an ultrasound scan done five months ago along with other every other checkups.,general
+Disease,DIS-00231,BELONGS_TO,Department,DEP-00110,IC-18770,Revert back with the details to an internal medicine physician online -,general
+Disease,DIS-00235,BELONGS_TO,Department,DEP-00110,IC-19153,For more information consult an internal medicine physician online -,general
+Disease,DIS-00237,REQUIRES_EXAM,Examination,EXA-00236,IC-19268,"I got my sugar test, thyroid profile and vitamin D levels checked yesterday.",general
+Disease,DIS-00237,USES_DRUG,Drug,DRU-00119,IC-19268,"I am attaching the detailed reports, summary as follows:Blood Glucose (F) 89 mg/dL.Blood Glucose (PP) 102 mg/dL.Urine sugar (both in F and PP) not present.HbA1C 5.8 %.Thyroid profile: T3(CLIA) 57 ng/mL, T4(FPIA) 6.38 ug/dL, TSH(CLIA) 1.81 uIU/mL.Vitamin D (25 hydroxycholecalciferol) 26.97 ng/mL.From",general
+Disease,DIS-00237,BELONGS_TO,Department,DEP-00238,IC-19268,For more information consult a general practitioner online -,general
+Disease,DIS-00021,USES_DRUG,Drug,DRU-00239,IC-19374,Consider taking tablet Ketoconazole 200 mg once daily for two weeks and apply Candid B lotion (Clotrimazole) on the affected scalp twice daily.,general
+Disease,DIS-00021,USES_DRUG,Drug,DRU-00240,IC-19374,Consider taking tablet Ketoconazole 200 mg once daily for two weeks and apply Candid B lotion (Clotrimazole) on the affected scalp twice daily.,general
+Disease,DIS-00021,BELONGS_TO,Department,DEP-00034,IC-19374,For further information consult a dermatologist online -,general
+Disease,DIS-00243,BELONGS_TO,Department,DEP-00028,IC-19945,Consult a dentist online for further investigations and follow up -,general
+Disease,DIS-00244,BELONGS_TO,Department,DEP-00092,IC-19947,For further information consult a cardiologist online -,general
+Disease,DIS-00067,BELONGS_TO,Department,DEP-00028,IC-20486,"Hello doctor, A back molar was sore when I chewed on it and my dentist found an infection under it, so he did a root canal but afterward, it was still sore.",general
+Disease,DIS-00247,BELONGS_TO,Department,DEP-00028,IC-20486,As for your question is concerned the doctor has tried best at first instance to save the tooth and it is a routine which dentists do.,general
+Disease,DIS-00249,REQUIRES_EXAM,Examination,EXA-00064,IC-20872,"Were you evaluated for this with blood test like ANA (anti-nuclear antibody), Anti-dsDNA, etc?",general
+Disease,DIS-00249,HAS_SYMPTOM,Symptom,SYM-00059,IC-20872,"Now, for chest pain, due to pain on exertion or at rest, for how long does it persist?",general
+Disease,DIS-00249,HAS_SYMPTOM,Symptom,SYM-00002,IC-20872,"Now, for chest pain, due to pain on exertion or at rest, for how long does it persist?",general
+Disease,DIS-00249,REQUIRES_EXAM,Examination,EXA-00236,IC-20872,"So investigations needed, peripheral blood film, thyroid profile, vitamin B12 and folic acid, serum iron studies, vitamin D, which will help in finding the cause.",general
+Disease,DIS-00249,REQUIRES_EXAM,Examination,EXA-00248,IC-20872,"So investigations needed, peripheral blood film, thyroid profile, vitamin B12 and folic acid, serum iron studies, vitamin D, which will help in finding the cause.",general
+Disease,DIS-00250,BELONGS_TO,Department,DEP-00038,IC-21575,For more information consult a family physician online -,general
+Disease,DIS-00042,USES_DRUG,Drug,DRU-00253,IC-21808,"For high cholesterol, Rosuvastatin 5 mg OD (once daily) can be prescribed.",general
+Disease,DIS-00042,BELONGS_TO,Department,DEP-00038,IC-21808,For more information consult a family physician online -,general
+Disease,DIS-00256,HAS_SYMPTOM,Symptom,SYM-00062,IC-21937,I do not really have fever symptoms.,general
+Disease,DIS-00256,USES_DRUG,Drug,DRU-00255,IC-21937,"I suggest you take an oral antibiotic like either Amoxycillin 500 mg or Cephalexin 500 mg, thrice daily for a week.",case_specific
+Disease,DIS-00256,USES_DRUG,Drug,DRU-00036,IC-21937,"In addition, I suggest you take an oral antihistamine like tablet Cetirizine 10 mg once a day for a few days.",case_specific
+Disease,DIS-00256,BELONGS_TO,Department,DEP-00034,IC-21937,For more information consult a dermatologist online -,general
+Disease,DIS-00259,BELONGS_TO,Department,DEP-00258,IC-22507,For more information consult an eye care ophthalmologist online -,general
+Disease,DIS-00259,BELONGS_TO,Department,DEP-00260,IC-22507,For more information consult an eye care ophthalmologist online -,general
+Disease,DIS-00263,BELONGS_TO,Department,DEP-00110,IC-23134,For more information consult an internal medicine physician online -,general
+Disease,DIS-00265,BELONGS_TO,Department,DEP-00264,IC-23494,For more information consult a general surgeon online -,general
+Disease,DIS-00055,HAS_SYMPTOM,Symptom,SYM-00144,IC-23558,"With regards to anxiety my symptoms are extreme worry, classic panic attacks sometimes 5-6 times a day, feel hard to breath, stomach sick.",general
+Disease,DIS-00268,HAS_SYMPTOM,Symptom,SYM-00266,IC-23558,"I feel tiredness in my whole body, a tense feel and headache.",general
+Disease,DIS-00268,HAS_SYMPTOM,Symptom,SYM-00026,IC-23558,"I feel tiredness in my whole body, a tense feel and headache.",general
+Disease,DIS-00268,HAS_SYMPTOM,Symptom,SYM-00144,IC-23558,You are suffering from panic attacks with agoraphobia (fear to go to public place).,general
+Disease,DIS-00268,USES_DRUG,Drug,DRU-00267,IC-23558,You are taking Benzodiazepine (Klonopin-Clonazepam) of very high dose.,general
+Disease,DIS-00270,BELONGS_TO,Department,DEP-00228,IC-24328,For more information consult a paediatrician online -,general
+Disease,DIS-00271,BELONGS_TO,Department,DEP-00272,IC-24364,For more information consult an orthopaedician and traumatologist online -,general
+Disease,DIS-00273,REQUIRES_EXAM,Examination,EXA-00017,IC-24534,"He was transferred to hospital and X-ray indicted his leg is not broken but severely ricked, as a result, it is not moving and will need time to recover.",general
+Disease,DIS-00043,USES_DRUG,Drug,DRU-00185,IC-24534,He has been suffering from type 2 diabetes for over 20 years and three years ago was prescribed to use Insulin.,general
+Disease,DIS-00273,REQUIRES_EXAM,Examination,EXA-00053,IC-24534,"For this reason, it is important performing a brain CT (computed tomography) scan or MRI (magnetic resonance imaging) to investigate for a possible stroke.",general
+Disease,DIS-00273,BELONGS_TO,Department,DEP-00233,IC-24534,For more information consult a neurologist online -,general
+Disease,DIS-00055,HAS_SYMPTOM,Symptom,SYM-00266,IC-24942,"His symptoms are tiredness, loss of appetite, shaky inside (similar to the feeling of anxiety).",general
+Disease,DIS-00055,HAS_SYMPTOM,Symptom,SYM-00274,IC-24942,"His symptoms are tiredness, loss of appetite, shaky inside (similar to the feeling of anxiety).",general
+Disease,DIS-00276,BELONGS_TO,Department,DEP-00275,IC-24942,For more information consult a nephrologist online -,general
+Disease,DIS-00278,BELONGS_TO,Department,DEP-00277,IC-26245,"Recently, I visited an ENT specialist.",general
+Disease,DIS-00278,BELONGS_TO,Department,DEP-00028,IC-26245,He referred me to a dentist.,general
+Disease,DIS-00279,BELONGS_TO,Department,DEP-00038,IC-26573,For more information consult a family physician online -,general
+Disease,DIS-00280,BELONGS_TO,Department,DEP-00221,IC-26824,For more information consult an obstetrician and gynaecologist online -,general
+Disease,DIS-00280,BELONGS_TO,Department,DEP-00223,IC-26824,For more information consult an obstetrician and gynaecologist online -,general
+Disease,DIS-00281,BELONGS_TO,Department,DEP-00258,IC-27041,for more information consult an eye care ophthalmologist online -,general
+Disease,DIS-00281,BELONGS_TO,Department,DEP-00260,IC-27041,for more information consult an eye care ophthalmologist online -,general
+Disease,DIS-00177,BELONGS_TO,Department,DEP-00011,IC-27043,"So you have to be careful and watchful that if any previous symptoms reappear or any new symptoms arise, then you have to consult your psychiatrist as soon as possible.",general
+Disease,DIS-00283,BELONGS_TO,Department,DEP-00282,IC-28373,For further information consult a physiotherapist online -,general
+Disease,DIS-00284,BELONGS_TO,Department,DEP-00272,IC-28388,For more information consult an orthopaedician and traumatologist online -,general
+Disease,DIS-00285,REQUIRES_EXAM,Examination,EXA-00017,IC-28557,I have seen the x-ray (attachment removed to protect patient identity).,general
+Disease,DIS-00285,BELONGS_TO,Department,DEP-00272,IC-28557,For further queries consult an orthopaedician and traumatologist online -,general
+Disease,DIS-00286,BELONGS_TO,Department,DEP-00110,IC-28689,For more information consult an internal medicine physician online -,general
+Disease,DIS-00287,HAS_SYMPTOM,Symptom,SYM-00002,IC-29076,"‏Hi doctor, My mother is suffering from severe pain in the throat since the past six months.",general
+Disease,DIS-00287,HAS_SYMPTOM,Symptom,SYM-00001,IC-29076,"‏Hi doctor, My mother is suffering from severe pain in the throat since the past six months.",general
+Disease,DIS-00288,BELONGS_TO,Department,DEP-00289,IC-29079,For further information consult a general medicine physician online -,general
+Disease,DIS-00291,REQUIRES_EXAM,Examination,EXA-00053,IC-29179,"Her recent MRI, which she got last week, showed that her lesion is stable.",general
+Disease,DIS-00291,BELONGS_TO,Department,DEP-00233,IC-29179,For further queries consult a neurologist online -,general
+Disease,DIS-00295,USES_DRUG,Drug,DRU-00292,IC-29243,I am taking Metoprolol and a combination of Triamterene and Hydrochlorothiazide.,general
+Disease,DIS-00295,USES_DRUG,Drug,DRU-00293,IC-29243,I am taking Metoprolol and a combination of Triamterene and Hydrochlorothiazide.,general
+Disease,DIS-00295,BELONGS_TO,Department,DEP-00092,IC-29243,For further information consult a cardiologist online -,general
+Disease,DIS-00297,REQUIRES_EXAM,Examination,EXA-00296,IC-29272,Can you check my semen analysis report and help me out?,general
+Disease,DIS-00297,HAS_SYMPTOM,Symptom,SYM-00141,IC-29272,I have a history of seizure.,general
+Disease,DIS-00297,USES_DRUG,Drug,DRU-00198,IC-29272,Could I take Folic acid?,general
+Disease,DIS-00297,BELONGS_TO,Department,DEP-00221,IC-29272,For further information consult an obstetrician and gynaecologist online -,general
+Disease,DIS-00297,BELONGS_TO,Department,DEP-00223,IC-29272,For further information consult an obstetrician and gynaecologist online -,general
+Disease,DIS-00298,REQUIRES_EXAM,Examination,EXA-00006,IC-29412,I just had an ultrasound done.,general
+Disease,DIS-00298,HAS_SYMPTOM,Symptom,SYM-00002,IC-29412,"It is a stabbing, serve pain and also when I am trying to pee I feel a lot of pressure.",general
+Disease,DIS-00298,BELONGS_TO,Department,DEP-00221,IC-29412,For further information consult an obstetrician and gynaecologist online -,general
+Disease,DIS-00298,BELONGS_TO,Department,DEP-00223,IC-29412,For further information consult an obstetrician and gynaecologist online -,general
+Disease,DIS-00299,BELONGS_TO,Department,DEP-00300,IC-29541,For further information consult a child health specialist online -,general
+Disease,DIS-00301,REQUIRES_EXAM,Examination,EXA-00064,IC-30325,"Presently, as per her blood test, bilirubin 0.40 mg/dL, conjugated bilirubin 0.10 mg/dL, unconjugated bilirubin 0.30 mg/dL and ALT (SGPT) 57.00 U/L.",general
+Disease,DIS-00301,BELONGS_TO,Department,DEP-00300,IC-30325,For further information consult a child health specialist online -,general
+Disease,DIS-00302,BELONGS_TO,Department,DEP-00034,IC-30356,For further information consult a dermatologist online -,general
+Disease,DIS-00304,HAS_SYMPTOM,Symptom,SYM-00002,IC-30742,I can feel it as pulsatile pain.,general
+Disease,DIS-00304,REQUIRES_EXAM,Examination,EXA-00017,IC-30742,Revert back with the x-ray to a dentist online.--,general
+Disease,DIS-00305,HAS_SYMPTOM,Symptom,SYM-00002,IC-30777,"Also, I feel pain near right ribs and center of the stomach near naval occasionally.",general
+Disease,DIS-00305,BELONGS_TO,Department,DEP-00272,IC-30777,For further information consult an orthopaedician and traumatologist online -,general
+Disease,DIS-00308,HAS_SYMPTOM,Symptom,SYM-00002,HE-00557,"Symptomatic gall stones is very common in middle age women, with presenting complaint of pain in the right upper quadrant.",general
+Disease,DIS-00308,REQUIRES_EXAM,Examination,EXA-00309,HE-00557,To confirm our diagnosis we need Ultrasonography Abdomen along with blood complete picture and liver function tests to rule out infection and gall stones effects on liver functions.,case_specific
+Disease,DIS-00308,REQUIRES_EXAM,Examination,EXA-00310,HE-00557,To confirm our diagnosis we need Ultrasonography Abdomen along with blood complete picture and liver function tests to rule out infection and gall stones effects on liver functions.,case_specific
+Disease,DIS-00308,REQUIRES_EXAM,Examination,EXA-00311,HE-00557,To confirm our diagnosis we need Ultrasonography Abdomen along with blood complete picture and liver function tests to rule out infection and gall stones effects on liver functions.,case_specific
+Disease,DIS-00308,USES_DRUG,Drug,DRU-00004,HE-00557,"If such a patient walk into my clinic I start treatment with tab paracetamol 500mg 8hourly, tab Nospa 40mg 12hourly, tab metoclopramide 10mg 12hourly, cap omeprazole 40mg 24hourly.",case_specific
+Disease,DIS-00308,USES_DRUG,Drug,DRU-00312,HE-00557,"If such a patient walk into my clinic I start treatment with tab paracetamol 500mg 8hourly, tab Nospa 40mg 12hourly, tab metoclopramide 10mg 12hourly, cap omeprazole 40mg 24hourly.",case_specific
+Disease,DIS-00308,USES_DRUG,Drug,DRU-00313,HE-00557,"If such a patient walk into my clinic I start treatment with tab paracetamol 500mg 8hourly, tab Nospa 40mg 12hourly, tab metoclopramide 10mg 12hourly, cap omeprazole 40mg 24hourly.",case_specific
+Disease,DIS-00308,USES_DRUG,Drug,DRU-00005,HE-00557,"If such a patient walk into my clinic I start treatment with tab paracetamol 500mg 8hourly, tab Nospa 40mg 12hourly, tab metoclopramide 10mg 12hourly, cap omeprazole 40mg 24hourly.",case_specific
+Disease,DIS-00319,HAS_SYMPTOM,Symptom,SYM-00314,HE-01970,Pain in your case could be related to gall bladder stones.,case_specific
+Disease,DIS-00319,REQUIRES_EXAM,Examination,EXA-00320,HE-01970,Get an ultrasound abdomen to confirm the diagnosis.,case_specific
+Disease,DIS-00319,USES_DRUG,Drug,DRU-00321,HE-01970,you may need a course of antibiotics.,case_specific
+Disease,DIS-00322,REQUIRES_EXAM,Examination,EXA-00326,HE-03016,"But just to be safe, get a blood hCg test conducted to check on hCG levels which should be raised if you are indeed pregnant.",case_specific
+Disease,DIS-00330,HAS_SYMPTOM,Symptom,SYM-00012,HE-05238,"I have extreme throbbing pain at waist level, pressure and visible bloating of the abdomen. I can't release gas or move my bowels due to the pain and feel like I need to greatly- had diarrhea yesterday morning and the discomfort never really abated. Hi.Your symptoms are looking like an internal inte",general
+Disease,DIS-00330,HAS_SYMPTOM,Symptom,SYM-00002,HE-05238,"I have extreme throbbing pain at waist level, pressure and visible bloating of the abdomen. I can't release gas or move my bowels due to the pain and feel like I need to greatly- had diarrhea yesterday morning and the discomfort never really abated. Hi.Your symptoms are looking like an internal inte",general
+Disease,DIS-00330,HAS_SYMPTOM,Symptom,SYM-00327,HE-05238,"I have extreme throbbing pain at waist level, pressure and visible bloating of the abdomen. I can't release gas or move my bowels due to the pain and feel like I need to greatly- had diarrhea yesterday morning and the discomfort never really abated. Hi.Your symptoms are looking like an internal inte",general
+Disease,DIS-00330,HAS_SYMPTOM,Symptom,SYM-00014,HE-05238,"I have extreme throbbing pain at waist level, pressure and visible bloating of the abdomen. I can't release gas or move my bowels due to the pain and feel like I need to greatly- had diarrhea yesterday morning and the discomfort never really abated. Hi.Your symptoms are looking like an internal inte",general
+Disease,DIS-00330,HAS_SYMPTOM,Symptom,SYM-00328,HE-05238,I can't release gas or move my bowels due to the pain and feel like I need to greatly- had diarrhea yesterday morning and the discomfort never really abated. Hi.Your symptoms are looking like an internal intestinal obstruction.,general
+Disease,DIS-00330,HAS_SYMPTOM,Symptom,SYM-00016,HE-05238,I can't release gas or move my bowels due to the pain and feel like I need to greatly- had diarrhea yesterday morning and the discomfort never really abated. Hi.Your symptoms are looking like an internal intestinal obstruction.,general
+Disease,DIS-00330,HAS_SYMPTOM,Symptom,SYM-00329,HE-05238,I can't release gas or move my bowels due to the pain and feel like I need to greatly- had diarrhea yesterday morning and the discomfort never really abated. Hi.Your symptoms are looking like an internal intestinal obstruction.,general
+Disease,DIS-00330,REQUIRES_EXAM,Examination,EXA-00017,HE-05238,"Get an X-ray in the standing position, ultrasonography..",case_specific
+Disease,DIS-00330,REQUIRES_EXAM,Examination,EXA-00331,HE-05238,"Get an X-ray in the standing position, ultrasonography..",case_specific
+Disease,DIS-00330,REQUIRES_EXAM,Examination,EXA-00332,HE-05238,This may give a probable diagnosis along with the clinical examination...,case_specific
+Disease,DIS-00337,HAS_SYMPTOM,Symptom,SYM-00338,HE-05825,YOUR DAUGHTER SEEMS TO HAVE DEVELOPED NARROWING OF THE OUTLET OF HER STOMMACH CALLED PYLORIC STENOSOS HENCE PREVIOUSLY EATEN FOOD STAYS IN STOMACH AS YOU SAY 4 DAYS OLD FOOD.,case_specific
+Disease,DIS-00339,HAS_SYMPTOM,Symptom,SYM-00340,HE-05825,THIS HAPPENS AS A RESULT OF COMPLICATION OF ULCER WHICH WOULD MANIFEST AS ACIDIC ERRUCTATION AND PAIN AFTER EATING FOOD.,general
+Disease,DIS-00339,HAS_SYMPTOM,Symptom,SYM-00002,HE-05825,THIS HAPPENS AS A RESULT OF COMPLICATION OF ULCER WHICH WOULD MANIFEST AS ACIDIC ERRUCTATION AND PAIN AFTER EATING FOOD.,general
+Disease,DIS-00337,HAS_SYMPTOM,Symptom,SYM-00341,HE-05825,A SPLASHING SOUND CAN BE HEARD / FELT IN UPPER ABDOMEN IF THERE IS PYLORIS STENOSIS.,general
+Disease,DIS-00337,REQUIRES_EXAM,Examination,EXA-00342,HE-05825,A THIN BARIUM MEAL XRAY OR MORE PREFERABLY ENDOSCOPIC EXAMINATION OF STOMACH IS NOT ONLY DIAGNOSTIC BUT ENDOSCOPIC DILATATION OF NARROWED PART OF STOMACH OUTLET WILL BE THERAPUTIC / CURATIVE ALSO.,case_specific
+Disease,DIS-00337,REQUIRES_EXAM,Examination,EXA-00343,HE-05825,A THIN BARIUM MEAL XRAY OR MORE PREFERABLY ENDOSCOPIC EXAMINATION OF STOMACH IS NOT ONLY DIAGNOSTIC BUT ENDOSCOPIC DILATATION OF NARROWED PART OF STOMACH OUTLET WILL BE THERAPUTIC / CURATIVE ALSO.,case_specific
+Disease,DIS-00023,USES_DRUG,Drug,DRU-00349,HE-09770,I have a history of hypothyroidism and right now i'm on eltroxin 100 mcg...,general
+Disease,DIS-00023,REQUIRES_EXAM,Examination,EXA-00352,HE-09770,you must check your thyroid function and adjust the dose of eltroxin.,case_specific
+Disease,DIS-00353,HAS_SYMPTOM,Symptom,SYM-00022,HE-09770,mostly your symptoms are due to slight overdose of eltroxin and you may need to reduce dose .,case_specific
+Disease,DIS-00353,HAS_SYMPTOM,Symptom,SYM-00347,HE-09770,mostly your symptoms are due to slight overdose of eltroxin and you may need to reduce dose .,case_specific
+Disease,DIS-00353,HAS_SYMPTOM,Symptom,SYM-00350,HE-09770,mostly your symptoms are due to slight overdose of eltroxin and you may need to reduce dose .,case_specific
+Disease,DIS-00353,HAS_SYMPTOM,Symptom,SYM-00351,HE-09770,mostly your symptoms are due to slight overdose of eltroxin and you may need to reduce dose .,case_specific
+Disease,DIS-00358,HAS_SYMPTOM,Symptom,SYM-00355,HE-102438,Toothache may be due to deep dental caries or periodontal infection.,general
+Disease,DIS-00359,HAS_SYMPTOM,Symptom,SYM-00355,HE-102438,Toothache may be due to deep dental caries or periodontal infection.,general
+Disease,DIS-00032,HAS_SYMPTOM,Symptom,SYM-00361,HE-11363,Just small cuts around the head and a dry shaft. What is this and how can we treat it? HiThanks for using healthcare magicIt can be due to dermatitis or eczema skin.,case_specific
+Disease,DIS-00032,HAS_SYMPTOM,Symptom,SYM-00362,HE-11363,Just small cuts around the head and a dry shaft. What is this and how can we treat it? HiThanks for using healthcare magicIt can be due to dermatitis or eczema skin.,case_specific
+Disease,DIS-00032,HAS_SYMPTOM,Symptom,SYM-00363,HE-11363,"It s painful for him and it s getting worse.
+It can be due to dermatitis or eczema skin.",case_specific
+Disease,DIS-00033,HAS_SYMPTOM,Symptom,SYM-00361,HE-11363,Just small cuts around the head and a dry shaft. What is this and how can we treat it? HiThanks for using healthcare magicIt can be due to dermatitis or eczema skin.,case_specific
+Disease,DIS-00033,HAS_SYMPTOM,Symptom,SYM-00362,HE-11363,Just small cuts around the head and a dry shaft. What is this and how can we treat it? HiThanks for using healthcare magicIt can be due to dermatitis or eczema skin.,case_specific
+Disease,DIS-00033,HAS_SYMPTOM,Symptom,SYM-00363,HE-11363,"It s painful for him and it s getting worse.
+It can be due to dermatitis or eczema skin.",case_specific
+Disease,DIS-00032,USES_DRUG,Drug,DRU-00366,HE-11363,It can be due to dermatitis or eczema skin. Treatment depend upon the severity of symptoms. In severe case patients need a higher-potency steroid.,general
+Disease,DIS-00033,USES_DRUG,Drug,DRU-00366,HE-11363,It can be due to dermatitis or eczema skin. Treatment depend upon the severity of symptoms. In severe case patients need a higher-potency steroid.,general
+Disease,DIS-00032,USES_DRUG,Drug,DRU-00367,HE-11363,"It can be due to dermatitis or eczema skin.
+Use good quality moisturizers to prevent moisture loss from the skin.",case_specific
+Disease,DIS-00033,USES_DRUG,Drug,DRU-00367,HE-11363,"It can be due to dermatitis or eczema skin.
+Use good quality moisturizers to prevent moisture loss from the skin.",case_specific
+Disease,DIS-00035,HAS_SYMPTOM,Symptom,SYM-00368,HE-13099,It can be a reinfection of scabies.,case_specific
+Disease,DIS-00035,USES_DRUG,Drug,DRU-00369,HE-13099,I suggest using Permethrin cream as the first treatment.,case_specific
+Disease,DIS-00035,USES_DRUG,Drug,DRU-00036,HE-13099,I also suggest using Cetirizine to relieve the itching.,case_specific
+Disease,DIS-00035,HAS_SYMPTOM,Symptom,SYM-00037,HE-13099,I also suggest using Cetirizine to relieve the itching.,case_specific
+Disease,DIS-00376,HAS_SYMPTOM,Symptom,SYM-00039,HE-14246,I m just curious about a rash I have.,general
+Disease,DIS-00376,HAS_SYMPTOM,Symptom,SYM-00371,HE-14246,"There wasn t any bumps,pustules,or anything but it seems like It get irritated causing maceration and clea fluid secretions.",general
+Disease,DIS-00376,HAS_SYMPTOM,Symptom,SYM-00372,HE-14246,"There wasn t any bumps,pustules,or anything but it seems like It get irritated causing maceration and clea fluid secretions.",general
+Disease,DIS-00376,HAS_SYMPTOM,Symptom,SYM-00373,HE-14246,"There wasn t any bumps,pustules,or anything but it seems like It get irritated causing maceration and clea fluid secretions.",general
+Disease,DIS-00376,HAS_SYMPTOM,Symptom,SYM-00037,HE-14246,Gets itchy when I sweat and burns with water.,general
+Disease,DIS-00376,HAS_SYMPTOM,Symptom,SYM-00374,HE-14246,Gets itchy when I sweat and burns with water.,general
+Disease,DIS-00376,USES_DRUG,Drug,DRU-00377,HE-14246,you may apply miconazole cream twice a day over groin and macrerated area.,case_specific
+Disease,DIS-00376,USES_DRUG,Drug,DRU-00378,HE-14246,you may take tab levocetrizine twice a day for itching.,case_specific
+Disease,DIS-00376,USES_DRUG,Drug,DRU-00379,HE-14246,"also, you may nned oral antifungals like tab fluconazole, but that has to be taken only after consulting a dermatologist.",case_specific
+Disease,DIS-00376,USES_DRUG,Drug,DRU-00040,HE-14246,"also, you may nned oral antifungals like tab fluconazole, but that has to be taken only after consulting a dermatologist.",case_specific
+Disease,DIS-00033,REQUIRES_EXAM,Examination,EXA-00383,HE-15627,"I have been to two dermatologists, after having 3 biopsys all showing eczema (disputed x2) I have been being treated continuously over this 4-year period.",general
+Disease,DIS-00041,HAS_SYMPTOM,Symptom,SYM-00039,HE-15627,"Hi, thiscould be a secondary rash to some thing else in the body(positive V.D.R.L.)or anemia.",case_specific
+Disease,DIS-00387,HAS_SYMPTOM,Symptom,SYM-00039,HE-15627,"Hi, thiscould be a secondary rash to some thing else in the body(positive V.D.R.L.)or anemia. or defeciency of the vitamins or minerals in the body.",case_specific
+Disease,DIS-00388,HAS_SYMPTOM,Symptom,SYM-00389,HE-24660,"My lower back down into the top part of my hip is swollen and tender, lying on my left side at night is painful, as well as walking up stairs. I was told it might be Bursitis, which I fell in July and torn my ACL and mess up other parts.",case_specific
+Disease,DIS-00388,HAS_SYMPTOM,Symptom,SYM-00390,HE-24660,"My lower back down into the top part of my hip is swollen and tender, lying on my left side at night is painful, as well as walking up stairs. I was told it might be Bursitis, which I fell in July and torn my ACL and mess up other parts.",case_specific
+Disease,DIS-00388,HAS_SYMPTOM,Symptom,SYM-00002,HE-24660,"My lower back down into the top part of my hip is swollen and tender, lying on my left side at night is painful, as well as walking up stairs. I was told it might be Bursitis, which I fell in July and torn my ACL and mess up other parts.",case_specific
+Disease,DIS-00388,HAS_SYMPTOM,Symptom,SYM-00391,HE-24660,"My lower back down into the top part of my hip is swollen and tender, lying on my left side at night is painful, as well as walking up stairs. I was told it might be Bursitis, which I fell in July and torn my ACL and mess up other parts.",case_specific
+Disease,DIS-00393,HAS_SYMPTOM,Symptom,SYM-00391,HE-24660,"As you find difficulty in climbing the stairs up and down and also had a ACL injury, this could be related to either a strain on the muscles or the SI joint or may be because of the nerve impingement as well.",case_specific
+Disease,DIS-00394,HAS_SYMPTOM,Symptom,SYM-00391,HE-24660,"As you find difficulty in climbing the stairs up and down and also had a ACL injury, this could be related to either a strain on the muscles or the SI joint or may be because of the nerve impingement as well.",case_specific
+Disease,DIS-00393,REQUIRES_EXAM,Examination,EXA-00395,HE-24660,"As you find difficulty in climbing the stairs up and down and also had a ACL injury, this could be related to either a strain on the muscles or the SI joint or may be because of the nerve impingement as well.Having a Thorough clinical assessment of the Musculoskeletal and Neuromuscular system will h",case_specific
+Disease,DIS-00394,REQUIRES_EXAM,Examination,EXA-00395,HE-24660,"As you find difficulty in climbing the stairs up and down and also had a ACL injury, this could be related to either a strain on the muscles or the SI joint or may be because of the nerve impingement as well.Having a Thorough clinical assessment of the Musculoskeletal and Neuromuscular system will h",case_specific
+Disease,DIS-00042,REQUIRES_EXAM,Examination,EXA-00399,HE-32676,"In addition to these aspects of diet, please note that hypertension, diabetes and hypercholesterolemia can worsen kidney function. You need to get checked for these diseases regularly and control them if you already have any one of them.",case_specific
+Disease,DIS-00043,REQUIRES_EXAM,Examination,EXA-00399,HE-32676,"In addition to these aspects of diet, please note that hypertension, diabetes and hypercholesterolemia can worsen kidney function. You need to get checked for these diseases regularly and control them if you already have any one of them.",case_specific
+Disease,DIS-00398,REQUIRES_EXAM,Examination,EXA-00399,HE-32676,"In addition to these aspects of diet, please note that hypertension, diabetes and hypercholesterolemia can worsen kidney function. You need to get checked for these diseases regularly and control them if you already have any one of them.",case_specific
+Disease,DIS-00402,REQUIRES_EXAM,Examination,EXA-00400,HE-32676,Checking 24 hours urinary protein can show early damage to kidney.,general
+Disease,DIS-00402,HAS_SYMPTOM,Symptom,SYM-00401,HE-32676,Proteinuria is a marker of kidney damage.,general
+Disease,DIS-00403,USES_DRUG,Drug,DRU-00404,HE-32734,His treatment includes prednisone & methotrexate.,case_specific
+Disease,DIS-00403,USES_DRUG,Drug,DRU-00405,HE-32734,His treatment includes prednisone & methotrexate.,case_specific
+Disease,DIS-00403,USES_DRUG,Drug,DRU-00406,HE-32734,"Steroids are the main stay of treatment, with or without the addition of other medications.",general
+Disease,DIS-00407,USES_DRUG,Drug,DRU-00408,HE-33938,"I had worms tablet,but still it has not stop.",case_specific
+Disease,DIS-00407,USES_DRUG,Drug,DRU-00409,HE-33938,"I had consulted a doctor,they gave me Bevon Capsules tablet for 1 month n Mupirocin Ointment:USP-T-Bact.",case_specific
+Disease,DIS-00407,USES_DRUG,Drug,DRU-00045,HE-33938,"I had consulted a doctor,they gave me Bevon Capsules tablet for 1 month n Mupirocin Ointment:USP-T-Bact.",case_specific
+Disease,DIS-00407,USES_DRUG,Drug,DRU-00410,HE-33938,"I had consulted a doctor,they gave me Bevon Capsules tablet for 1 month n Mupirocin Ointment:USP-T-Bact.",case_specific
+Disease,DIS-00411,USES_DRUG,Drug,DRU-00321,HE-33938,"As far as treatment is considered you need to to get the apsis drained in case it is large,for smaller apsis conservative management with oral antibiotics for 3-5 days is sufficient.",general
+Disease,DIS-00043,USES_DRUG,Drug,DRU-00413,HE-47397,"I have used trigil tablets for 3 months, and then stopped as per doctor advice for non-availablity of medicine and ban. After that, for the past 2 to 3 months toe (Kanukkal) swelling both the legs. Is it the side effect of trigil or some other reason. now I have taken tribose m3 2 tab twice in a day",general
+Disease,DIS-00043,USES_DRUG,Drug,DRU-00414,HE-47397,"now I have taken tribose m3 2 tab twice in a day i.e. morning and evening. Even after taking diabetic tablets, I feel banning sensation on right leg patham upto upper side.",general
+Disease,DIS-00043,HAS_SYMPTOM,Symptom,SYM-00046,HE-47397,The diabetes is; diabetes causes the complaints over feet due to neuropathy .,general
+Disease,DIS-00043,HAS_SYMPTOM,Symptom,SYM-00415,HE-47397,The diabetes is; diabetes causes the complaints over feet due to neuropathy .,general
+Disease,DIS-00416,HAS_SYMPTOM,Symptom,SYM-00046,HE-47397,The diabetes is; diabetes causes the complaints over feet due to neuropathy .,general
+Disease,DIS-00416,HAS_SYMPTOM,Symptom,SYM-00415,HE-47397,The diabetes is; diabetes causes the complaints over feet due to neuropathy .,general
+Disease,DIS-00043,REQUIRES_EXAM,Examination,EXA-00417,HE-47397,"To stop the progression of this,you have to control your blood sugar level ,exercise and life style midification .and it has to be measured every month and also the status of you control can be estimated by doing Hba1c evaluation.",case_specific
+Disease,DIS-00043,REQUIRES_EXAM,Examination,EXA-00048,HE-47397,and it has to be measured every month and also the status of you control can be estimated by doing Hba1c evaluation.,case_specific
+Disease,DIS-00419,HAS_SYMPTOM,Symptom,SYM-00418,HE-50348,im not to worry much as this is benign condition like sebaceous cyst or lipoma,general
+Disease,DIS-00420,HAS_SYMPTOM,Symptom,SYM-00418,HE-50348,im not to worry much as this is benign condition like sebaceous cyst or lipoma,general
+Disease,DIS-00419,REQUIRES_EXAM,Examination,EXA-00421,HE-50348,if really worries you can go for an FNAC test for confirmation,case_specific
+Disease,DIS-00420,REQUIRES_EXAM,Examination,EXA-00421,HE-50348,if really worries you can go for an FNAC test for confirmation,case_specific
+Disease,DIS-00428,HAS_SYMPTOM,Symptom,SYM-00046,HE-50695,"Any new onset swelling and change in colour around a joint is a matter of concern. It can be due to injury, infection, inflammation, dvt. etc.",general
+Disease,DIS-00428,HAS_SYMPTOM,Symptom,SYM-00427,HE-50695,"Any new onset swelling and change in colour around a joint is a matter of concern. It can be due to injury, infection, inflammation, dvt. etc.",general
+Disease,DIS-00429,HAS_SYMPTOM,Symptom,SYM-00046,HE-50695,"Any new onset swelling and change in colour around a joint is a matter of concern. It can be due to injury, infection, inflammation, dvt. etc.",general
+Disease,DIS-00429,HAS_SYMPTOM,Symptom,SYM-00427,HE-50695,"Any new onset swelling and change in colour around a joint is a matter of concern. It can be due to injury, infection, inflammation, dvt. etc.",general
+Disease,DIS-00430,HAS_SYMPTOM,Symptom,SYM-00046,HE-50695,"Any new onset swelling and change in colour around a joint is a matter of concern. It can be due to injury, infection, inflammation, dvt. etc.",general
+Disease,DIS-00430,HAS_SYMPTOM,Symptom,SYM-00427,HE-50695,"Any new onset swelling and change in colour around a joint is a matter of concern. It can be due to injury, infection, inflammation, dvt. etc.",general
+Disease,DIS-00436,HAS_SYMPTOM,Symptom,SYM-00435,HE-53110,hiProbably it is some blood clot or hematoma common after bruising of soft tissues on impact injuries.,general
+Disease,DIS-00433,USES_DRUG,Drug,DRU-00437,HE-53110,hiProbably it is some blood clot or hematoma common after bruising of soft tissues on impact injuries. Do hot fomentation and apply thrombophob Gel locally.,case_specific
+Disease,DIS-00434,USES_DRUG,Drug,DRU-00437,HE-53110,hiProbably it is some blood clot or hematoma common after bruising of soft tissues on impact injuries. Do hot fomentation and apply thrombophob Gel locally.,case_specific
+Disease,DIS-00052,REQUIRES_EXAM,Examination,EXA-00438,HE-61718,investegatons ; plain x ray of cervical vertebra reveals cervcal spondolysis with bony osteophits.,case_specific
+Disease,DIS-00052,REQUIRES_EXAM,Examination,EXA-00053,HE-61718,"m.r.i on cervical spins reveals cervical spondolysis at the levels c3,4,5,6. with cord compretion.",case_specific
+Disease,DIS-00052,USES_DRUG,Drug,DRU-00360,HE-61718,"Along with physiotherapy you need to avoid pillow ,sternous acivity , putting ny weight on head; take warm compression ; and other symptomatic management like analgesic (NSAID ),muscle relaxant ,ppi n vitamins .",case_specific
+Disease,DIS-00052,USES_DRUG,Drug,DRU-00448,HE-61718,"Along with physiotherapy you need to avoid pillow ,sternous acivity , putting ny weight on head; take warm compression ; and other symptomatic management like analgesic (NSAID ),muscle relaxant ,ppi n vitamins .",case_specific
+Disease,DIS-00052,USES_DRUG,Drug,DRU-00449,HE-61718,"Along with physiotherapy you need to avoid pillow ,sternous acivity , putting ny weight on head; take warm compression ; and other symptomatic management like analgesic (NSAID ),muscle relaxant ,ppi n vitamins .",case_specific
+Disease,DIS-00052,USES_DRUG,Drug,DRU-00450,HE-61718,"Along with physiotherapy you need to avoid pillow ,sternous acivity , putting ny weight on head; take warm compression ; and other symptomatic management like analgesic (NSAID ),muscle relaxant ,ppi n vitamins .",case_specific
+Disease,DIS-00052,USES_DRUG,Drug,DRU-00451,HE-61718,"Along with physiotherapy you need to avoid pillow ,sternous acivity , putting ny weight on head; take warm compression ; and other symptomatic management like analgesic (NSAID ),muscle relaxant ,ppi n vitamins .",case_specific
+Disease,DIS-00452,REQUIRES_EXAM,Examination,EXA-00457,HE-62128,She also needs chest x ray to quantity infection and parts of lung involved.,case_specific
+Disease,DIS-00452,USES_DRUG,Drug,DRU-00321,HE-62128,If infection is more or the involved lung part is larger than she may need dual antibiotics support.,case_specific
+Disease,DIS-00467,REQUIRES_EXAM,Examination,EXA-00468,HE-64108,you are dealing with allergies of pollens ad as you grow immunity decreases and attack increasesget blood serum tests fr specific antibodies for pollens of your aea at that seasonand go for immunotherapy to get rid of it,case_specific
+Disease,DIS-00003,HAS_SYMPTOM,Symptom,SYM-00002,HE-67220,I have a lot of pain in that area as well mainly during my period which I think may be do to endometriosis in my scar tissue since it only really hurts during my cycle.,case_specific
+Disease,DIS-00469,HAS_SYMPTOM,Symptom,SYM-00441,HE-67220,"The symptoms are heaviness in the abdomendistension of the abdomen,bloating sensationvague discomfort or pain.",general
+Disease,DIS-00469,HAS_SYMPTOM,Symptom,SYM-00474,HE-67220,"The symptoms are heaviness in the abdomendistension of the abdomen,bloating sensationvague discomfort or pain.",general
+Disease,DIS-00469,HAS_SYMPTOM,Symptom,SYM-00014,HE-67220,"The symptoms are heaviness in the abdomendistension of the abdomen,bloating sensationvague discomfort or pain.",general
+Disease,DIS-00469,HAS_SYMPTOM,Symptom,SYM-00329,HE-67220,"The symptoms are heaviness in the abdomendistension of the abdomen,bloating sensationvague discomfort or pain.",general
+Disease,DIS-00469,HAS_SYMPTOM,Symptom,SYM-00002,HE-67220,"The symptoms are heaviness in the abdomendistension of the abdomen,bloating sensationvague discomfort or pain.",general
+Disease,DIS-00482,REQUIRES_EXAM,Examination,EXA-00061,HE-85184,"But in case the episodes recur, then I would recommend you to go for an ECG and chest X Ray to rule out arrhythmias or pulmonary disease.",case_specific
+Disease,DIS-00483,REQUIRES_EXAM,Examination,EXA-00457,HE-85184,"But in case the episodes recur, then I would recommend you to go for an ECG and chest X Ray to rule out arrhythmias or pulmonary disease.",case_specific
+Disease,DIS-00486,HAS_SYMPTOM,Symptom,SYM-00062,HE-88094,Is zathrine and jiffy right medication for fever diagnosed as typhoid in a child?,case_specific
+Disease,DIS-00486,USES_DRUG,Drug,DRU-00484,HE-88094,zathrine is for resistant typhoid fever means not responding to first line of therapy.,general
+Disease,DIS-00486,USES_DRUG,Drug,DRU-00485,HE-88094,so only jiffy is sufficient total 14 days of treatment to cure typhoid fever.,case_specific
+Disease,DIS-00486,USES_DRUG,Drug,DRU-00321,HE-88094,oral antibiotics ( zathrine or jiffy not both) treatment should be given minimum 14 days or 5 days after last fever episode which ever is longer.,general
+Disease,DIS-00487,HAS_SYMPTOM,Symptom,SYM-00002,HE-99847,The next couple of days it grew worse pain throbbing and I couldn t eat anything.,general
+Disease,DIS-00487,HAS_SYMPTOM,Symptom,SYM-00488,HE-99847,Then it stopped hurting but woke up with a small nick in the gum.,general
+Disease,DIS-00490,HAS_SYMPTOM,Symptom,SYM-00489,HE-99847,Sice you have mentioned you have good oral health your pus formation might be a gingival abscess which does not lasts for more than 48 hours and it gets bursts by itself heals on its own.,general
+Disease,DIS-00492,HAS_SYMPTOM,Symptom,SYM-00493,IC-00127,"As you have caries and sensitivity associated, you might not necessarily need an extraction.",general
+Disease,DIS-00500,BELONGS_TO,Department,DEP-00065,IC-00536,For further doubts consult a periodontist online -,case_specific
+Disease,DIS-00503,REQUIRES_EXAM,Examination,EXA-00504,IC-00551,"Hello doctor, My mother has been diagnosed with probability of lower GI bleed in proximal jejunal small bowel loops through nuclear scan.",general
+Disease,DIS-00071,HAS_SYMPTOM,Symptom,SYM-00354,IC-00551,My mother had low hemoglobin due to blood loss in stool.,general
+Disease,DIS-00071,HAS_SYMPTOM,Symptom,SYM-00507,IC-00551,My mother had low hemoglobin due to blood loss in stool.,general
+Disease,DIS-00071,REQUIRES_EXAM,Examination,EXA-00504,IC-00551,"But, this time, she is getting blood loss on more frequent duration and thus doctors asked to do nuclear scan to check for any GI bleeding.",case_specific
+Disease,DIS-00508,REQUIRES_EXAM,Examination,EXA-00510,IC-00551,"Once stool color changed to normal from black, can proceed with CT scan abdomen to find out the cause.",case_specific
+Disease,DIS-00511,BELONGS_TO,Department,DEP-00070,IC-00551,For further information consult a surgical gastroenterologist online.,case_specific
+Disease,DIS-00512,HAS_SYMPTOM,Symptom,SYM-00489,IC-00596,I am worried because my levels are elevated and I show no signs of infection apart from the eye (which still has a little pus).,general
+Disease,DIS-00513,USES_DRUG,Drug,DRU-00321,IC-00596,My doctor thinks it is a bacterial infection and has put me on antibiotics.,case_specific
+Disease,DIS-00055,USES_DRUG,Drug,DRU-00516,IC-00596,You can be prescribed anti-anxiety medication for stress.,case_specific
+Disease,DIS-00526,REQUIRES_EXAM,Examination,EXA-00072,IC-00652,"As per gynecologist advise I did CBC, fasting sugar, TSH, prolactin, HCG, total testosterone, DHEAS, FSH, LH, USG pelvis for PCOD.",case_specific
+Disease,DIS-00526,REQUIRES_EXAM,Examination,EXA-00519,IC-00652,"As per gynecologist advise I did CBC, fasting sugar, TSH, prolactin, HCG, total testosterone, DHEAS, FSH, LH, USG pelvis for PCOD.",case_specific
+Disease,DIS-00526,REQUIRES_EXAM,Examination,EXA-00077,IC-00652,"As per gynecologist advise I did CBC, fasting sugar, TSH, prolactin, HCG, total testosterone, DHEAS, FSH, LH, USG pelvis for PCOD.",case_specific
+Disease,DIS-00526,REQUIRES_EXAM,Examination,EXA-00520,IC-00652,"As per gynecologist advise I did CBC, fasting sugar, TSH, prolactin, HCG, total testosterone, DHEAS, FSH, LH, USG pelvis for PCOD.",case_specific
+Disease,DIS-00526,REQUIRES_EXAM,Examination,EXA-00521,IC-00652,"As per gynecologist advise I did CBC, fasting sugar, TSH, prolactin, HCG, total testosterone, DHEAS, FSH, LH, USG pelvis for PCOD.",case_specific
+Disease,DIS-00526,REQUIRES_EXAM,Examination,EXA-00522,IC-00652,"As per gynecologist advise I did CBC, fasting sugar, TSH, prolactin, HCG, total testosterone, DHEAS, FSH, LH, USG pelvis for PCOD.",case_specific
+Disease,DIS-00526,REQUIRES_EXAM,Examination,EXA-00523,IC-00652,"As per gynecologist advise I did CBC, fasting sugar, TSH, prolactin, HCG, total testosterone, DHEAS, FSH, LH, USG pelvis for PCOD.",case_specific
+Disease,DIS-00526,REQUIRES_EXAM,Examination,EXA-00524,IC-00652,"As per gynecologist advise I did CBC, fasting sugar, TSH, prolactin, HCG, total testosterone, DHEAS, FSH, LH, USG pelvis for PCOD.",case_specific
+Disease,DIS-00526,REQUIRES_EXAM,Examination,EXA-00525,IC-00652,"As per gynecologist advise I did CBC, fasting sugar, TSH, prolactin, HCG, total testosterone, DHEAS, FSH, LH, USG pelvis for PCOD.",case_specific
+Disease,DIS-00526,HAS_SYMPTOM,Symptom,SYM-00019,IC-00652,"I would like to know if you face any acne or unwanted facial hair growth problems, if so, then you must be having PCOS (even if the USG is normal).",case_specific
+Disease,DIS-00526,HAS_SYMPTOM,Symptom,SYM-00533,IC-00652,"I would like to know if you face any acne or unwanted facial hair growth problems, if so, then you must be having PCOS (even if the USG is normal).",case_specific
+Disease,DIS-00081,USES_DRUG,Drug,DRU-00527,IC-00652,"Yes, you can take the Primolut N tablet as advised by your gynecologist.",case_specific
+Disease,DIS-00023,USES_DRUG,Drug,DRU-00080,IC-00652,"So, definitely you need to start your thyroxine replacement medications.",case_specific
+Disease,DIS-00085,HAS_SYMPTOM,Symptom,SYM-00535,IC-00772,Skin tag post healing of anal fissure appears as wound near my anus.,case_specific
+Disease,DIS-00085,HAS_SYMPTOM,Symptom,SYM-00002,IC-00772,"These are nothing but accumulated skin due to fissure usually nothing to do for that but if you have any problem because of it like pain, bleeding, or pus discharge, you can opt for surgery.",general
+Disease,DIS-00085,HAS_SYMPTOM,Symptom,SYM-00069,IC-00772,"These are nothing but accumulated skin due to fissure usually nothing to do for that but if you have any problem because of it like pain, bleeding, or pus discharge, you can opt for surgery.",general
+Disease,DIS-00085,HAS_SYMPTOM,Symptom,SYM-00536,IC-00772,"These are nothing but accumulated skin due to fissure usually nothing to do for that but if you have any problem because of it like pain, bleeding, or pus discharge, you can opt for surgery.",general
+Disease,DIS-00085,USES_DRUG,Drug,DRU-00538,IC-00772,"I will advise you to start a sitz bath in which you have to sit in lukewarm water for 15 minutes twice a day, 10 ml Betadine can be added to it.",case_specific
+Disease,DIS-00087,HAS_SYMPTOM,Symptom,SYM-00540,IC-01288,Presently also stomach feeling full of gas.,general
+Disease,DIS-00087,USES_DRUG,Drug,DRU-00542,IC-01288,"It is fine to continue with the Rabiprazole for now, but I want to substitute another medication over Domperidone.",case_specific
+Disease,DIS-00087,USES_DRUG,Drug,DRU-00543,IC-01288,"Tablet Digestine 40 mg once daily before meals, you can increase the dose to twice daily before meals if you dont feel improvement in next 48 hours.",case_specific
+Disease,DIS-00551,HAS_SYMPTOM,Symptom,SYM-00089,IC-01385,"Burning sensation in palms and hand is called Carpal Syndrome, it happens in pregnancy due to swelling of tissues.",general
+Disease,DIS-00552,REQUIRES_EXAM,Examination,EXA-00553,IC-01385,To exclude vaginal infection you can perform a vaginal swab and urinary analysis.,case_specific
+Disease,DIS-00552,REQUIRES_EXAM,Examination,EXA-00554,IC-01385,To exclude vaginal infection you can perform a vaginal swab and urinary analysis.,case_specific
+Disease,DIS-00558,BELONGS_TO,Department,DEP-00092,IC-01475,For further information consult a cardiologist online -,case_specific
+Disease,DIS-00100,HAS_SYMPTOM,Symptom,SYM-00098,IC-02033,and about your cerical problem may be there's a nerve compression and that neck pain radiating to shoulder if ignored it will pass through arms.,case_specific
+Disease,DIS-00041,USES_DRUG,Drug,DRU-00570,IC-02144,I went to see my primary care doctor and they gave me some iron pills to be taken for three months which are over the counter called Ferrous Sulfate.,case_specific
+Disease,DIS-00580,HAS_SYMPTOM,Symptom,SYM-00578,IC-02683,"The extra fat, cholesterol can get converted into hormones and cause an imbalance of hormones needed for normal ovulation. Thus due to impaired ovulation, period will be delayed on and off.",general
+Disease,DIS-00580,HAS_SYMPTOM,Symptom,SYM-00576,IC-02683,"The extra fat, cholesterol can get converted into hormones and cause an imbalance of hormones needed for normal ovulation. Thus due to impaired ovulation, period will be delayed on and off.",general
+Disease,DIS-00581,HAS_SYMPTOM,Symptom,SYM-00577,IC-02683,"About pain in the lower abdominal area and during sex, there could be two reasons. a. Pelvic infection in and around the uterus.",general
+Disease,DIS-00581,HAS_SYMPTOM,Symptom,SYM-00572,IC-02683,"About pain in the lower abdominal area and during sex, there could be two reasons. a. Pelvic infection in and around the uterus.",general
+Disease,DIS-00581,HAS_SYMPTOM,Symptom,SYM-00582,IC-02683,"Symptoms are vaginal dryness during sex, burning sensation in vagina after sex, pain throughout which increases around the time of ejaculation, following day excessive vaginal discharge with or without itching and foul smell.",general
+Disease,DIS-00581,HAS_SYMPTOM,Symptom,SYM-00583,IC-02683,"Symptoms are vaginal dryness during sex, burning sensation in vagina after sex, pain throughout which increases around the time of ejaculation, following day excessive vaginal discharge with or without itching and foul smell.",general
+Disease,DIS-00581,HAS_SYMPTOM,Symptom,SYM-00584,IC-02683,"Symptoms are vaginal dryness during sex, burning sensation in vagina after sex, pain throughout which increases around the time of ejaculation, following day excessive vaginal discharge with or without itching and foul smell.",general
+Disease,DIS-00581,HAS_SYMPTOM,Symptom,SYM-00037,IC-02683,"Symptoms are vaginal dryness during sex, burning sensation in vagina after sex, pain throughout which increases around the time of ejaculation, following day excessive vaginal discharge with or without itching and foul smell.",general
+Disease,DIS-00581,HAS_SYMPTOM,Symptom,SYM-00585,IC-02683,"Symptoms are vaginal dryness during sex, burning sensation in vagina after sex, pain throughout which increases around the time of ejaculation, following day excessive vaginal discharge with or without itching and foul smell.",general
+Disease,DIS-00581,HAS_SYMPTOM,Symptom,SYM-00586,IC-02683,"Period blood is darker, thicker and stickier.",general
+Disease,DIS-00581,HAS_SYMPTOM,Symptom,SYM-00587,IC-02683,Mild feverish feel before period.,general
+Disease,DIS-00581,HAS_SYMPTOM,Symptom,SYM-00574,IC-02683,Cramping pains just before period.,general
+Disease,DIS-00581,USES_DRUG,Drug,DRU-00321,IC-02683,"If this is the case, avoid sex, meet your doctor at leisure, both you and your partner should have a good course of antibiotics.",case_specific
+Disease,DIS-00003,HAS_SYMPTOM,Symptom,SYM-00577,IC-02683,"About pain in the lower abdominal area and during sex, there could be two reasons. b. Endometriosis due to blood causing adhesive areas around uterus, increasing over the months and years.",general
+Disease,DIS-00003,HAS_SYMPTOM,Symptom,SYM-00572,IC-02683,"About pain in the lower abdominal area and during sex, there could be two reasons. b. Endometriosis due to blood causing adhesive areas around uterus, increasing over the months and years.",general
+Disease,DIS-00003,HAS_SYMPTOM,Symptom,SYM-00588,IC-02683,"Endometriosis due to blood causing adhesive areas around uterus, increasing over the months and years.",general
+Disease,DIS-00595,HAS_SYMPTOM,Symptom,SYM-00054,IC-03387,"I wonder whether she has herniated disc. Because, she has all the symptoms except the numbness in legs and feet.",general
+Disease,DIS-00598,REQUIRES_EXAM,Examination,EXA-00597,IC-03387,Plain KUB x-ray to look for renal stones and urinalysis with culture.,case_specific
+Disease,DIS-00109,REQUIRES_EXAM,Examination,EXA-00597,IC-03387,Let us analyze different reasons for back pain of her age. Plain KUB x-ray to look for renal stones and urinalysis with culture.,case_specific
+Disease,DIS-00109,REQUIRES_EXAM,Examination,EXA-00599,IC-03387,Let us analyze different reasons for back pain of her age. Plain KUB x-ray to look for renal stones and urinalysis with culture.,case_specific
+Disease,DIS-00109,REQUIRES_EXAM,Examination,EXA-00600,IC-03387,Let us analyze different reasons for back pain of her age. Plain KUB x-ray to look for renal stones and urinalysis with culture.,case_specific
+Disease,DIS-00109,USES_DRUG,Drug,DRU-00603,IC-03387,1. Tylenol two pills every 8 hours for pain on as needed basis.,case_specific
+Disease,DIS-00109,USES_DRUG,Drug,DRU-00604,IC-03387,2. Flexeril 5 mg (Cyclobenzaprine) every 12 hours as needed for pain.,case_specific
+Disease,DIS-00109,USES_DRUG,Drug,DRU-00605,IC-03387,2. Flexeril 5 mg (Cyclobenzaprine) every 12 hours as needed for pain.,case_specific
+Disease,DIS-00109,BELONGS_TO,Department,DEP-00606,IC-03387,Revert back after a week with investigation report to an internal medicine physician online.,case_specific
+Disease,DIS-00607,HAS_SYMPTOM,Symptom,SYM-00111,IC-03789,"In this condition there will be giddiness and imbalance when exposed to loud noise and imbalance, echoing of once own voice, etc.",general
+Disease,DIS-00607,HAS_SYMPTOM,Symptom,SYM-00609,IC-03789,"In this condition there will be giddiness and imbalance when exposed to loud noise and imbalance, echoing of once own voice, etc.",general
+Disease,DIS-00607,HAS_SYMPTOM,Symptom,SYM-00610,IC-03789,"In this condition there will be giddiness and imbalance when exposed to loud noise and imbalance, echoing of once own voice, etc.",general
+Disease,DIS-00607,USES_DRUG,Drug,DRU-00611,IC-03789,In any case keep anti-vertigo medications such as Stemetil handy when you fly.,case_specific
+Disease,DIS-00607,USES_DRUG,Drug,DRU-00612,IC-03789,In any case keep anti-vertigo medications such as Stemetil handy when you fly.,case_specific
+Disease,DIS-00607,HAS_SYMPTOM,Symptom,SYM-00613,IC-03789,I can say that if there is vertigo then it is superior canal dehiscence if there is no vertigo chances of Patulous eustachian tube are high.,general
+Disease,DIS-00608,HAS_SYMPTOM,Symptom,SYM-00614,IC-03789,In any case people with Patulous eustachian tube will have certain degree of pressure symptoms in ear when they fly but most of the times it will not be very severe.,general
+Disease,DIS-00608,USES_DRUG,Drug,DRU-00615,IC-03789,You can use simple saline nasal spray before boarding the flight and every two hours in air to reduce symptoms.,case_specific
+Disease,DIS-00616,BELONGS_TO,Department,DEP-00617,IC-03839,For further clarifications consult an ENT otolaryngologist online -,case_specific
+Disease,DIS-00115,HAS_SYMPTOM,Symptom,SYM-00619,IC-04101,"Of course, it was very difficult eating with only two teeth that had full contact.",general
+Disease,DIS-00115,HAS_SYMPTOM,Symptom,SYM-00002,IC-04101,"And usually, when there is no occlusion on one side, you will get pain and soreness on the opposite side.",general
+Disease,DIS-00115,HAS_SYMPTOM,Symptom,SYM-00422,IC-04101,"And usually, when there is no occlusion on one side, you will get pain and soreness on the opposite side.",general
+Disease,DIS-00621,HAS_SYMPTOM,Symptom,SYM-00002,IC-04101,I called the dentist and he said that the pain was related to some nerve problems inside the number 4 tooth.,general
+Disease,DIS-00621,REQUIRES_EXAM,Examination,EXA-00017,IC-04101,"Were there any x-rays taken for the same tooth? In that case, any nerve problem can be easily identified.",case_specific
+Disease,DIS-00116,BELONGS_TO,Department,DEP-00606,IC-05156,Revert back with the x-ray reports to an internal medicine physician online -,case_specific

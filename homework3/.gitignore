@@ -1,0 +1,16 @@
+# 密钥：绝不进仓库
+.env
+
+# 原始数据集（约 300MB，需自行下载）
+data/raw/
+*.zip
+
+# 运行产物
+__pycache__/
+*.pyc
+results/*.log
+data/processed/_tmp/
+
+# 编辑器
+.idea/
+.vscode/

@@ -1,0 +1,145 @@
+method,qa_id,error_type,entity_type,entity
+rule_simple,IC-03839,FN,Department,ent specialist
+rule_simple,IC-00536,FP,Disease,receding gums
+rule_simple,IC-00536,FN,Disease,bruxism
+rule_simple,IC-00536,FN,Disease,gum recession
+rule_simple,IC-05156,FP,Department,internal medicine physician
+rule_simple,IC-05156,FP,Disease,joint pain
+rule_simple,IC-05156,FN,Department,internal medicine specialist
+rule_simple,IC-05156,FN,Symptom,lump
+rule_simple,HE-01970,FP,Symptom,pain
+rule_simple,HE-01970,FP,Symptom,severe pain
+rule_simple,HE-01970,FP,Examination,ultrasound
+rule_simple,HE-01970,FN,Symptom,abdominal pain
+rule_simple,HE-01970,FN,Drug,antibiotics
+rule_simple,HE-01970,FN,Symptom,back pain
+rule_simple,HE-01970,FN,Symptom,fainting
+rule_simple,HE-01970,FN,Disease,gallstone
+rule_simple,HE-01970,FN,Department,general surgeon
+rule_simple,HE-01970,FN,Drug,motilium
+rule_simple,HE-01970,FN,Drug,painkiller
+rule_simple,HE-01970,FN,Examination,ultrasound abdomen
+rule_simple,HE-53110,FN,Disease,blood clot
+rule_simple,HE-53110,FN,Symptom,bruising
+rule_simple,HE-53110,FN,Disease,hematoma
+rule_simple,HE-53110,FN,Symptom,soreness
+rule_simple,HE-53110,FN,Drug,thrombophob gel
+rule_simple,HE-05238,FP,Symptom,abdominal pain
+rule_simple,HE-05238,FP,Symptom,throbbing pain
+rule_simple,HE-05238,FN,Disease,intestinal obstruction
+rule_simple,HE-05238,FN,Examination,ultrasound
+rule_simple,HE-69307,FN,Disease,allergy
+rule_simple,HE-69307,FN,Drug,guaifenesin
+rule_simple,HE-13099,FP,Department,family physician
+rule_simple,HE-13099,FN,Drug,permethrin
+rule_simple,HE-09712,FP,Symptom,acne
+rule_simple,HE-09712,FP,Disease,dandruff
+rule_simple,HE-09712,FP,Symptom,dandruff
+rule_simple,HE-50348,FP,Examination,fnac
+rule_simple,HE-50348,FN,Disease,lipoma
+rule_simple,HE-50348,FN,Symptom,lump
+rule_simple,HE-50348,FN,Disease,sebaceous cyst
+rule_simple,HE-03016,FP,Examination,hcg test
+rule_simple,HE-03016,FN,Symptom,missed period
+rule_simple,HE-03016,FN,Drug,nexplanon
+rule_simple,HE-03016,FN,Symptom,spotting
+rule_longest,IC-03839,FN,Department,ent specialist
+rule_longest,IC-00536,FP,Disease,receding gums
+rule_longest,IC-00536,FN,Disease,bruxism
+rule_longest,IC-00536,FN,Disease,gum recession
+rule_longest,IC-05156,FP,Department,internal medicine physician
+rule_longest,IC-05156,FP,Disease,joint pain
+rule_longest,IC-05156,FN,Department,internal medicine specialist
+rule_longest,IC-05156,FN,Symptom,lump
+rule_longest,HE-01970,FP,Symptom,pain
+rule_longest,HE-01970,FP,Symptom,severe pain
+rule_longest,HE-01970,FP,Examination,ultrasound
+rule_longest,HE-01970,FN,Symptom,abdominal pain
+rule_longest,HE-01970,FN,Drug,antibiotics
+rule_longest,HE-01970,FN,Symptom,back pain
+rule_longest,HE-01970,FN,Symptom,fainting
+rule_longest,HE-01970,FN,Disease,gallstone
+rule_longest,HE-01970,FN,Department,general surgeon
+rule_longest,HE-01970,FN,Drug,motilium
+rule_longest,HE-01970,FN,Drug,painkiller
+rule_longest,HE-01970,FN,Examination,ultrasound abdomen
+rule_longest,HE-53110,FN,Disease,blood clot
+rule_longest,HE-53110,FN,Symptom,bruising
+rule_longest,HE-53110,FN,Disease,hematoma
+rule_longest,HE-53110,FN,Symptom,soreness
+rule_longest,HE-53110,FN,Drug,thrombophob gel
+rule_longest,HE-05238,FP,Symptom,abdominal pain
+rule_longest,HE-05238,FP,Symptom,throbbing pain
+rule_longest,HE-05238,FN,Disease,intestinal obstruction
+rule_longest,HE-05238,FN,Examination,ultrasound
+rule_longest,HE-69307,FN,Disease,allergy
+rule_longest,HE-69307,FN,Drug,guaifenesin
+rule_longest,HE-13099,FP,Department,family physician
+rule_longest,HE-13099,FN,Drug,permethrin
+rule_longest,HE-09712,FP,Symptom,acne
+rule_longest,HE-09712,FP,Disease,dandruff
+rule_longest,HE-50348,FP,Examination,fnac
+rule_longest,HE-50348,FN,Disease,lipoma
+rule_longest,HE-50348,FN,Symptom,lump
+rule_longest,HE-50348,FN,Disease,sebaceous cyst
+rule_longest,HE-03016,FP,Examination,hcg test
+rule_longest,HE-03016,FN,Symptom,missed period
+rule_longest,HE-03016,FN,Drug,nexplanon
+rule_longest,HE-03016,FN,Symptom,spotting
+llm,IC-03839,FP,Department,ent
+llm,IC-03839,FP,Disease,pseudomonas species infection
+llm,IC-03839,FN,Department,ent specialist
+llm,IC-00536,FP,Examination,gum measurements
+llm,IC-00536,FP,Disease,receding gums
+llm,IC-05156,FP,Department,internal medicine
+llm,IC-05156,FP,Department,internal medicine physician
+llm,IC-05156,FP,Disease,joint pain
+llm,IC-05156,FN,Department,internal medicine specialist
+llm,HE-01970,FP,Disease,gall bladder stones
+llm,HE-01970,FP,Drug,motrilium
+llm,HE-01970,FP,Symptom,pain in abdomen and back
+llm,HE-01970,FP,Drug,pain killers
+llm,HE-01970,FP,Symptom,passing out
+llm,HE-01970,FP,Symptom,trapped wind
+llm,HE-01970,FN,Symptom,abdominal pain
+llm,HE-01970,FN,Symptom,back pain
+llm,HE-01970,FN,Symptom,fainting
+llm,HE-01970,FN,Disease,gallstone
+llm,HE-01970,FN,Department,general surgeon
+llm,HE-01970,FN,Drug,motilium
+llm,HE-01970,FN,Drug,painkiller
+llm,HE-53110,FP,Symptom,darkish color
+llm,HE-53110,FP,Disease,impact injuries
+llm,HE-06520,FP,Examination,checkup
+llm,HE-06520,FP,Examination,ultrasound scan
+llm,HE-06520,FN,Disease,pregnancy
+llm,HE-06520,FN,Examination,ultrasound
+llm,HE-05238,FP,Symptom,abdominal pain
+llm,HE-05238,FP,Symptom,can't release gas or move my bowels
+llm,HE-05238,FP,Examination,clinical examination
+llm,HE-05238,FP,Symptom,discomfort
+llm,HE-05238,FP,Department,er
+llm,HE-05238,FP,Symptom,pressure
+llm,HE-05238,FP,Examination,ultrasonography
+llm,HE-05238,FN,Symptom,gas
+llm,HE-05238,FN,Examination,ultrasound
+llm,HE-69307,FP,Department,addiction medicine
+llm,HE-69307,FP,Disease,allergies
+llm,HE-69307,FP,Drug,guafinacin
+llm,HE-69307,FP,Drug,guafinex
+llm,HE-69307,FN,Disease,allergy
+llm,HE-69307,FN,Drug,guaifenesin
+llm,HE-13099,FP,Symptom,bumps
+llm,HE-13099,FN,Department,dermatologist
+llm,HE-09712,FP,Symptom,acne
+llm,HE-09712,FP,Symptom,dandruff
+llm,HE-50348,FP,Examination,fnac test
+llm,HE-50348,FP,Symptom,lumps
+llm,HE-50348,FN,Symptom,lump
+llm,HE-03016,FP,Examination,blood hcg test
+llm,HE-03016,FP,Drug,nexaplon
+llm,HE-03016,FP,Symptom,period
+llm,HE-03016,FP,Disease,pregnant
+llm,HE-03016,FN,Symptom,missed period
+llm,HE-03016,FN,Drug,nexplanon
+llm,HE-03016,FN,Disease,pregnancy

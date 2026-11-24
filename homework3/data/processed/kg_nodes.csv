@@ -1,0 +1,623 @@
+label,id,name,description
+Symptom,SYM-00001,severe pain,由 rule_longest 抽取
+Symptom,SYM-00002,pain,由 rule_longest 抽取
+Disease,DIS-00003,endometriosis,由 rule_longest 抽取
+Drug,DRU-00004,paracetamol,由 rule_longest 抽取
+Drug,DRU-00005,omeprazole,由 rule_longest 抽取
+Examination,EXA-00006,ultrasound,由 rule_longest 抽取
+Disease,DIS-00007,pregnancy,由 rule_longest 抽取
+Examination,EXA-00008,hcg test,由 rule_longest 抽取
+Symptom,SYM-00009,low libido,由 rule_longest 抽取
+Disease,DIS-00010,erectile dysfunction,由 rule_longest 抽取
+Department,DEP-00011,psychiatrist,由 rule_longest 抽取
+Symptom,SYM-00012,abdominal pain,由 rule_longest 抽取
+Symptom,SYM-00013,throbbing pain,由 rule_longest 抽取
+Symptom,SYM-00014,bloating,由 rule_longest 抽取
+Symptom,SYM-00015,gas,由 rule_longest 抽取
+Symptom,SYM-00016,diarrhea,由 rule_longest 抽取
+Examination,EXA-00017,x-ray,由 rule_longest 抽取
+Department,DEP-00018,gastroenterologist,由 rule_longest 抽取
+Symptom,SYM-00019,acne,由 rule_longest 抽取
+Disease,DIS-00020,acne,由 rule_longest 抽取
+Disease,DIS-00021,dandruff,由 rule_longest 抽取
+Symptom,SYM-00022,shortness of breath,由 rule_longest 抽取
+Disease,DIS-00023,hypothyroidism,由 rule_longest 抽取
+Disease,DIS-00024,thyroid disorder,由 rule_longest 抽取
+Symptom,SYM-00025,stress,由 rule_longest 抽取
+Symptom,SYM-00026,headache,由 rule_longest 抽取
+Symptom,SYM-00027,dull ache,由 rule_longest 抽取
+Department,DEP-00028,dentist,由 rule_longest 抽取
+Symptom,SYM-00029,toothache,由 rule_longest 抽取
+Examination,EXA-00030,scaling,由 rule_longest 抽取
+Symptom,SYM-00031,white discharge,由 rule_longest 抽取
+Disease,DIS-00032,dermatitis,由 rule_longest 抽取
+Disease,DIS-00033,eczema,由 rule_longest 抽取
+Department,DEP-00034,dermatologist,由 rule_longest 抽取
+Disease,DIS-00035,scabies,由 rule_longest 抽取
+Drug,DRU-00036,cetirizine,由 rule_longest 抽取
+Symptom,SYM-00037,itching,由 rule_longest 抽取
+Department,DEP-00038,family physician,由 rule_longest 抽取
+Symptom,SYM-00039,rash,由 rule_longest 抽取
+Drug,DRU-00040,fluconazole,由 rule_longest 抽取
+Disease,DIS-00041,anemia,由 rule_longest 抽取
+Disease,DIS-00042,hypertension,由 rule_longest 抽取
+Disease,DIS-00043,diabetes,由 rule_longest 抽取
+Department,DEP-00044,urologist,由 rule_longest 抽取
+Drug,DRU-00045,mupirocin,由 rule_longest 抽取
+Symptom,SYM-00046,swelling,由 rule_longest 抽取
+Examination,EXA-00047,blood sugar,由 rule_longest 抽取
+Examination,EXA-00048,hba1c,由 rule_longest 抽取
+Examination,EXA-00049,fnac,由 rule_longest 抽取
+Disease,DIS-00050,sleep apnea,由 rule_longest 抽取
+Disease,DIS-00051,arthritis,由 rule_longest 抽取
+Disease,DIS-00052,cervical spondylosis,由 rule_longest 抽取
+Examination,EXA-00053,mri,由 rule_longest 抽取
+Symptom,SYM-00054,numbness,由 rule_longest 抽取
+Disease,DIS-00055,anxiety,由 rule_longest 抽取
+Department,DEP-00056,pulmonologist,由 rule_longest 抽取
+Examination,EXA-00057,ct scan,由 rule_longest 抽取
+Disease,DIS-00058,copd,由 rule_longest 抽取
+Symptom,SYM-00059,chest pain,由 rule_longest 抽取
+Symptom,SYM-00060,indigestion,由 rule_longest 抽取
+Examination,EXA-00061,ecg,由 rule_longest 抽取
+Symptom,SYM-00062,fever,由 rule_longest 抽取
+Disease,DIS-00063,typhoid,由 rule_longest 抽取
+Examination,EXA-00064,blood test,由 rule_longest 抽取
+Department,DEP-00065,periodontist,由 rule_longest 抽取
+Disease,DIS-00066,tooth cavity,由 rule_longest 抽取
+Disease,DIS-00067,root canal,由 rule_longest 抽取
+Disease,DIS-00068,receding gums,由 rule_longest 抽取
+Symptom,SYM-00069,bleeding,由 rule_longest 抽取
+Department,DEP-00070,surgical gastroenterologist,由 rule_longest 抽取
+Disease,DIS-00071,gi bleeding,由 rule_longest 抽取
+Examination,EXA-00072,complete blood count,由 rule_longest 抽取
+Examination,EXA-00073,esr,由 rule_longest 抽取
+Disease,DIS-00074,covid,由 rule_longest 抽取
+Disease,DIS-00075,high wbc count,由 rule_longest 抽取
+Symptom,SYM-00076,weight gain,由 rule_longest 抽取
+Examination,EXA-00077,tsh,由 rule_longest 抽取
+Department,DEP-00078,gynecologist,由 rule_longest 抽取
+Disease,DIS-00079,pcos,由 rule_longest 抽取
+Drug,DRU-00080,thyroxine,由 rule_longest 抽取
+Disease,DIS-00081,delayed period,由 rule_longest 抽取
+Disease,DIS-00082,fissure,由 rule_longest 抽取
+Disease,DIS-00083,warts,由 rule_longest 抽取
+Symptom,SYM-00084,constipation,由 rule_longest 抽取
+Disease,DIS-00085,skin tag,由 rule_longest 抽取
+Drug,DRU-00086,domperidone,由 rule_longest 抽取
+Disease,DIS-00087,gas formation,由 rule_longest 抽取
+Symptom,SYM-00088,sharp pain,由 rule_longest 抽取
+Symptom,SYM-00089,burning sensation,由 rule_longest 抽取
+Department,DEP-00090,endocrinologist,由 rule_longest 抽取
+Disease,DIS-00091,burning sensation,由 rule_longest 抽取
+Department,DEP-00092,cardiologist,由 rule_longest 抽取
+Disease,DIS-00093,chest pain,由 rule_longest 抽取
+Disease,DIS-00094,tobacco,由 rule_longest 抽取
+Disease,DIS-00095,prostate and testicular health,由 rule_longest 抽取
+Symptom,SYM-00096,back pain,由 rule_longest 抽取
+Symptom,SYM-00097,stiffness,由 rule_longest 抽取
+Symptom,SYM-00098,neck pain,由 rule_longest 抽取
+Drug,DRU-00099,diclofenac,由 rule_longest 抽取
+Disease,DIS-00100,nerve compression,由 rule_longest 抽取
+Examination,EXA-00101,colonoscopy,由 rule_longest 抽取
+Symptom,SYM-00102,cramps,由 rule_longest 抽取
+Symptom,SYM-00103,weight loss,由 rule_longest 抽取
+Disease,DIS-00104,pain during sex,由 rule_longest 抽取
+Disease,DIS-00105,increased heart rate,由 rule_longest 抽取
+Symptom,SYM-00106,lower back pain,由 rule_longest 抽取
+Symptom,SYM-00107,cough,由 rule_longest 抽取
+Disease,DIS-00108,uti,由 rule_longest 抽取
+Disease,DIS-00109,back pain,由 rule_longest 抽取
+Department,DEP-00110,internal medicine physician,由 rule_longest 抽取
+Symptom,SYM-00111,dizziness,由 rule_longest 抽取
+Disease,DIS-00112,vertigo,由 rule_longest 抽取
+Disease,DIS-00113,pseudomonas infection,由 rule_longest 抽取
+Drug,DRU-00114,ibuprofen,由 rule_longest 抽取
+Disease,DIS-00115,malocclusion,由 rule_longest 抽取
+Disease,DIS-00116,joint pain,由 rule_longest 抽取
+Disease,DIS-00117,dry skin,由 rule_longest 抽取
+Drug,DRU-00118,vitamin b12,由 rule_longest 抽取
+Drug,DRU-00119,vitamin d,由 rule_longest 抽取
+Disease,DIS-00120,malaria,由 rule_longest 抽取
+Disease,DIS-00121,hepatitis,由 rule_longest 抽取
+Examination,EXA-00122,peripheral smear,由 rule_longest 抽取
+Examination,EXA-00123,biopsy,由 rule_longest 抽取
+Disease,DIS-00124,splenomegaly,由 rule_longest 抽取
+Symptom,SYM-00125,sore throat,由 rule_longest 抽取
+Symptom,SYM-00126,ear pain,由 rule_longest 抽取
+Disease,DIS-00127,acid reflux,由 rule_longest 抽取
+Disease,DIS-00128,sore throat,由 rule_longest 抽取
+Disease,DIS-00129,headache,由 rule_longest 抽取
+Disease,DIS-00130,depression,由 rule_longest 抽取
+Disease,DIS-00131,relationship issues,由 rule_longest 抽取
+Symptom,SYM-00132,nausea,由 rule_longest 抽取
+Symptom,SYM-00133,vomiting,由 rule_longest 抽取
+Drug,DRU-00134,amlodipine,由 rule_longest 抽取
+Disease,DIS-00135,amlodipine,由 rule_longest 抽取
+Disease,DIS-00136,asthma,由 rule_longest 抽取
+Department,DEP-00137,pediatrician,由 rule_longest 抽取
+Disease,DIS-00138,vomiting,由 rule_longest 抽取
+Symptom,SYM-00139,redness,由 rule_longest 抽取
+Disease,DIS-00140,high rbc count,由 rule_longest 抽取
+Symptom,SYM-00141,seizure,由 rule_longest 抽取
+Disease,DIS-00142,growth retardation,由 rule_longest 抽取
+Disease,DIS-00143,sinusitis,由 rule_longest 抽取
+Symptom,SYM-00144,panic,由 rule_longest 抽取
+Symptom,SYM-00145,heartburn,由 rule_longest 抽取
+Symptom,SYM-00146,cold,由 rule_longest 抽取
+Disease,DIS-00147,chronic rhinosinusitis,由 rule_longest 抽取
+Disease,DIS-00148,phentermine,由 rule_longest 抽取
+Drug,DRU-00149,psyllium,由 rule_longest 抽取
+Disease,DIS-00150,constipation,由 rule_longest 抽取
+Disease,DIS-00151,abdominal pain,由 rule_longest 抽取
+Disease,DIS-00152,sleep hygeine,由 rule_longest 抽取
+Department,DEP-00153,childbirth educator,由 rule_longest 抽取
+Symptom,SYM-00154,shoulder pain,由 rule_longest 抽取
+Disease,DIS-00155,glaucoma,由 rule_longest 抽取
+Disease,DIS-00156,dental retainer,由 rule_longest 抽取
+Disease,DIS-00157,gingivitis,由 rule_longest 抽取
+Disease,DIS-00158,invisalign,由 rule_longest 抽取
+Disease,DIS-00159,itchy blisters,由 rule_longest 抽取
+Disease,DIS-00160,intraocular pressure,由 rule_longest 抽取
+Disease,DIS-00161,anal discomfort,由 rule_longest 抽取
+Department,DEP-00162,psychologist,由 rule_longest 抽取
+Disease,DIS-00163,psychosis,由 rule_longest 抽取
+Disease,DIS-00164,side effects of steroids,由 rule_longest 抽取
+Disease,DIS-00165,sciatica,由 rule_longest 抽取
+Symptom,SYM-00166,weakness,由 rule_longest 抽取
+Symptom,SYM-00167,edema,由 rule_longest 抽取
+Symptom,SYM-00168,fainting,由 rule_longest 抽取
+Disease,DIS-00169,brain edema,由 rule_longest 抽取
+Disease,DIS-00170,oral sex,由 rule_longest 抽取
+Drug,DRU-00171,antifungal,由 rule_longest 抽取
+Disease,DIS-00172,white discharge,由 rule_longest 抽取
+Symptom,SYM-00173,fatigue,由 rule_longest 抽取
+Symptom,SYM-00174,ringing in ears,由 rule_longest 抽取
+Disease,DIS-00175,lyme disease,由 rule_longest 抽取
+Disease,DIS-00176,clitoris,由 rule_longest 抽取
+Disease,DIS-00177,anxiety disorder,由 rule_longest 抽取
+Disease,DIS-00178,depersonalization disorder,由 rule_longest 抽取
+Disease,DIS-00179,insomnia,由 rule_longest 抽取
+Drug,DRU-00180,metformin,由 rule_longest 抽取
+Disease,DIS-00181,hyperthyroidism,由 rule_longest 抽取
+Symptom,SYM-00182,muscle pain,由 rule_longest 抽取
+Drug,DRU-00183,carbimazole,由 rule_longest 抽取
+Drug,DRU-00184,glimepiride,由 rule_longest 抽取
+Drug,DRU-00185,insulin,由 rule_longest 抽取
+Disease,DIS-00186,high testosterone level,由 rule_longest 抽取
+Disease,DIS-00187,corneal dystrophy,由 rule_longest 抽取
+Drug,DRU-00188,naproxen,由 rule_longest 抽取
+Disease,DIS-00189,muscle spasm,由 rule_longest 抽取
+Disease,DIS-00190,ecg,由 rule_longest 抽取
+Disease,DIS-00191,reduced range of movement,由 rule_longest 抽取
+Disease,DIS-00192,prepone periods,由 rule_longest 抽取
+Drug,DRU-00193,betamethasone,由 rule_longest 抽取
+Disease,DIS-00194,phimosis,由 rule_longest 抽取
+Disease,DIS-00195,psoriasis,由 rule_longest 抽取
+Disease,DIS-00196,skin infections,由 rule_longest 抽取
+Disease,DIS-00197,c section,由 rule_longest 抽取
+Drug,DRU-00198,folic acid,由 rule_longest 抽取
+Department,DEP-00199,oncologist,由 rule_longest 抽取
+Department,DEP-00200,general physician,由 rule_longest 抽取
+Disease,DIS-00201,folic acid,由 rule_longest 抽取
+Department,DEP-00202,hematologist,由 rule_longest 抽取
+Disease,DIS-00203,burn,由 rule_longest 抽取
+Symptom,SYM-00204,blood in urine,由 rule_longest 抽取
+Disease,DIS-00205,urinary tract infection,由 rule_longest 抽取
+Examination,EXA-00206,urine routine,由 rule_longest 抽取
+Disease,DIS-00207,viral fever,由 rule_longest 抽取
+Disease,DIS-00208,fungal infection,由 rule_longest 抽取
+Disease,DIS-00209,af kit,由 rule_longest 抽取
+Symptom,SYM-00210,stomach pain,由 rule_longest 抽取
+Drug,DRU-00211,loperamide,由 rule_longest 抽取
+Drug,DRU-00212,ofloxacin,由 rule_longest 抽取
+Drug,DRU-00213,metronidazole,由 rule_longest 抽取
+Disease,DIS-00214,gastroenteritis,由 rule_longest 抽取
+Disease,DIS-00215,neck pain,由 rule_longest 抽取
+Disease,DIS-00216,tonsillectomy,由 rule_longest 抽取
+Disease,DIS-00217,sleep disorder,由 rule_longest 抽取
+Drug,DRU-00218,doxycycline,由 rule_longest 抽取
+Drug,DRU-00219,clindamycin,由 rule_longest 抽取
+Disease,DIS-00220,oral candidiasis,由 rule_longest 抽取
+Department,DEP-00221,obstetrician,由 rule_longest 抽取
+Disease,DIS-00222,amniotic fluid leak,由 rule_longest 抽取
+Department,DEP-00223,obstetrician and gynaecologist,由 rule_longest 抽取
+Examination,EXA-00224,hiv test,由 rule_longest 抽取
+Disease,DIS-00225,hiv,由 rule_longest 抽取
+Symptom,SYM-00226,runny nose,由 rule_longest 抽取
+Disease,DIS-00227,ofloxacin,由 rule_longest 抽取
+Department,DEP-00228,paediatrician,由 rule_longest 抽取
+Disease,DIS-00229,irregular periods,由 rule_longest 抽取
+Drug,DRU-00230,oral contraceptive,由 rule_longest 抽取
+Disease,DIS-00231,liver damage,由 rule_longest 抽取
+Disease,DIS-00232,autism,由 rule_longest 抽取
+Department,DEP-00233,neurologist,由 rule_longest 抽取
+Disease,DIS-00234,autism spectrum disorder,由 rule_longest 抽取
+Disease,DIS-00235,unwanted 72,由 rule_longest 抽取
+Examination,EXA-00236,thyroid profile,由 rule_longest 抽取
+Disease,DIS-00237,vitamin d deficiency,由 rule_longest 抽取
+Department,DEP-00238,general practitioner,由 rule_longest 抽取
+Drug,DRU-00239,ketoconazole,由 rule_longest 抽取
+Drug,DRU-00240,clotrimazole,由 rule_longest 抽取
+Disease,DIS-00241,wisdom tooth,由 rule_longest 抽取
+Disease,DIS-00242,wisdom tooth extraction,由 rule_longest 抽取
+Disease,DIS-00243,jaw growth,由 rule_longest 抽取
+Disease,DIS-00244,drug overdose,由 rule_longest 抽取
+Examination,EXA-00245,root canal treatment,由 rule_longest 抽取
+Department,DEP-00246,endodontist,由 rule_longest 抽取
+Disease,DIS-00247,root canal treatment,由 rule_longest 抽取
+Examination,EXA-00248,iron studies,由 rule_longest 抽取
+Disease,DIS-00249,pancytopenia,由 rule_longest 抽取
+Disease,DIS-00250,mebendazole,由 rule_longest 抽取
+Examination,EXA-00251,doppler,由 rule_longest 抽取
+Disease,DIS-00252,hyperlipidemia,由 rule_longest 抽取
+Drug,DRU-00253,rosuvastatin,由 rule_longest 抽取
+Drug,DRU-00254,amoxicillin,由 rule_longest 抽取
+Drug,DRU-00255,cephalexin,由 rule_longest 抽取
+Disease,DIS-00256,infected eczematous dermatitis,由 rule_longest 抽取
+Disease,DIS-00257,missed period,由 rule_longest 抽取
+Department,DEP-00258,ophthalmologist,由 rule_longest 抽取
+Disease,DIS-00259,eye discharge,由 rule_longest 抽取
+Department,DEP-00260,eye care ophthalmologist,由 rule_longest 抽取
+Disease,DIS-00261,dementia,由 rule_longest 抽取
+Examination,EXA-00262,endoscopy,由 rule_longest 抽取
+Disease,DIS-00263,vascular dementia,由 rule_longest 抽取
+Department,DEP-00264,general surgeon,由 rule_longest 抽取
+Disease,DIS-00265,sigmoid volvulus,由 rule_longest 抽取
+Symptom,SYM-00266,tiredness,由 rule_longest 抽取
+Drug,DRU-00267,clonazepam,由 rule_longest 抽取
+Disease,DIS-00268,agoraphobia,由 rule_longest 抽取
+Examination,EXA-00269,urine culture,由 rule_longest 抽取
+Disease,DIS-00270,high colored urine,由 rule_longest 抽取
+Disease,DIS-00271,disc problem,由 rule_longest 抽取
+Department,DEP-00272,orthopaedician and traumatologist,由 rule_longest 抽取
+Disease,DIS-00273,paralysis,由 rule_longest 抽取
+Symptom,SYM-00274,loss of appetite,由 rule_longest 抽取
+Department,DEP-00275,nephrologist,由 rule_longest 抽取
+Disease,DIS-00276,gfr,由 rule_longest 抽取
+Department,DEP-00277,ent specialist,由 rule_longest 抽取
+Disease,DIS-00278,white patches,由 rule_longest 抽取
+Disease,DIS-00279,head lice,由 rule_longest 抽取
+Disease,DIS-00280,effects of drugs during pregnancy,由 rule_longest 抽取
+Disease,DIS-00281,redness in eyes,由 rule_longest 抽取
+Department,DEP-00282,physiotherapist,由 rule_longest 抽取
+Disease,DIS-00283,popping sound,由 rule_longest 抽取
+Disease,DIS-00284,coccydynia,由 rule_longest 抽取
+Disease,DIS-00285,fibular fracture,由 rule_longest 抽取
+Disease,DIS-00286,boil,由 rule_longest 抽取
+Disease,DIS-00287,throat pain,由 rule_longest 抽取
+Disease,DIS-00288,blood pressure,由 rule_longest 抽取
+Department,DEP-00289,general medicine physician,由 rule_longest 抽取
+Symptom,SYM-00290,confusion,由 rule_longest 抽取
+Disease,DIS-00291,anaplastic astrocytoma,由 rule_longest 抽取
+Drug,DRU-00292,metoprolol,由 rule_longest 抽取
+Drug,DRU-00293,hydrochlorothiazide,由 rule_longest 抽取
+Examination,EXA-00294,echocardiogram,由 rule_longest 抽取
+Disease,DIS-00295,diastolic dysfunction,由 rule_longest 抽取
+Examination,EXA-00296,semen analysis,由 rule_longest 抽取
+Disease,DIS-00297,low sperm count,由 rule_longest 抽取
+Disease,DIS-00298,conception and pregnancy,由 rule_longest 抽取
+Disease,DIS-00299,height gain,由 rule_longest 抽取
+Department,DEP-00300,child health specialist,由 rule_longest 抽取
+Disease,DIS-00301,jaundice,由 rule_longest 抽取
+Disease,DIS-00302,sycosis barbae,由 rule_longest 抽取
+Disease,DIS-00303,tooth decay,由 rule_longest 抽取
+Disease,DIS-00304,toothache,由 rule_longest 抽取
+Disease,DIS-00305,back bone pain,由 rule_longest 抽取
+Disease,DIS-00306,mono,由 llm 抽取
+Disease,DIS-00307,cysts,由 llm 抽取
+Disease,DIS-00308,cholelithiasis,由 llm 抽取
+Examination,EXA-00309,ultrasonography abdomen,由 llm 抽取
+Examination,EXA-00310,blood complete picture,由 llm 抽取
+Examination,EXA-00311,liver function tests,由 llm 抽取
+Drug,DRU-00312,nospa,由 llm 抽取
+Drug,DRU-00313,metoclopramide,由 llm 抽取
+Symptom,SYM-00314,pain in abdomen and back,由 llm 抽取
+Symptom,SYM-00315,passing out,由 llm 抽取
+Symptom,SYM-00316,trapped wind,由 llm 抽取
+Drug,DRU-00317,motrilium,由 llm 抽取
+Drug,DRU-00318,pain killers,由 llm 抽取
+Disease,DIS-00319,gall bladder stones,由 llm 抽取
+Examination,EXA-00320,ultrasound abdomen,由 llm 抽取
+Drug,DRU-00321,antibiotics,由 llm 抽取
+Disease,DIS-00322,pregnant,由 llm 抽取
+Symptom,SYM-00323,period,由 llm 抽取
+Symptom,SYM-00324,spotting,由 llm 抽取
+Drug,DRU-00325,nexaplon,由 llm 抽取
+Examination,EXA-00326,blood hcg test,由 llm 抽取
+Symptom,SYM-00327,pressure,由 llm 抽取
+Symptom,SYM-00328,can't release gas or move my bowels,由 llm 抽取
+Symptom,SYM-00329,discomfort,由 llm 抽取
+Disease,DIS-00330,intestinal obstruction,由 llm 抽取
+Examination,EXA-00331,ultrasonography,由 llm 抽取
+Examination,EXA-00332,clinical examination,由 llm 抽取
+Symptom,SYM-00333,stomach expanding,由 llm 抽取
+Department,DEP-00334,emergency room,由 llm 抽取
+Drug,DRU-00335,pain meds,由 llm 抽取
+Drug,DRU-00336,pill to make her throw up,由 llm 抽取
+Disease,DIS-00337,pyloric stenos os,由 llm 抽取
+Symptom,SYM-00338,food stays in stomach,由 llm 抽取
+Disease,DIS-00339,ulcer,由 llm 抽取
+Symptom,SYM-00340,acidic erructation,由 llm 抽取
+Symptom,SYM-00341,splashing sound,由 llm 抽取
+Examination,EXA-00342,barium meal xray,由 llm 抽取
+Examination,EXA-00343,endoscopic examination of stomach,由 llm 抽取
+Examination,EXA-00344,ultrasound scan,由 llm 抽取
+Examination,EXA-00345,checkup,由 llm 抽取
+Symptom,SYM-00346,dandruff,由 llm 抽取
+Symptom,SYM-00347,tachycardia,由 llm 抽取
+Examination,EXA-00348,pulse rate,由 llm 抽取
+Drug,DRU-00349,eltroxin,由 llm 抽取
+Symptom,SYM-00350,black-out,由 llm 抽取
+Symptom,SYM-00351,dizzy,由 llm 抽取
+Examination,EXA-00352,thyroid function,由 llm 抽取
+Disease,DIS-00353,overdose,由 llm 抽取
+Symptom,SYM-00354,low hemoglobin,由 llm 抽取
+Symptom,SYM-00355,tooth ache,由 llm 抽取
+Examination,EXA-00356,xray,由 llm 抽取
+Drug,DRU-00357,amoxy,由 llm 抽取
+Disease,DIS-00358,dental caries,由 llm 抽取
+Disease,DIS-00359,periodontal infection,由 llm 抽取
+Drug,DRU-00360,analgesic,由 llm 抽取
+Symptom,SYM-00361,dry skin,由 llm 抽取
+Symptom,SYM-00362,cuts,由 llm 抽取
+Symptom,SYM-00363,painful,由 llm 抽取
+Disease,DIS-00364,yeast infection,由 llm 抽取
+Symptom,SYM-00365,burning when urinating,由 llm 抽取
+Drug,DRU-00366,steroid,由 llm 抽取
+Drug,DRU-00367,moisturizers,由 llm 抽取
+Symptom,SYM-00368,bumps,由 llm 抽取
+Drug,DRU-00369,permethrin,由 llm 抽取
+Symptom,SYM-00370,pustules,由 llm 抽取
+Symptom,SYM-00371,irritated,由 llm 抽取
+Symptom,SYM-00372,maceration,由 llm 抽取
+Symptom,SYM-00373,fluid secretions,由 llm 抽取
+Symptom,SYM-00374,burns,由 llm 抽取
+Disease,DIS-00375,diaper rash,由 llm 抽取
+Disease,DIS-00376,intertrigo,由 llm 抽取
+Drug,DRU-00377,miconazole,由 llm 抽取
+Drug,DRU-00378,levocetrizine,由 llm 抽取
+Drug,DRU-00379,antifungals,由 llm 抽取
+Drug,DRU-00380,triamcinolone,由 llm 抽取
+Drug,DRU-00381,retina gel,由 llm 抽取
+Symptom,SYM-00382,red mark,由 llm 抽取
+Examination,EXA-00383,biopsies,由 llm 抽取
+Symptom,SYM-00384,red areas,由 llm 抽取
+Symptom,SYM-00385,holes,由 llm 抽取
+Examination,EXA-00386,v.d.r.l,由 llm 抽取
+Disease,DIS-00387,defeciency of the vitamins or minerals,由 llm 抽取
+Disease,DIS-00388,bursitis,由 llm 抽取
+Symptom,SYM-00389,swollen,由 llm 抽取
+Symptom,SYM-00390,tender,由 llm 抽取
+Symptom,SYM-00391,difficulty in climbing the stairs,由 llm 抽取
+Disease,DIS-00392,acl injury,由 llm 抽取
+Disease,DIS-00393,strain,由 llm 抽取
+Disease,DIS-00394,nerve impingement,由 llm 抽取
+Examination,EXA-00395,clinical assessment,由 llm 抽取
+Disease,DIS-00396,cancer,由 llm 抽取
+Symptom,SYM-00397,dehydration,由 llm 抽取
+Disease,DIS-00398,hypercholesterolemia,由 llm 抽取
+Examination,EXA-00399,medical check-up,由 llm 抽取
+Examination,EXA-00400,24 hours urinary protein,由 llm 抽取
+Symptom,SYM-00401,proteinuria,由 llm 抽取
+Disease,DIS-00402,kidney damage,由 llm 抽取
+Disease,DIS-00403,takayasu arteritis,由 llm 抽取
+Drug,DRU-00404,prednisone,由 llm 抽取
+Drug,DRU-00405,methotrexate,由 llm 抽取
+Drug,DRU-00406,steroids,由 llm 抽取
+Disease,DIS-00407,apsys,由 llm 抽取
+Drug,DRU-00408,worms tablet,由 llm 抽取
+Drug,DRU-00409,bevon,由 llm 抽取
+Drug,DRU-00410,t-bact,由 llm 抽取
+Disease,DIS-00411,apsis,由 llm 抽取
+Symptom,SYM-00412,breach in skin continuity,由 llm 抽取
+Drug,DRU-00413,trigil,由 llm 抽取
+Drug,DRU-00414,tribose m3,由 llm 抽取
+Symptom,SYM-00415,banning sensation,由 llm 抽取
+Disease,DIS-00416,neuropathy,由 llm 抽取
+Examination,EXA-00417,blood sugar level,由 llm 抽取
+Symptom,SYM-00418,lumps,由 llm 抽取
+Disease,DIS-00419,sebaceous cyst,由 llm 抽取
+Disease,DIS-00420,lipoma,由 llm 抽取
+Examination,EXA-00421,fnac test,由 llm 抽取
+Symptom,SYM-00422,soreness,由 llm 抽取
+Symptom,SYM-00423,bulging,由 llm 抽取
+Symptom,SYM-00424,deformity,由 llm 抽取
+Disease,DIS-00425,hi blood pressure,由 llm 抽取
+Disease,DIS-00426,reactive arthritis,由 llm 抽取
+Symptom,SYM-00427,change in colour,由 llm 抽取
+Disease,DIS-00428,injury,由 llm 抽取
+Disease,DIS-00429,inflammation,由 llm 抽取
+Disease,DIS-00430,dvt,由 llm 抽取
+Examination,EXA-00431,tests,由 llm 抽取
+Symptom,SYM-00432,darkish color,由 llm 抽取
+Disease,DIS-00433,blood clot,由 llm 抽取
+Disease,DIS-00434,hematoma,由 llm 抽取
+Symptom,SYM-00435,bruising,由 llm 抽取
+Disease,DIS-00436,impact injuries,由 llm 抽取
+Drug,DRU-00437,thrombophob gel,由 llm 抽取
+Examination,EXA-00438,plain x-ray,由 llm 抽取
+Disease,DIS-00439,osteophytes,由 llm 抽取
+Disease,DIS-00440,cord compression,由 llm 抽取
+Symptom,SYM-00441,heaviness,由 llm 抽取
+Symptom,SYM-00442,crampes,由 llm 抽取
+Symptom,SYM-00443,neck pains,由 llm 抽取
+Disease,DIS-00444,radiculopathy,由 llm 抽取
+Symptom,SYM-00445,bladder involvement,由 llm 抽取
+Symptom,SYM-00446,breathing difficulty,由 llm 抽取
+Symptom,SYM-00447,loss of power,由 llm 抽取
+Drug,DRU-00448,nsaid,由 llm 抽取
+Drug,DRU-00449,muscle relaxant,由 llm 抽取
+Drug,DRU-00450,ppi,由 llm 抽取
+Drug,DRU-00451,vitamins,由 llm 抽取
+Disease,DIS-00452,lung infection,由 llm 抽取
+Drug,DRU-00453,methamphetamine,由 llm 抽取
+Drug,DRU-00454,albuterol,由 llm 抽取
+Drug,DRU-00455,azithromyicin,由 llm 抽取
+Symptom,SYM-00456,anxiety,由 llm 抽取
+Examination,EXA-00457,chest x ray,由 llm 抽取
+Symptom,SYM-00458,heating up body,由 llm 抽取
+Symptom,SYM-00459,red face and eyes,由 llm 抽取
+Symptom,SYM-00460,dripping wet,由 llm 抽取
+Symptom,SYM-00461,loss of consciousness,由 llm 抽取
+Symptom,SYM-00462,low bp,由 llm 抽取
+Symptom,SYM-00463,weird feeling,由 llm 抽取
+Symptom,SYM-00464,losing control of my body,由 llm 抽取
+Symptom,SYM-00465,"can""t respond",由 llm 抽取
+Drug,DRU-00466,oxgyen,由 llm 抽取
+Disease,DIS-00467,allergies of pollens,由 llm 抽取
+Examination,EXA-00468,blood serum tests,由 llm 抽取
+Disease,DIS-00469,ovarian cancer,由 llm 抽取
+Disease,DIS-00470,hernia,由 llm 抽取
+Symptom,SYM-00471,knot,由 llm 抽取
+Examination,EXA-00472,pelvic,由 llm 抽取
+Examination,EXA-00473,yearly exam,由 llm 抽取
+Symptom,SYM-00474,distension of the abdomen,由 llm 抽取
+Drug,DRU-00475,guafinex,由 llm 抽取
+Disease,DIS-00476,allergies,由 llm 抽取
+Drug,DRU-00477,guafinacin,由 llm 抽取
+Department,DEP-00478,addiction medicine,由 llm 抽取
+Symptom,SYM-00479,faster heart beat,由 llm 抽取
+Disease,DIS-00480,indigestion,由 llm 抽取
+Symptom,SYM-00481,underweight,由 llm 抽取
+Disease,DIS-00482,arrhythmias,由 llm 抽取
+Disease,DIS-00483,pulmonary disease,由 llm 抽取
+Drug,DRU-00484,zathrine,由 llm 抽取
+Drug,DRU-00485,jiffy,由 llm 抽取
+Disease,DIS-00486,typhoid fever,由 llm 抽取
+Disease,DIS-00487,gum injury,由 llm 抽取
+Symptom,SYM-00488,nick,由 llm 抽取
+Symptom,SYM-00489,pus,由 llm 抽取
+Disease,DIS-00490,gingival abscess,由 llm 抽取
+Symptom,SYM-00491,swollen gingiva,由 llm 抽取
+Disease,DIS-00492,caries,由 llm 抽取
+Symptom,SYM-00493,sensitivity,由 llm 抽取
+Drug,DRU-00494,betadine mouthwash,由 llm 抽取
+Symptom,SYM-00495,foul breath,由 llm 抽取
+Drug,DRU-00496,sporidex,由 llm 抽取
+Drug,DRU-00497,zerodol sp,由 llm 抽取
+Drug,DRU-00498,pan d,由 llm 抽取
+Symptom,SYM-00499,tartar,由 llm 抽取
+Disease,DIS-00500,gum recession,由 llm 抽取
+Disease,DIS-00501,bruxism,由 llm 抽取
+Examination,EXA-00502,gum measurements,由 llm 抽取
+Disease,DIS-00503,lower gi bleed,由 llm 抽取
+Examination,EXA-00504,nuclear scan,由 llm 抽取
+Drug,DRU-00505,blood thinning medications,由 llm 抽取
+Drug,DRU-00506,warfarin,由 llm 抽取
+Symptom,SYM-00507,blood loss in stool,由 llm 抽取
+Disease,DIS-00508,warfarin induced bleeding,由 llm 抽取
+Symptom,SYM-00509,stool color changed to normal from black,由 llm 抽取
+Examination,EXA-00510,ct scan abdomen,由 llm 抽取
+Disease,DIS-00511,jejunal ulcer,由 llm 抽取
+Disease,DIS-00512,eye infection,由 llm 抽取
+Disease,DIS-00513,bacterial infection,由 llm 抽取
+Disease,DIS-00514,covid-19,由 llm 抽取
+Examination,EXA-00515,urine sample,由 llm 抽取
+Drug,DRU-00516,anti-anxiety medication,由 llm 抽取
+Symptom,SYM-00517,period is getting delayed,由 llm 抽取
+Symptom,SYM-00518,face chubbiness,由 llm 抽取
+Examination,EXA-00519,fasting sugar,由 llm 抽取
+Examination,EXA-00520,prolactin,由 llm 抽取
+Examination,EXA-00521,hcg,由 llm 抽取
+Examination,EXA-00522,total testosterone,由 llm 抽取
+Examination,EXA-00523,dheas,由 llm 抽取
+Examination,EXA-00524,fsh,由 llm 抽取
+Examination,EXA-00525,usg pelvis,由 llm 抽取
+Disease,DIS-00526,polycystic ovary syndrome,由 llm 抽取
+Drug,DRU-00527,primolut n,由 llm 抽取
+Symptom,SYM-00528,anovulatory cycle,由 llm 抽取
+Symptom,SYM-00529,scanty flow,由 llm 抽取
+Symptom,SYM-00530,excess flow,由 llm 抽取
+Symptom,SYM-00531,prolonged bleeding,由 llm 抽取
+Drug,DRU-00532,hormonal medications,由 llm 抽取
+Symptom,SYM-00533,unwanted facial hair growth,由 llm 抽取
+Disease,DIS-00534,anal fissure,由 llm 抽取
+Symptom,SYM-00535,wound,由 llm 抽取
+Symptom,SYM-00536,pus discharge,由 llm 抽取
+Symptom,SYM-00537,raw area,由 llm 抽取
+Drug,DRU-00538,betadine,由 llm 抽取
+Symptom,SYM-00539,gas formation,由 llm 抽取
+Symptom,SYM-00540,full,由 llm 抽取
+Symptom,SYM-00541,no clear stool,由 llm 抽取
+Drug,DRU-00542,rabiprazole,由 llm 抽取
+Drug,DRU-00543,digestine,由 llm 抽取
+Disease,DIS-00544,sibo,由 llm 抽取
+Symptom,SYM-00545,hot,由 llm 抽取
+Drug,DRU-00546,fol 123,由 llm 抽取
+Drug,DRU-00547,duvadilan,由 llm 抽取
+Drug,DRU-00548,duphaston,由 llm 抽取
+Drug,DRU-00549,udiliv,由 llm 抽取
+Drug,DRU-00550,pan-d,由 llm 抽取
+Disease,DIS-00551,carpal syndrome,由 llm 抽取
+Disease,DIS-00552,vaginal infection,由 llm 抽取
+Examination,EXA-00553,vaginal swab,由 llm 抽取
+Examination,EXA-00554,urinary analysis,由 llm 抽取
+Examination,EXA-00555,cervical length,由 llm 抽取
+Symptom,SYM-00556,uterine contraction,由 llm 抽取
+Examination,EXA-00557,thyroid hormone levels,由 llm 抽取
+Disease,DIS-00558,lad stenosis,由 llm 抽取
+Disease,DIS-00559,gastric issue,由 llm 抽取
+Examination,EXA-00560,angiogram,由 llm 抽取
+Disease,DIS-00561,calcification,由 llm 抽取
+Disease,DIS-00562,plaque,由 llm 抽取
+Disease,DIS-00563,coronary artery disease,由 llm 抽取
+Drug,DRU-00564,gutka,由 llm 抽取
+Disease,DIS-00565,addiction,由 llm 抽取
+Disease,DIS-00566,prostate cancer,由 llm 抽取
+Symptom,SYM-00567,low back ache,由 llm 抽取
+Drug,DRU-00568,zerodol-p,由 llm 抽取
+Symptom,SYM-00569,rectal bleeding,由 llm 抽取
+Drug,DRU-00570,ferrous sulfate,由 llm 抽取
+Disease,DIS-00571,covid 19,由 llm 抽取
+Symptom,SYM-00572,pain during sex,由 llm 抽取
+Drug,DRU-00573,contraceptives,由 llm 抽取
+Symptom,SYM-00574,cramping pains,由 llm 抽取
+Symptom,SYM-00575,pain in my upper butt area,由 llm 抽取
+Symptom,SYM-00576,delayed period,由 llm 抽取
+Symptom,SYM-00577,lower abdominal pain,由 llm 抽取
+Symptom,SYM-00578,impaired ovulation,由 llm 抽取
+Drug,DRU-00579,birth control pills,由 llm 抽取
+Disease,DIS-00580,hormone imbalance,由 llm 抽取
+Disease,DIS-00581,pelvic infection,由 llm 抽取
+Symptom,SYM-00582,vaginal dryness,由 llm 抽取
+Symptom,SYM-00583,burning sensation in vagina,由 llm 抽取
+Symptom,SYM-00584,vaginal discharge,由 llm 抽取
+Symptom,SYM-00585,foul smell,由 llm 抽取
+Symptom,SYM-00586,"period blood is darker, thicker and stickier",由 llm 抽取
+Symptom,SYM-00587,feverish feel,由 llm 抽取
+Symptom,SYM-00588,adhesive areas around uterus,由 llm 抽取
+Drug,DRU-00589,cocaine,由 llm 抽取
+Symptom,SYM-00590,elevated heart rate,由 llm 抽取
+Drug,DRU-00591,caffeine,由 llm 抽取
+Drug,DRU-00592,ed pills,由 llm 抽取
+Symptom,SYM-00593,heart pain,由 llm 抽取
+Symptom,SYM-00594,pains,由 llm 抽取
+Disease,DIS-00595,herniated disc,由 llm 抽取
+Disease,DIS-00596,sports injury,由 llm 抽取
+Examination,EXA-00597,kub x-ray,由 llm 抽取
+Disease,DIS-00598,renal stones,由 llm 抽取
+Examination,EXA-00599,urinalysis,由 llm 抽取
+Examination,EXA-00600,culture,由 llm 抽取
+Disease,DIS-00601,back sprain,由 llm 抽取
+Disease,DIS-00602,ovarian cyst,由 llm 抽取
+Drug,DRU-00603,tylenol,由 llm 抽取
+Drug,DRU-00604,flexeril,由 llm 抽取
+Drug,DRU-00605,cyclobenzaprine,由 llm 抽取
+Department,DEP-00606,internal medicine,由 llm 抽取
+Disease,DIS-00607,semicircular canal dehiscence,由 llm 抽取
+Disease,DIS-00608,patulous eustachian tube dysfunction,由 llm 抽取
+Symptom,SYM-00609,imbalance,由 llm 抽取
+Symptom,SYM-00610,echoing of once own voice,由 llm 抽取
+Drug,DRU-00611,anti-vertigo medications,由 llm 抽取
+Drug,DRU-00612,stemetil,由 llm 抽取
+Symptom,SYM-00613,vertigo,由 llm 抽取
+Symptom,SYM-00614,pressure symptoms in ear,由 llm 抽取
+Drug,DRU-00615,saline nasal spray,由 llm 抽取
+Disease,DIS-00616,pseudomonas species infection,由 llm 抽取
+Department,DEP-00617,ent,由 llm 抽取
+Symptom,SYM-00618,no occlusion,由 llm 抽取
+Symptom,SYM-00619,eating difficulty,由 llm 抽取
+Drug,DRU-00620,aspercreme,由 llm 抽取
+Disease,DIS-00621,nerve problem,由 llm 抽取
+Symptom,SYM-00622,lump,由 llm 抽取

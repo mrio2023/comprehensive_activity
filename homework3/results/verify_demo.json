@@ -1,0 +1,52 @@
+{
+  "graph": "medical_kg",
+  "checks": [
+    {
+      "name": "节点数",
+      "pass": true,
+      "detail": "8/8"
+    },
+    {
+      "name": "关系数",
+      "pass": true,
+      "detail": "6/6"
+    },
+    {
+      "name": "5 类节点",
+      "pass": true,
+      "detail": "5 类"
+    },
+    {
+      "name": "4 类关系",
+      "pass": true,
+      "detail": "4 类"
+    },
+    {
+      "name": "属性完整",
+      "pass": true,
+      "detail": "缺 name=0, 缺证据=0"
+    },
+    {
+      "name": "糖尿病 -> 多饮/多尿",
+      "pass": true,
+      "detail": "['多饮', '多尿']"
+    },
+    {
+      "name": "糖尿病->Examination",
+      "pass": true,
+      "detail": "['空腹血糖检测', '糖化血红蛋白检测']"
+    },
+    {
+      "name": "糖尿病->Department",
+      "pass": true,
+      "detail": "['内分泌科']"
+    },
+    {
+      "name": "糖尿病->Drug",
+      "pass": true,
+      "detail": "['二甲双胍']"
+    }
+  ],
+  "passed": 9,
+  "total": 9
+}

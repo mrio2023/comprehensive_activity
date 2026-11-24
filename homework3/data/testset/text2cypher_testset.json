@@ -1,0 +1,173 @@
+{
+  "graph": "medical_kg_en",
+  "items": [
+    {
+      "id": "T01",
+      "question": "pelvic infection 有哪些症状？",
+      "gold_cypher": "MATCH (d:Disease)-[r:HAS_SYMPTOM]->(s:Symptom) WHERE d.name = $name RETURN s.name AS answer ORDER BY s.name",
+      "params": {
+        "name": "pelvic infection"
+      },
+      "gold_answer": [
+        "burning sensation in vagina",
+        "cramping pains",
+        "feverish feel",
+        "foul smell",
+        "itching",
+        "lower abdominal pain",
+        "pain during sex",
+        "period blood is darker, thicker and stickier",
+        "vaginal discharge",
+        "vaginal dryness"
+      ],
+      "gold_size": 10
+    },
+    {
+      "id": "T02",
+      "question": "intestinal obstruction 有哪些症状？",
+      "gold_cypher": "MATCH (d:Disease)-[r:HAS_SYMPTOM]->(s:Symptom) WHERE d.name = $name RETURN s.name AS answer ORDER BY s.name",
+      "params": {
+        "name": "intestinal obstruction"
+      },
+      "gold_answer": [
+        "abdominal pain",
+        "bloating",
+        "can't release gas or move my bowels",
+        "diarrhea",
+        "discomfort",
+        "pain",
+        "pressure"
+      ],
+      "gold_size": 7
+    },
+    {
+      "id": "T03",
+      "question": "得了 polycystic ovary syndrome 需要做哪些检查？",
+      "gold_cypher": "MATCH (d:Disease)-[r:REQUIRES_EXAM]->(e:Examination) WHERE d.name = $name RETURN e.name AS answer ORDER BY e.name",
+      "params": {
+        "name": "polycystic ovary syndrome"
+      },
+      "gold_answer": [
+        "complete blood count",
+        "dheas",
+        "fasting sugar",
+        "fsh",
+        "hcg",
+        "prolactin",
+        "total testosterone",
+        "tsh",
+        "usg pelvis"
+      ],
+      "gold_size": 9
+    },
+    {
+      "id": "T04",
+      "question": "得了 diabetes 需要做哪些检查？",
+      "gold_cypher": "MATCH (d:Disease)-[r:REQUIRES_EXAM]->(e:Examination) WHERE d.name = $name RETURN e.name AS answer ORDER BY e.name",
+      "params": {
+        "name": "diabetes"
+      },
+      "gold_answer": [
+        "blood sugar level",
+        "hba1c",
+        "medical check-up",
+        "mri",
+        "x-ray"
+      ],
+      "gold_size": 5
+    },
+    {
+      "id": "T05",
+      "question": "cervical spondylosis 一般用什么药？",
+      "gold_cypher": "MATCH (d:Disease)-[r:USES_DRUG]->(m:Drug) WHERE d.name = $name RETURN m.name AS answer ORDER BY m.name",
+      "params": {
+        "name": "cervical spondylosis"
+      },
+      "gold_answer": [
+        "analgesic",
+        "muscle relaxant",
+        "nsaid",
+        "ppi",
+        "vitamins"
+      ],
+      "gold_size": 5
+    },
+    {
+      "id": "T06",
+      "question": "diabetes 一般用什么药？",
+      "gold_cypher": "MATCH (d:Disease)-[r:USES_DRUG]->(m:Drug) WHERE d.name = $name RETURN m.name AS answer ORDER BY m.name",
+      "params": {
+        "name": "diabetes"
+      },
+      "gold_answer": [
+        "glimepiride",
+        "insulin",
+        "tribose m3",
+        "trigil"
+      ],
+      "gold_size": 4
+    },
+    {
+      "id": "T07",
+      "question": "pcos 应该去哪个科室看？",
+      "gold_cypher": "MATCH (d:Disease)-[r:BELONGS_TO]->(p:Department) WHERE d.name = $name RETURN p.name AS answer ORDER BY p.name",
+      "params": {
+        "name": "pcos"
+      },
+      "gold_answer": [
+        "obstetrician",
+        "obstetrician and gynaecologist"
+      ],
+      "gold_size": 2
+    },
+    {
+      "id": "T08",
+      "question": "back pain 应该去哪个科室看？",
+      "gold_cypher": "MATCH (d:Disease)-[r:BELONGS_TO]->(p:Department) WHERE d.name = $name RETURN p.name AS answer ORDER BY p.name",
+      "params": {
+        "name": "back pain"
+      },
+      "gold_answer": [
+        "internal medicine",
+        "internal medicine physician"
+      ],
+      "gold_size": 2
+    },
+    {
+      "id": "T09",
+      "question": "图谱里一共有多少个疾病节点？",
+      "gold_cypher": "MATCH (d:Disease) RETURN count(d) AS answer",
+      "params": {},
+      "gold_answer": [
+        235
+      ],
+      "gold_size": 1
+    },
+    {
+      "id": "T10",
+      "question": "图谱里一共有多少条关系？",
+      "gold_cypher": "MATCH ()-[r]->() RETURN count(r) AS answer",
+      "params": {},
+      "gold_answer": [
+        416
+      ],
+      "gold_size": 1
+    },
+    {
+      "id": "T11",
+      "question": "有哪些疾病会出现 itching 这个症状？",
+      "gold_cypher": "MATCH (d:Disease)-[r:HAS_SYMPTOM]->(s:Symptom) WHERE s.name = $name RETURN d.name AS answer ORDER BY d.name",
+      "params": {
+        "name": "itching"
+      },
+      "gold_answer": [
+        "intertrigo",
+        "itchy blisters",
+        "pain during sex",
+        "pelvic infection",
+        "scabies"
+      ],
+      "gold_size": 5
+    }
+  ]
+}

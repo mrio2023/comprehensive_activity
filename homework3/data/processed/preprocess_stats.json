@@ -1,0 +1,36 @@
+{
+  "files": {
+    "healthcaremagic_dialogue_1.txt": {
+      "records": 34307,
+      "parsed": 34307
+    },
+    "healthcaremagic_dialogue_2.txt": {
+      "records": 106220,
+      "parsed": 106220
+    },
+    "healthcaremagic_dialogue_3.txt": {
+      "records": 69372,
+      "parsed": 69372
+    },
+    "healthcaremagic_dialogue_4.txt": {
+      "records": 16507,
+      "parsed": 16506
+    },
+    "icliniq_dialogue.txt": {
+      "records": 31065,
+      "parsed": 31064
+    }
+  },
+  "parsed": 257469,
+  "dropped_short": 0,
+  "dropped_dup": 28590,
+  "unique": 228879,
+  "sampled": 150,
+  "with_disease_hint": 120,
+  "topics": 115,
+  "source_dist": {
+    "healthcaremagic": 30,
+    "icliniq": 120
+  },
+  "avg_text_len": 1150.7
+}
