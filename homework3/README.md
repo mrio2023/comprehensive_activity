@@ -342,9 +342,11 @@ $P scripts/eval_text2cypher.py --modes baseline schema schema_aware
 ```text
 homework3/
 ├── .env / .env.example              # 大模型与数据库配置（.env 已在 .gitignore，不进仓库）
-├── Medical-Dialogue-Dataset-English.zip
-├── 专业综合实践-实验3-*.pptx         # 作业原题
-├── docs/screenshots/                # 01-login / 02-home / 03-schema / 04-query
+├── Medical-Dialogue-Dataset-English.zip   # 原始语料（.gitignore，需自行下载）
+├── docs/
+│   ├── 专业综合实践-实验3-医疗知识图谱对话系统.pptx   # 作业原题
+│   └── screenshots/                 # 01-login / 02-home / 03-schema / 04-query
+├── README.md                        # 本报告
 ├── data/
 │   ├── raw/                         # 解压后的英文语料（.gitignore，296MB）
 │   ├── demo/{nodes,edges}.csv       # 课堂样例 8 节点 6 关系（中文）
@@ -353,7 +355,7 @@ homework3/
 │   ├── processed/                   # 预处理/抽取/融合中间产物 + kg_nodes.csv / kg_edges.csv
 │   └── testset/text2cypher_testset.json   # 11 条 Text2Cypher 测试集（含标准答案）
 ├── scripts/                         # 15 个脚本，约 2400 行
-└── results/                         # 全部实验指标（json + md）
+└── results/                         # 全部实验指标（json + md），报告引用其中 5 份
 ```
 
 ## 附录 B. 脚本清单
